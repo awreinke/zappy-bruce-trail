@@ -1,38 +1,17 @@
 {
- "run": "2026-10-19T13:14:16-04:00",
- "tracks": [],
- "photos": [
+ "run": "2026-10-19T13:27:06-04:00",
+ "tracks": [
   {
-   "file": "IMG_4014.jpeg",
-   "date": "2026-10-17",
-   "gps": true
-  },
-  {
-   "file": "IMG_4619.jpeg",
-   "date": "2026-10-17",
-   "gps": true
-  },
-  {
-   "file": "IMG_4621.jpeg",
-   "date": "2026-10-17",
-   "gps": true
-  },
-  {
-   "file": "IMG_4625.jpeg",
-   "date": "2026-10-17",
-   "gps": true
-  },
-  {
-   "file": "IMG_4631.jpeg",
-   "date": "2026-10-17",
-   "gps": true
-  },
-  {
-   "file": "IMG_4650.jpeg",
-   "date": "2026-10-18",
-   "gps": true
+   "file": "Saturday_Morning_Activity-monocliffs.gpx",
+   "date": "2026-10-03",
+   "km": 5.5,
+   "hikes": [
+    47
+   ],
+   "side_trail_km_new": 0.6
   }
  ],
+ "photos": [],
  "problems": [
   "IMG_4650.jpeg: no trip matched yet (date 2026-10-18); it will be matched when that day's GPX is uploaded"
  ]
