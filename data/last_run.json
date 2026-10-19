@@ -1,16 +1,39 @@
 {
- "run": "2026-10-19T13:12:12-04:00",
- "tracks": [
+ "run": "2026-10-19T13:14:16-04:00",
+ "tracks": [],
+ "photos": [
   {
-   "file": "Saturday_Morning_Hiking Goodyear .gpx",
+   "file": "IMG_4014.jpeg",
    "date": "2026-10-17",
-   "km": 5.4,
-   "hikes": [
-    44
-   ],
-   "side_trail_km_new": 3.64
+   "gps": true
+  },
+  {
+   "file": "IMG_4619.jpeg",
+   "date": "2026-10-17",
+   "gps": true
+  },
+  {
+   "file": "IMG_4621.jpeg",
+   "date": "2026-10-17",
+   "gps": true
+  },
+  {
+   "file": "IMG_4625.jpeg",
+   "date": "2026-10-17",
+   "gps": true
+  },
+  {
+   "file": "IMG_4631.jpeg",
+   "date": "2026-10-17",
+   "gps": true
+  },
+  {
+   "file": "IMG_4650.jpeg",
+   "date": "2026-10-18",
+   "gps": true
   }
  ],
- "photos": [],
- "problems": []
+ "problems": [
+  "IMG_4650.jpeg: no trip matched yet (date 2026-10-18); it will be matched when that day's GPX is uploaded"
+ ]
 }
