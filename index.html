@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zappy's Bruce Trail Side Trails</title>
+<meta name="description" content="Tracking Zappy the dog's progress hiking every dog-friendly Bruce Trail side trail.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='44' fill='%231d8a4e'/%3E%3Cpath d='M20 70 L42 38 L54 54 L64 42 L82 70Z' fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+<header id="hdr">
+  <h1>Zappy's Bruce Trail <span>side trails</span></h1>
+  <div class="progress">
+    <div class="bar"><div id="bar" style="width:0"></div></div>
+    <small id="progtext">Loading…</small>
+  </div>
+  <nav>
+    <a class="btn on" id="tabMap" href="#">Map</a>
+    <a class="btn" id="tabList" href="#list">List</a>
+    <a class="btn" href="upload.html">Upload</a>
+  </nav>
+</header>
+<main>
+  <div id="map"></div>
+  <aside id="panel" aria-label="Hike details"><button class="close" id="closePanel" aria-label="Close">✕</button><div class="inner" id="panelInner"></div></aside>
+  <section id="list"></section>
+</main>
+<div id="lb"><button class="x" aria-label="Close">✕</button><button class="prev" aria-label="Previous">‹</button><button class="next" aria-label="Next">›</button><img alt=""><div class="cap"></div></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+section,side_trail,reason,km_skipped,full_trail_km
+Niagara,Bert Lowe Side Trail,follows a road (not required; used only as a connector),0.09,12.34
+Niagara,Margaret Reed Side Trail,short (< 1 km) and not next to any other side trail,0.36,0.36
+Niagara,Morningstar Side Trail,short (< 1 km) and not next to any other side trail,0.7,0.7
+Niagara,Rockway Side Trail,short (< 1 km) and not next to any other side trail,0.97,0.97
+Iroquoia,Artaban Road Side Trail,follows a road (not required; used only as a connector),1.06,3.18
+Iroquoia,Cheryl Duke Side Trail,follows a road (not required; used only as a connector),0.93,0.93
+Iroquoia,Crawford Lake Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.26,1.92
+Iroquoia,Davidson Boulevard Side Trail,short (< 1 km) and not next to any other side trail,0.1,0.1
+Iroquoia,Devil's Punch Bowl Side Trail,follows a road (not required; used only as a connector),0.54,1.15
+Iroquoia,Devil's Punch Bowl Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.61,1.15
+Iroquoia,Filman Road Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.4,0.4
+Iroquoia,Glen Eden Side Trail,short (< 1 km) and not next to any other side trail,0.69,0.69
+Iroquoia,Glover Mountain Rd Side Trail,follows a road (not required; used only as a connector),0.22,0.22
+Iroquoia,Greenhill Avenue Side Trail,short (< 1 km) and not next to any other side trail,0.11,0.11
+Iroquoia,I032.,short (< 1 km) and not next to any other side trail,0.27,0.27
+Iroquoia,Iroquoia Heights Side Trail,"tiny end piece (< 60 m), not worth the detour",0.03,1.11
+Iroquoia,Jones Road Access Trail,short (< 1 km) and not next to any other side trail,0.21,0.21
+Iroquoia,Kimberly Drive Side Trail,short (< 1 km) and not next to any other side trail,0.08,0.08
+Iroquoia,Lewis Road Side Trail,short (< 1 km) and not next to any other side trail,0.45,0.45
+Iroquoia,MacDui Drive Side Trail,short (< 1 km) and not next to any other side trail,0.04,0.04
+Iroquoia,Millen Road Side Trail,short (< 1 km) and not next to any other side trail,0.1,0.1
+Iroquoia,Mount Nemo Shortcut,short (< 1 km) and not next to any other side trail,0.06,0.06
+Iroquoia,Mount Nemo Side Trail,short (< 1 km) and not next to any other side trail,0.78,0.78
+Iroquoia,New Mountain Road Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.05,0.05
+Iroquoia,Oakridge Drive Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.21,0.21
+Iroquoia,Old Guelph Rd Side Trail,follows a road (not required; used only as a connector),0.09,0.18
+Iroquoia,Old Guelph Rd Side Trail,short (< 1 km) and not next to any other side trail,0.08,0.18
+Iroquoia,Robert MacLaren Side Trail,follows a road (not required; used only as a connector),1.47,2.35
+Iroquoia,Robert MacLaren Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.31,2.35
+Iroquoia,Rockcliffe Side Trail,short (< 1 km) and not next to any other side trail,0.73,0.73
+Iroquoia,Steeles Avenue Side Trail,follows a road (not required; used only as a connector),1.0,1.0
+Iroquoia,Tews Falls Side Trail,"tiny end piece (< 60 m), not worth the detour",0.03,3.34
+Iroquoia,Tiffany Falls Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.36,0.36
+Iroquoia,Veever's Park Side Trail,short (< 1 km) and not next to any other side trail,0.1,0.1
+Iroquoia,Wentworth Steps Side Trail,short (< 1 km) and not next to any other side trail,0.09,0.09
+Toronto,Credit Valley Footpath,follows a road (not required; used only as a connector),4.08,9.69
+Toronto,Maureen Smith Side Trail,follows a road (not required; used only as a connector),0.18,0.72
+Toronto,Maureen Smith Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.54,0.72
+Toronto,Rockside Side Trail,follows a road (not required; used only as a connector),0.6,1.73
+Caledon Hills,Caledon Trailway Link Side Trail,follows a road (not required; used only as a connector),0.6,0.6
+Caledon Hills,Devils Pulpit Side Trail,follows a road (not required; used only as a connector),1.38,3.67
+Caledon Hills,Glen Haffy Side Trail,follows a road (not required; used only as a connector),2.9,4.85
+Caledon Hills,Griffith Ravine Side Trail,short (< 1 km) and not next to any other side trail,0.89,0.89
+Caledon Hills,Hockley Heights Side Trail,follows a road (not required; used only as a connector),2.0,6.89
+Caledon Hills,Hockley Road Side Trail,follows a road (not required; used only as a connector),0.22,0.22
+Caledon Hills,Paris Morain Side Trail,follows a road (not required; used only as a connector),0.92,2.27
+Caledon Hills,Paris Morain Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.65,2.27
+Caledon Hills,Paris Morain Side Trail,"tiny end piece (< 60 m), not worth the detour",0.05,2.27
+Caledon Hills,Peter Beecham Side Trail,short (< 1 km) and not next to any other side trail,0.04,0.04
+Caledon Hills,Vineyard View Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.11,0.11
+Dufferin Hi-Land,2nd Line EHS Side Trail,follows a road (not required; used only as a connector),1.31,1.31
+Dufferin Hi-Land,Boyne Creek Side Trail,short (< 1 km) and not next to any other side trail,0.16,0.16
+Dufferin Hi-Land,Boyne Valley Side Trail,follows a road (not required; used only as a connector),0.82,2.64
+Dufferin Hi-Land,Boyne Valley Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.34,2.64
+Dufferin Hi-Land,David Hahn Side Trail,short (< 1 km) and not next to any other side trail,0.21,0.21
+Dufferin Hi-Land,Mulmur Lookout Side Trail,short (< 1 km) and not next to any other side trail,0.08,0.08
+Dufferin Hi-Land,Murphy's Pinnacle Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.07,0.07
+Dufferin Hi-Land,Rockhill Park Side Trail,short (< 1 km) and not next to any other side trail,0.46,0.46
+Dufferin Hi-Land,Splitrock Side Trail,"tiny end piece (< 60 m), not worth the detour",0.02,1.94
+Blue Mountains,Franks Lime Kiln Side Trail,short (< 1 km) and not next to any other side trail,0.18,0.18
+Blue Mountains,June & George Willis Side Trail,follows a road (not required; used only as a connector),2.97,2.97
+Blue Mountains,Mission Road Side Trail,follows a road (not required; used only as a connector),0.68,1.71
+Blue Mountains,Mission Road Side Trail-01.,follows a road (not required; used only as a connector),0.44,1.5
+Blue Mountains,Singhampton Side Trail,short (< 1 km) and not next to any other side trail,0.19,0.19
+Blue Mountains,Standing Rock & Caves Side Trail,short (< 1 km) and not next to any other side trail,0.63,0.63
+Blue Mountains,Walker Aggregates Side Trail,follows a road (not required; used only as a connector),0.25,0.7
+Blue Mountains,Walker Aggregates Side Trail,short (< 1 km) and not next to any other side trail,0.46,0.7
+Beaver Valley,Allan Side Trail,short (< 1 km) and not next to any other side trail,0.71,0.71
+Beaver Valley,Beaver Pond Lookout Side Trail,short (< 1 km) and not next to any other side trail,0.04,0.04
+Beaver Valley,Beech Grove Side Trail,short (< 1 km) and not next to any other side trail,0.34,0.34
+Beaver Valley,Campbell's / Graham's Hill Side Trail,follows a road (not required; used only as a connector),2.37,2.37
+Beaver Valley,Epping Lookout Side Trail,short (< 1 km) and not next to any other side trail,0.39,0.39
+Beaver Valley,Eugenia Falls Side Trail,short (< 1 km) and not next to any other side trail,0.43,0.43
+Beaver Valley,Griersville Memorial Forest Side Trail,short (< 1 km) and not next to any other side trail,0.72,0.72
+Beaver Valley,Jack Morgan Side Trail,short (< 1 km) and not next to any other side trail,0.04,0.04
+Beaver Valley,Ken Young Side Trail,follows a road (not required; used only as a connector),0.16,0.8
+Beaver Valley,Ken Young Side Trail,short (< 1 km) and not next to any other side trail,0.64,0.8
+Beaver Valley,Len Gertler Connector Side Trail,"tiny end piece (< 60 m), not worth the detour",0.05,0.05
+Beaver Valley,Len Gertler Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.74,2.14
+Beaver Valley,Lower Valley Nature Reserve Side Trail,short (< 1 km) and not next to any other side trail,0.48,0.48
+Beaver Valley,Sideroad 4A Side Trail,short (< 1 km) and not next to any other side trail,0.81,0.81
+Beaver Valley,Siegerman Access Side Trail,short (< 1 km) and not next to any other side trail,0.49,0.49
+Beaver Valley,Sligo Side Trail,follows a road (not required; used only as a connector),0.9,2.91
+Beaver Valley,Stew Hilts Side Trail,short (< 1 km) and not next to any other side trail,0.83,0.83
+Beaver Valley,Stone Foundation Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.51,0.51
+Beaver Valley,Valley Crossover Side Trail,follows a road (not required; used only as a connector),1.41,3.1
+Sydenham,7th St. W. Side Trail_,short (< 1 km) and not next to any other side trail,0.21,0.21
+Sydenham,Ambrose Camp Side Trail,short (< 1 km) and not next to any other side trail,0.14,0.14
+Sydenham,Bognor Marsh Side Trail,short (< 1 km) and not next to any other side trail,0.98,0.98
+Sydenham,Chalmers Quarry Side Trail,short (< 1 km) and not next to any other side trail,0.26,0.26
+Sydenham,Creamery Hill Side Trail,follows a road (not required; used only as a connector),0.23,0.9
+Sydenham,Dawson Road Side Trail,short (< 1 km) and not next to any other side trail,0.38,0.38
+Sydenham,Derby Forest Side Trail,short (< 1 km) and not next to any other side trail,0.44,0.44
+Sydenham,Dodds Hill Side Trail,follows a road (not required; used only as a connector),1.53,1.65
+Sydenham,Keeling Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.3,2.57
+Sydenham,Legacy Ridge Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.09,0.09
+Sydenham,Lindenwood Side Trail,short (< 1 km) and not next to any other side trail,0.92,0.92
+Sydenham,Merle Gunby Side Trail,"tiny end piece (< 60 m), not worth the detour",0.05,2.3
+Sydenham,Raven's Nest Side Trail,"tiny end piece (< 60 m), not worth the detour",0.05,0.05
+Sydenham,Slough of Despond Side Trail,follows a road (not required; used only as a connector),3.03,8.71
+Sydenham,Sydenham Forest East Side Trail,follows a road (not required; used only as a connector),0.77,0.79
+Sydenham,Sydenham Forest East Side Trail,short (< 1 km) and not next to any other side trail,0.02,0.79
+Sydenham,Tall Pines Side Trail,follows a road (not required; used only as a connector),1.05,3.13
+Sydenham,Walker Homestead Side Trail,"tiny end piece (< 60 m), not worth the detour",0.02,0.02
+Sydenham,no name access (Syd 01),short (< 1 km) and not next to any other side trail,0.08,0.08
+Peninsula,Bannister's Hill Side Trail,short (< 1 km) and not next to any other side trail,0.94,0.94
+Peninsula,Fred Binding Lookout,"tiny end piece (< 60 m), not worth the detour",0.03,0.03
+Peninsula,Giant's Cauldron Side Trail,"tiny end piece (< 60 m), not worth the detour",0.04,0.04
+Peninsula,Halfway Dump Side Trail,short (< 1 km) and not next to any other side trail,0.93,0.93
+Peninsula,High Dump Side Trail,short (< 1 km) and not next to any other side trail,0.23,0.23
+Peninsula,Hopeness Side Trail,follows a road (not required; used only as a connector),0.46,3.8
+Peninsula,Jackson's Cove Lookout Side Trail,"tiny end piece (< 60 m), not worth the detour",0.04,0.04
+Peninsula,Jackson's Cove Side Trail,follows a road (not required; used only as a connector),0.05,1.75
+Peninsula,Jackson's Cove Side Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.19,1.75
+Peninsula,Lion's Head Pothole Side Trail,"tiny end piece (< 60 m), not worth the detour",0.03,0.03
+Peninsula,Lion's Head Village Side Trail,follows a road (not required; used only as a connector),0.67,0.67
+Peninsula,Malcolm Bluff Side Trail,follows a road (not required; used only as a connector),1.24,3.27
+Peninsula,Purple Valley Access Trail,short (< 1 km); would need its own parking stop (no room in a nearby hike under 8 mi),0.52,0.52
+Peninsula,Rush Cove Rd Side Trail,follows a road (not required; used only as a connector),1.02,1.49
+Peninsula,Sydney Bay Bluff Lookout Side Trail,short (< 1 km) and not next to any other side trail,0.09,0.09
+Peninsula,Viewpoint-LDB,"tiny end piece (< 60 m), not worth the detour",0.05,0.05
+Peninsula,Viewpoint-LH,"tiny end piece (< 60 m), not worth the detour",0.05,0.05
+Peninsula,Viewpoint-SBB,"tiny end piece (< 60 m), not worth the detour",0.13,0.13
+Peninsula,Whicher Side Trail (disappearing stream),"tiny end piece (< 60 m), not worth the detour",0.02,0.02
+Peninsula,Wiarton Side Trail,follows a road (not required; used only as a connector),1.21,1.82
+Peninsula,Williams Caves Side Trail,short (< 1 km) and not next to any other side trail,0.04,0.04

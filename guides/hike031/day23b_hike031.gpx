@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>Day 23 (stop 2 of 2) - Rockside</name></metadata>
+<wpt lat="43.750866" lon="-79.951452"><name>P Start/finish parking</name><desc>Roadside parking at Boston Mills Rd just west of the Mississauga Rd intersection</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.748022" lon="-79.954440"><name>J1</name><desc>J1: Continue straight onto the blue-blazed Rockside Side Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
+<wpt lat="43.740370" lon="-79.952586"><name>J2</name><desc>J2: Turnaround point. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
+<trk><name>Day 23 (stop 2 of 2) - Rockside (3.0 km)</name><trkseg>
+<trkpt lat="43.750866" lon="-79.951452"></trkpt>
+<trkpt lat="43.750570" lon="-79.951800"></trkpt>
+<trkpt lat="43.749850" lon="-79.952510"></trkpt>
+<trkpt lat="43.749360" lon="-79.953080"></trkpt>
+<trkpt lat="43.749210" lon="-79.953200"></trkpt>
+<trkpt lat="43.749200" lon="-79.953280"></trkpt>
+<trkpt lat="43.749000" lon="-79.953410"></trkpt>
+<trkpt lat="43.748780" lon="-79.953650"></trkpt>
+<trkpt lat="43.748390" lon="-79.954120"></trkpt>
+<trkpt lat="43.748030" lon="-79.954450"></trkpt>
+<trkpt lat="43.747610" lon="-79.954750"></trkpt>
+<trkpt lat="43.746900" lon="-79.955560"></trkpt>
+<trkpt lat="43.746500" lon="-79.955870"></trkpt>
+<trkpt lat="43.746140" lon="-79.956380"></trkpt>
+<trkpt lat="43.745520" lon="-79.956850"></trkpt>
+<trkpt lat="43.745080" lon="-79.957220"></trkpt>
+<trkpt lat="43.744410" lon="-79.957930"></trkpt>
+<trkpt lat="43.744280" lon="-79.957900"></trkpt>
+<trkpt lat="43.744030" lon="-79.957610"></trkpt>
+<trkpt lat="43.743790" lon="-79.957110"></trkpt>
+<trkpt lat="43.743380" lon="-79.956630"></trkpt>
+<trkpt lat="43.740380" lon="-79.952580"></trkpt>
+<trkpt lat="43.743380" lon="-79.956630"></trkpt>
+<trkpt lat="43.743790" lon="-79.957110"></trkpt>
+<trkpt lat="43.744030" lon="-79.957610"></trkpt>
+<trkpt lat="43.744280" lon="-79.957900"></trkpt>
+<trkpt lat="43.744410" lon="-79.957930"></trkpt>
+<trkpt lat="43.745080" lon="-79.957220"></trkpt>
+<trkpt lat="43.745520" lon="-79.956850"></trkpt>
+<trkpt lat="43.746140" lon="-79.956380"></trkpt>
+<trkpt lat="43.746500" lon="-79.955870"></trkpt>
+<trkpt lat="43.746900" lon="-79.955560"></trkpt>
+<trkpt lat="43.747610" lon="-79.954750"></trkpt>
+<trkpt lat="43.748030" lon="-79.954450"></trkpt>
+<trkpt lat="43.748390" lon="-79.954120"></trkpt>
+<trkpt lat="43.748780" lon="-79.953650"></trkpt>
+<trkpt lat="43.749000" lon="-79.953410"></trkpt>
+<trkpt lat="43.749200" lon="-79.953280"></trkpt>
+<trkpt lat="43.749210" lon="-79.953200"></trkpt>
+<trkpt lat="43.749360" lon="-79.953080"></trkpt>
+<trkpt lat="43.749850" lon="-79.952510"></trkpt>
+<trkpt lat="43.750570" lon="-79.951800"></trkpt>
+<trkpt lat="43.750866" lon="-79.951452"></trkpt>
+</trkseg></trk></gpx>

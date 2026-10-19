@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>Day 61 (stop 3 of 3) - Colpoy's Cavern, Trail to Caves</name></metadata>
+<wpt lat="44.772449" lon="-81.075108"><name>P Start/finish parking</name><desc>Bruce's Caves Conservation Area: Enter parking area from Grey Rd 1</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.774264" lon="-81.071394"><name>J1</name><desc>J1: Start the Colpoy's Cavern Side Trail loop (0.7 km). Turn left onto it, heading north; it brings you back to this junction.</desc><sym>Waypoint</sym></wpt>
+<trk><name>Day 61 (stop 3 of 3) - Colpoy's Cavern, Trail to Caves (1.4 km)</name><trkseg>
+<trkpt lat="44.772470" lon="-81.075060"></trkpt>
+<trkpt lat="44.772700" lon="-81.074900"></trkpt>
+<trkpt lat="44.772730" lon="-81.074550"></trkpt>
+<trkpt lat="44.773110" lon="-81.073910"></trkpt>
+<trkpt lat="44.773140" lon="-81.073680"></trkpt>
+<trkpt lat="44.773220" lon="-81.073530"></trkpt>
+<trkpt lat="44.773470" lon="-81.073310"></trkpt>
+<trkpt lat="44.773580" lon="-81.073110"></trkpt>
+<trkpt lat="44.773730" lon="-81.072630"></trkpt>
+<trkpt lat="44.773700" lon="-81.072520"></trkpt>
+<trkpt lat="44.774090" lon="-81.072090"></trkpt>
+<trkpt lat="44.774170" lon="-81.071840"></trkpt>
+<trkpt lat="44.774280" lon="-81.071670"></trkpt>
+<trkpt lat="44.774270" lon="-81.071400"></trkpt>
+<trkpt lat="44.774450" lon="-81.071370"></trkpt>
+<trkpt lat="44.774540" lon="-81.071280"></trkpt>
+<trkpt lat="44.774560" lon="-81.070970"></trkpt>
+<trkpt lat="44.774890" lon="-81.070580"></trkpt>
+<trkpt lat="44.775400" lon="-81.069770"></trkpt>
+<trkpt lat="44.775580" lon="-81.069180"></trkpt>
+<trkpt lat="44.775670" lon="-81.069080"></trkpt>
+<trkpt lat="44.775680" lon="-81.068900"></trkpt>
+<trkpt lat="44.775840" lon="-81.068730"></trkpt>
+<trkpt lat="44.775860" lon="-81.068600"></trkpt>
+<trkpt lat="44.775720" lon="-81.068590"></trkpt>
+<trkpt lat="44.775540" lon="-81.068860"></trkpt>
+<trkpt lat="44.775380" lon="-81.068910"></trkpt>
+<trkpt lat="44.775230" lon="-81.069040"></trkpt>
+<trkpt lat="44.775060" lon="-81.069320"></trkpt>
+<trkpt lat="44.775060" lon="-81.069380"></trkpt>
+<trkpt lat="44.775160" lon="-81.069400"></trkpt>
+<trkpt lat="44.774810" lon="-81.069730"></trkpt>
+<trkpt lat="44.774810" lon="-81.069800"></trkpt>
+<trkpt lat="44.774880" lon="-81.069840"></trkpt>
+<trkpt lat="44.774900" lon="-81.070020"></trkpt>
+<trkpt lat="44.774750" lon="-81.070060"></trkpt>
+<trkpt lat="44.774680" lon="-81.070180"></trkpt>
+<trkpt lat="44.774560" lon="-81.070170"></trkpt>
+<trkpt lat="44.774520" lon="-81.070250"></trkpt>
+<trkpt lat="44.774540" lon="-81.070440"></trkpt>
+<trkpt lat="44.774370" lon="-81.070520"></trkpt>
+<trkpt lat="44.774260" lon="-81.070680"></trkpt>
+<trkpt lat="44.774280" lon="-81.070850"></trkpt>
+<trkpt lat="44.774230" lon="-81.070980"></trkpt>
+<trkpt lat="44.774270" lon="-81.071400"></trkpt>
+<trkpt lat="44.774280" lon="-81.071670"></trkpt>
+<trkpt lat="44.774170" lon="-81.071840"></trkpt>
+<trkpt lat="44.774090" lon="-81.072090"></trkpt>
+<trkpt lat="44.773700" lon="-81.072520"></trkpt>
+<trkpt lat="44.773730" lon="-81.072630"></trkpt>
+<trkpt lat="44.773580" lon="-81.073110"></trkpt>
+<trkpt lat="44.773470" lon="-81.073310"></trkpt>
+<trkpt lat="44.773220" lon="-81.073530"></trkpt>
+<trkpt lat="44.773140" lon="-81.073680"></trkpt>
+<trkpt lat="44.773110" lon="-81.073910"></trkpt>
+<trkpt lat="44.772730" lon="-81.074550"></trkpt>
+<trkpt lat="44.772700" lon="-81.074900"></trkpt>
+<trkpt lat="44.772470" lon="-81.075060"></trkpt>
+</trkseg></trk></gpx>

@@ -1,0 +1,48 @@
+name: Process uploads and publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # always the newest commit, so queued runs never push stale work
+
+      - name: Process new GPX tracks and photos
+        run: |
+          if find uploads -type f ! -name 'README.md' ! -name '.*' | grep -q .; then
+            pip install --quiet pillow pillow-heif numpy
+            python scripts/process_uploads.py
+            git config user.name "zappy-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Add uploaded tracks and photos" || echo "nothing to commit"
+            git pull --rebase --quiet || true
+            git push
+          else
+            echo "No new uploads"
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}

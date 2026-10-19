@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Upload a Hike · Zappy's Bruce Trail</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="hdr">
+  <h1>Zappy's Bruce Trail <span>upload</span></h1>
+  <div style="flex:1"></div>
+  <nav><a class="btn" href="./">Map</a><a class="btn" href="./#list">List</a><a class="btn on" href="upload.html">Upload</a></nav>
+</header>
+<div class="page">
+  <div class="card" id="dropCard">
+    <h2>Add a hike</h2>
+    <p class="muted" style="margin-top:0">Drop in the GPX track from Gaia GPS and the photos from the hike (JPEG or iPhone HEIC). You can add several hikes at once.
+      The site works out which hike it was, dates everything, and places the photos on the track.</p>
+    <div class="drop" id="drop" tabindex="0" role="button">Drop files here, or tap to choose<br><small>.gpx, .jpg, .heic, .png</small></div>
+    <input type="file" id="pick" multiple accept=".gpx,application/gpx+xml,image/*,.heic,.heif" hidden>
+    <div class="files" id="files"></div>
+    <button class="primary" id="go" disabled>Upload</button>
+    <button id="clear" hidden>Clear</button>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="card" id="last" hidden></div>
+
+  <details class="card" id="setup">
+    <summary><b>One-time setup on this device</b> <span class="muted" id="setupState"></span></summary>
+    <p class="muted">Uploading saves files straight into the site's GitHub repository, so this page needs a GitHub access token.
+      It is stored only in this browser, never in the site.</p>
+    <ol class="muted">
+      <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → new fine-grained token</a>.</li>
+      <li>Name it e.g. "Zappy upload", set an expiry (up to a year), and under <b>Repository access</b> choose <b>Only select repositories</b> → this site's repository.</li>
+      <li>Under <b>Permissions → Repository permissions</b> set <b>Contents: Read and write</b> and <b>Actions: Read-only</b>.</li>
+      <li>Generate it, copy it, and paste it below.</li>
+    </ol>
+    <label for="repo">Repository (owner/name)</label>
+    <input type="text" id="repo" placeholder="awreinke/zappy-bruce-trail" autocomplete="off">
+    <label for="tok">Access token</label>
+    <input type="password" id="tok" placeholder="github_pat_…" autocomplete="off">
+    <p><button class="primary" id="save">Save on this device</button> <button id="forget">Forget token</button></p>
+    <p class="muted">No token? You can also upload on github.com: open the repository's <b>uploads</b> folder → <b>Add file → Upload files</b>. The site processes them the same way.</p>
+  </details>
+</div>
+<script src="upload.js"></script>
+</body>
+</html>

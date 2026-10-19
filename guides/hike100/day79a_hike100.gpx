@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>Day 79 (stop 1 of 3) - Cape Chin, no name access, Cape Chin Connector</name></metadata>
+<wpt lat="45.092716" lon="-81.272189"><name>P Start/finish parking</name><desc>Parking at the south end of Carter Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.092327" lon="-81.272848"><name>J1</name><desc>J1: Turn left onto the blue-blazed Cape Chin Side Trail, heading south-east. (the white-blazed main Bruce Trail goes off on your left; the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
+<wpt lat="45.085721" lon="-81.268420"><name>J2</name><desc>J2: Turn left onto the blue-blazed Cape Chin Connector Side Trail, heading east. (the blue-blazed Cape Chin Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
+<wpt lat="45.085596" lon="-81.267682"><name>J3</name><desc>J3: Turn right onto the white-blazed main Bruce Trail, heading south. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
+<wpt lat="45.079848" lon="-81.266194"><name>J4</name><desc>J4: Turn right onto the blue-blazed Cape Chin Side Trail, heading north. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
+<trk><name>Day 79 (stop 1 of 3) - Cape Chin, no name access, Cape Chin Connector (3.3 km)</name><trkseg>
+<trkpt lat="45.092760" lon="-81.272140"></trkpt>
+<trkpt lat="45.092570" lon="-81.272370"></trkpt>
+<trkpt lat="45.092340" lon="-81.272850"></trkpt>
+<trkpt lat="45.092220" lon="-81.272860"></trkpt>
+<trkpt lat="45.091800" lon="-81.272510"></trkpt>
+<trkpt lat="45.091120" lon="-81.272120"></trkpt>
+<trkpt lat="45.090880" lon="-81.272050"></trkpt>
+<trkpt lat="45.090710" lon="-81.272030"></trkpt>
+<trkpt lat="45.090160" lon="-81.272260"></trkpt>
+<trkpt lat="45.090000" lon="-81.272260"></trkpt>
+<trkpt lat="45.089410" lon="-81.271970"></trkpt>
+<trkpt lat="45.088580" lon="-81.271740"></trkpt>
+<trkpt lat="45.088310" lon="-81.271580"></trkpt>
+<trkpt lat="45.086340" lon="-81.269270"></trkpt>
+<trkpt lat="45.085730" lon="-81.268430"></trkpt>
+<trkpt lat="45.085640" lon="-81.268230"></trkpt>
+<trkpt lat="45.085660" lon="-81.268010"></trkpt>
+<trkpt lat="45.085600" lon="-81.267690"></trkpt>
+<trkpt lat="45.085510" lon="-81.267630"></trkpt>
+<trkpt lat="45.084450" lon="-81.267530"></trkpt>
+<trkpt lat="45.084040" lon="-81.267380"></trkpt>
+<trkpt lat="45.083490" lon="-81.267250"></trkpt>
+<trkpt lat="45.082580" lon="-81.266740"></trkpt>
+<trkpt lat="45.082350" lon="-81.266650"></trkpt>
+<trkpt lat="45.082020" lon="-81.266430"></trkpt>
+<trkpt lat="45.081900" lon="-81.266410"></trkpt>
+<trkpt lat="45.081130" lon="-81.265990"></trkpt>
+<trkpt lat="45.081010" lon="-81.265990"></trkpt>
+<trkpt lat="45.080790" lon="-81.265750"></trkpt>
+<trkpt lat="45.080470" lon="-81.265520"></trkpt>
+<trkpt lat="45.080320" lon="-81.265530"></trkpt>
+<trkpt lat="45.080100" lon="-81.265770"></trkpt>
+<trkpt lat="45.080020" lon="-81.266050"></trkpt>
+<trkpt lat="45.079900" lon="-81.266070"></trkpt>
+<trkpt lat="45.079860" lon="-81.266200"></trkpt>
+<trkpt lat="45.081430" lon="-81.266890"></trkpt>
+<trkpt lat="45.082560" lon="-81.267500"></trkpt>
+<trkpt lat="45.083160" lon="-81.267940"></trkpt>
+<trkpt lat="45.083590" lon="-81.268160"></trkpt>
+<trkpt lat="45.085050" lon="-81.268270"></trkpt>
+<trkpt lat="45.085730" lon="-81.268430"></trkpt>
+<trkpt lat="45.086340" lon="-81.269270"></trkpt>
+<trkpt lat="45.088310" lon="-81.271580"></trkpt>
+<trkpt lat="45.088580" lon="-81.271740"></trkpt>
+<trkpt lat="45.089410" lon="-81.271970"></trkpt>
+<trkpt lat="45.090000" lon="-81.272260"></trkpt>
+<trkpt lat="45.090160" lon="-81.272260"></trkpt>
+<trkpt lat="45.090710" lon="-81.272030"></trkpt>
+<trkpt lat="45.090880" lon="-81.272050"></trkpt>
+<trkpt lat="45.091120" lon="-81.272120"></trkpt>
+<trkpt lat="45.091800" lon="-81.272510"></trkpt>
+<trkpt lat="45.092220" lon="-81.272860"></trkpt>
+<trkpt lat="45.092340" lon="-81.272850"></trkpt>
+<trkpt lat="45.092570" lon="-81.272370"></trkpt>
+<trkpt lat="45.092760" lon="-81.272140"></trkpt>
+</trkseg></trk></gpx>
