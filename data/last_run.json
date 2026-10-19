@@ -1,27 +1,26 @@
 {
- "run": "2026-10-19T13:33:45-04:00",
+ "run": "2026-10-19T17:44:23-04:00",
  "tracks": [
   {
-   "file": "Saturday_Lunch_Hiking-pine valley.gpx",
-   "date": "2026-09-19",
-   "km": 4.4,
+   "file": "Saturday_Morning_Activity-hockley.gpx",
+   "date": "2025-10-25",
+   "km": 2.3,
    "hikes": [
-    51
+    43
    ],
-   "side_trail_km_new": 2.82
+   "side_trail_km_new": 0.96
   },
   {
-   "file": "Saturday_Morning_Hiking-primrose.gpx",
-   "date": "2026-09-05",
-   "km": 3.4,
-   "hikes": [
-    49
-   ],
-   "side_trail_km_new": 2.73
+   "file": "Saturday_Morning_Hiking-grimsby.gpx",
+   "date": "2026-01-24",
+   "km": 1.7,
+   "hikes": [],
+   "side_trail_km_new": 0.0
   }
  ],
  "photos": [],
  "problems": [
+  "Saturday_Morning_Hiking-grimsby.gpx: did not match any planned side trail (kept as a bonus trip)",
   "IMG_4650.jpeg: no trip matched yet (date 2026-10-18); it will be matched when that day's GPX is uploaded"
  ]
 }
