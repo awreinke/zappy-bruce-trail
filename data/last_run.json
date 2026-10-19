@@ -1,18 +1,26 @@
 {
- "run": "2026-10-19T13:30:52-04:00",
- "tracks": [],
- "photos": [
+ "run": "2026-10-19T13:33:45-04:00",
+ "tracks": [
   {
-   "file": "IMG_4539.jpeg",
-   "date": "2026-10-03",
-   "gps": true
+   "file": "Saturday_Lunch_Hiking-pine valley.gpx",
+   "date": "2026-09-19",
+   "km": 4.4,
+   "hikes": [
+    51
+   ],
+   "side_trail_km_new": 2.82
   },
   {
-   "file": "IMG_4543.jpeg",
-   "date": "2026-10-03",
-   "gps": true
+   "file": "Saturday_Morning_Hiking-primrose.gpx",
+   "date": "2026-09-05",
+   "km": 3.4,
+   "hikes": [
+    49
+   ],
+   "side_trail_km_new": 2.73
   }
  ],
+ "photos": [],
  "problems": [
   "IMG_4650.jpeg: no trip matched yet (date 2026-10-18); it will be matched when that day's GPX is uploaded"
  ]
