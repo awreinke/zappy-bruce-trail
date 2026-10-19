@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Upload a Hike · Zappy's Bruce Trail</title>
+<title>Upload a Hike · Zappy's Off the Beaten Path</title>
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header id="hdr">
-  <h1>Zappy's Bruce Trail <span>upload</span></h1>
+  <h1>Zappy's Off the Beaten Path<span><i class="sep">: </i>upload</span></h1>
   <div style="flex:1"></div>
   <nav><a class="btn" href="./">Map</a><a class="btn" href="./#list">List</a><a class="btn on" href="upload.html">Upload</a></nav>
 </header>
@@ -43,6 +43,7 @@
     <label for="tok">Access token</label>
     <input type="password" id="tok" placeholder="github_pat_…" autocomplete="off">
     <p><button class="primary" id="save">Save on this device</button> <button id="forget">Forget token</button></p>
+    <div class="status" id="setupMsg"></div>
     <p class="muted">No token? You can also upload on github.com: open the repository's <b>uploads</b> folder → <b>Add file → Upload files</b>. The site processes them the same way.</p>
   </details>
 </div>

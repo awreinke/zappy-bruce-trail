@@ -19,8 +19,9 @@ button:hover, .btn:hover { background: var(--surface2); }
 .btn.primary:hover, button.primary:hover { filter: brightness(1.08); }
 header { display: flex; align-items: center; gap: 16px; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--line);
   flex-wrap: wrap; position: relative; z-index: 1200; }
-header h1 { font-size: 18px; margin: 0; white-space: nowrap; }
+header h1 { font-size: 18px; margin: 0; }
 header h1 span { color: var(--ink2); font-weight: 400; }
+header h1 .sep { font-style: normal; }
 .progress { flex: 1; min-width: 240px; display: flex; flex-direction: column; gap: 4px; }
 .bar { height: 10px; background: var(--surface2); border-radius: 6px; overflow: hidden; }
 .bar > div { height: 100%; background: var(--green); border-radius: 6px; transition: width .6s; }
@@ -99,7 +100,7 @@ label { font-size: 13px; color: var(--ink2); display: block; margin: 8px 0 3px; 
 .status { font-size: 14px; margin-top: 10px; white-space: pre-wrap; }
 .ok { color: var(--green); } .err { color: var(--red); }
 @media (max-width: 760px) {
-  header { gap: 8px; padding: 8px 12px; } header h1 { font-size: 16px; } .progress { order: 3; min-width: 100%; }
+  header { gap: 8px; padding: 8px 12px; } header h1 { font-size: 16px; line-height: 1.25; } header h1 span { display: block; font-size: 13.5px; } header h1 .sep { display: none; } .progress { order: 3; min-width: 100%; }
   #panel { top: auto; height: 62vh; width: 100%; border-left: 0; border-top: 1px solid var(--line); border-radius: 14px 14px 0 0; transform: translateY(105%); }
   #panel.open { transform: none; }
   .stats { grid-template-columns: repeat(2, 1fr); }

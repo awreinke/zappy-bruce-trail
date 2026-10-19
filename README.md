@@ -1,4 +1,4 @@
-# Zappy's Bruce Trail side trails
+# Zappy's Off the Beaten Path: Bruce Trail Side Trails
 
 A free website (GitHub Pages) that tracks Zappy's progress through every dog-friendly Bruce Trail side trail.
 
