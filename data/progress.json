@@ -107,6 +107,35 @@
  ],
  "photos": [
   {
+   "hash": "03dfe5a69d19",
+   "file": "photos/2025-10-18/03dfe5a69d19.jpg",
+   "thumb": "photos/2025-10-18/03dfe5a69d19_t.jpg",
+   "w": 4032,
+   "h": 3024,
+   "taken": "2025-10-18T11:52:20-04:00",
+   "date": "2025-10-18",
+   "lon": -80.024375,
+   "lat": 44.018531,
+   "gps": true,
+   "trip": null,
+   "original": "IMG_7895.jpeg",
+   "placed_by": "gps"
+  },
+  {
+   "hash": "e3fc584cf739",
+   "file": "photos/2025-10-29/e3fc584cf739.jpg",
+   "thumb": "photos/2025-10-29/e3fc584cf739_t.jpg",
+   "w": 2266,
+   "h": 1488,
+   "taken": "2025-10-29T15:24:19-04:00",
+   "date": "2025-10-29",
+   "lon": null,
+   "lat": null,
+   "gps": false,
+   "trip": null,
+   "original": "IMG_7955.png"
+  },
+  {
    "hash": "9e1d32250917",
    "file": "photos/2026-10-03/9e1d32250917.jpg",
    "thumb": "photos/2026-10-03/9e1d32250917_t.jpg",
@@ -246,5 +275,5 @@
   "1673": "2026-09-05",
   "1983": "2025-10-25"
  },
- "updated": "2026-10-19T17:44:23-04:00"
+ "updated": "2026-10-19T17:47:41-04:00"
 }

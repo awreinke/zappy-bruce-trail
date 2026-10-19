@@ -1,26 +1,21 @@
 {
- "run": "2026-10-19T17:44:23-04:00",
- "tracks": [
+ "run": "2026-10-19T17:47:41-04:00",
+ "tracks": [],
+ "photos": [
   {
-   "file": "Saturday_Morning_Activity-hockley.gpx",
-   "date": "2025-10-25",
-   "km": 2.3,
-   "hikes": [
-    43
-   ],
-   "side_trail_km_new": 0.96
+   "file": "IMG_7895.jpeg",
+   "date": "2025-10-18",
+   "gps": true
   },
   {
-   "file": "Saturday_Morning_Hiking-grimsby.gpx",
-   "date": "2026-01-24",
-   "km": 1.7,
-   "hikes": [],
-   "side_trail_km_new": 0.0
+   "file": "IMG_7955.png",
+   "date": "2025-10-29",
+   "gps": false
   }
  ],
- "photos": [],
  "problems": [
-  "Saturday_Morning_Hiking-grimsby.gpx: did not match any planned side trail (kept as a bonus trip)",
-  "IMG_4650.jpeg: no trip matched yet (date 2026-10-18); it will be matched when that day's GPX is uploaded"
+  "IMG_4650.jpeg: no trip matched yet (date 2026-10-18); it will be matched when that day's GPX is uploaded",
+  "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
+  "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded"
  ]
 }
