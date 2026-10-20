@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 83 - Burnt Point Loop, Dolostone Arch, Burnt Point Access Trail, Shortcut</name></metadata>
-<wpt lat="45.249700" lon="-81.645066"><name>P Start/finish parking</name><desc>There is an official municipal parking lot at the end of Dunks Bay Road at the water…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.249700" lon="-81.645066"><name>P Start/finish parking</name><desc>There is an official municipal parking lot at the end of Dunks Bay Road at the water…. Fee unclear</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.256890" lon="-81.656720"><name>P2 alternative parking</name><desc>Bruce Peninsula National Park Visitors Centre: A large parking area at the Visitors Centre. Paid (amount not confirmed). Joins the route near km 4.6 (690 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="45.250997" lon="-81.633869"><name>J1</name><desc>J1: Junction. Turn right to stay on the main Bruce Trail, heading east. (the blue-blazed Dolostone Arch Side Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.251495" lon="-81.630001"><name>J2</name><desc>J2: Turn left onto the blue-blazed Dolostone Arch Side Trail, heading north. (the white-blazed main Bruce Trail goes off on your right.) The next 1.3 km follows an unopened road allowance (rough track, no traffic).</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.248837" lon="-81.646589"><name>J3</name><desc>J3: You pass the start again. Keep going on the white-blazed main Bruce Trail, heading north-west.</desc><sym>Waypoint</sym></wpt>

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 28 - Terra Cotta</name></metadata>
-<wpt lat="43.734079" lon="-79.944033"><name>P Start/finish parking</name><desc>Roadside parking where the main Trail meets Heritage Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.734079" lon="-79.944033"><name>P Start/finish parking</name><desc>Roadside parking where the main Trail meets Heritage Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.717850" lon="-79.941750"><name>P2 alternative parking</name><desc>Roadside parking on Winston Churchill Blvd where the Terra Cotta Side Trail crosses the road. Free. Joins the route near km 3.9 (470 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.709750" lon="-79.962890"><name>P3 alternative parking</name><desc>Roadside parking on Tenth Line, 2.2 km southeast of 32 Sideroad (Halton Road 42). Free. Joins the route near km 6.0 (840 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.726470" lon="-79.958220"><name>P4 alternative parking</name><desc>Off road parking, located on a very short dirt road off of Winston Churchill Blvd just south…. Free. Joins the route near km 9.3 (170 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.722500" lon="-79.956860"><name>P5 alternative parking</name><desc>Terra Cotta Conservation Area: Parking is available off Winston Churchill Blvd within the…. Paid: $8.50 per adult admission (+HST); no separate vehicle fee listed. Joins the route near km 9.3 (780 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.737782" lon="-79.942374"><name>J1</name><desc>J1: Continue straight onto the blue-blazed Terra Cotta Side Trail, heading north. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.712905" lon="-79.959184"><name>J2</name><desc>J2: Continue straight onto the white-blazed main Bruce Trail, heading west. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.736477" lon="-79.947364"><name>J3</name><desc>J3: Junction. Turn right to stay on the main Bruce Trail, heading south-east. (the blue-blazed Rockside Side Trail goes off on your left (optional extra: Rockside Side Trail, 1.7 km, mostly on road, not in the plan).) The next 0.4 km follows a road shoulder; keep the dog close.</desc><sym>Waypoint</sym></wpt>

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 11 - Iroquoia Heights, Scenic Woods, Robert MacLaren, Hillcrest Ave</name></metadata>
-<wpt lat="43.246437" lon="-79.892130"><name>P Start/finish parking</name><desc>Roadside parking at the east end of Hillcrest Ave providing access to the Chedoke Radial…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.246437" lon="-79.892130"><name>P Start/finish parking</name><desc>Roadside parking at the east end of Hillcrest Ave providing access to the Chedoke Radial…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.241820" lon="-79.882280"><name>P2 alternative parking</name><desc>St. Paid: $4.50 per 30 min, $24 daily max. Joins the route near km 0.2 (1610 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.246210" lon="-79.906930"><name>P3 alternative parking</name><desc>Chedoke Golf Club: Access from Beddoe Dr off Studholme Rd, south of Aberdeen Ave. Free. Joins the route near km 1.7 (120 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.245530" lon="-79.930690"><name>P4 alternative parking</name><desc>Parking lot on Scenic Dr, west of Chateau Court is a parking lot under the hydro towers. Free. Joins the route near km 3.7 (120 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.239380" lon="-79.949360"><name>P5 alternative parking</name><desc>Roadside parking at the end of Filman Road. Free. Joins the route near km 5.2 (1190 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.244120" lon="-79.907110"><name>P6 alternative parking</name><desc>Parking lot on Upper Paradise Rd, north of Scenic Dr. Free. Joins the route near km 10.2 (90 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.245249" lon="-79.892759"><name>J1</name><desc>J1: Turn right onto the white-blazed main Bruce Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.245562" lon="-79.907485"><name>J2</name><desc>J2: Junction. Continue straight to stay on the main Bruce Trail, heading north-west. (the blue-blazed Robert MacLaren Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.245422" lon="-79.931741"><name>J3</name><desc>J3: Junction. Continue straight to stay on the main Bruce Trail, heading west. (the blue-blazed Robert MacLaren Side Trail goes off behind you.) There is trailhead parking here (Parking lot on Scenic Dr, west of Chateau Court is a parking lot under the hydro towers).</desc><sym>Waypoint</sym></wpt>

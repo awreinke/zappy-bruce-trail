@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 79 (stop 3 of 3) - Juniper Flats, Harkins Road</name></metadata>
-<wpt lat="45.182922" lon="-81.334410"><name>P Start/finish parking</name><desc>On roadside at the south end of Harkins Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.182922" lon="-81.334410"><name>P Start/finish parking</name><desc>On roadside at the south end of Harkins Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.192210" lon="-81.343240"><name>P2 alternative parking</name><desc>Limited roadside parking on the north side of this road leading to Gillies Lake. Free. Joins the route near km 0.9 (880 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.198030" lon="-81.327190"><name>P3 alternative parking</name><desc>Mountain Trout Camp: East along Lindsay Road 40 and Daly's Road. Fee unclear · book ahead. Joins the route near km 0.9 (2840 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.162330" lon="-81.340380"><name>P4 alternative parking</name><desc>In the community parking lot situated in the old quarry, just east of the Trail. Paid: $5 per hour, max $30/day (Dyers Bay Rd lot) · book ahead. Joins the route near km 3.4 (1060 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="45.182538" lon="-81.334947"><name>J1</name><desc>J1: Turn right onto the white-blazed main Bruce Trail, heading north-west. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.185886" lon="-81.341395"><name>J2</name><desc>J2: Turn left onto the blue-blazed Juniper Flats Side Trail, heading west. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.169848" lon="-81.337494"><name>J3</name><desc>J3: Turn left onto the white-blazed main Bruce Trail, heading north. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

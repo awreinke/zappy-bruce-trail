@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 3 (stop 1 of 2) - Wetland Ridge, Margaret Kalogeropoulos, Niagara College</name></metadata>
-<wpt lat="43.148280" lon="-79.156708"><name>P Start/finish parking</name><desc>Woodend Conservation Area: Enter from Taylor Rd, 140 m north of Warner Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.148280" lon="-79.156708"><name>P Start/finish parking</name><desc>Woodend Conservation Area: Enter from Taylor Rd, 140 m north of Warner Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.143620" lon="-79.166700"><name>P2 alternative parking</name><desc>Woodend Conservation Area: Enter from Taylor Rd. Free. Joins the route near km 0.8 (360 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.150280" lon="-79.155090"><name>P3 alternative parking</name><desc>Woodend Conservation Area: Enter from Taylor Rd, 140 m north of Warner Rd. Free. Joins the route near km 3.8 (130 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.146325" lon="-79.163563"><name>J1</name><desc>J1: Continue straight onto the white-blazed main Bruce Trail, heading south-west. (the white-blazed main Bruce Trail goes off behind you.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.145696" lon="-79.165340"><name>J2</name><desc>J2: Continue straight onto the blue-blazed Wetland Ridge Side Trail, heading west. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.148703" lon="-79.162532"><name>J3</name><desc>J3: Continue straight onto the blue-blazed Niagara College Side Trail, heading north. (the blue-blazed Wetland Ridge Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 10 (stop 1 of 2) - Ray Lowes</name></metadata>
-<wpt lat="43.289426" lon="-79.927153"><name>P Start/finish parking</name><desc>Parking at Borer's Dog Park on York Rd just south of Valley Rd (Hopkins Corners) provides…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.289426" lon="-79.927153"><name>P Start/finish parking</name><desc>Parking at Borer's Dog Park on York Rd just south of Valley Rd (Hopkins Corners) provides…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.296380" lon="-79.927140"><name>P2 alternative parking</name><desc>Roadside parking on Valley Rd. Free. Joins the route near km 1.0 (550 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.295130" lon="-79.931130"><name>J1</name><desc>J1: Turnaround point. The side trail meets the white-blazed main Bruce Trail here. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <trk><name>Day 10 (stop 1 of 2) - Ray Lowes (2.1 km)</name><trkseg>
 <trkpt lat="43.289310" lon="-79.927180"></trkpt>

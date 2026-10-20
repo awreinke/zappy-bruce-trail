@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 70 - Boundary Bluffs, Hart's Tongue</name></metadata>
-<wpt lat="44.884588" lon="-81.107644"><name>P Start/finish parking</name><desc>Parking on east side of Pit Rd just before the bend</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.884588" lon="-81.107644"><name>P Start/finish parking</name><desc>Parking on east side of Pit Rd just before the bend. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.895140" lon="-81.109020"><name>P2 alternative parking</name><desc>Cape Croker Indian Park: There are several parking locations within the campground. Free. Joins the route near km 2.1 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.895089" lon="-81.109019"><name>J1</name><desc>J1: Turn left onto the white-blazed main Bruce Trail, heading north-west. (the white-blazed main Bruce Trail goes off on your right.) There is trailhead parking here (Cape Croker Indian Park: There are several parking locations within the campground).</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.896481" lon="-81.112567"><name>J2</name><desc>J2: Turn left onto the blue-blazed Boundary Bluffs Side Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.894966" lon="-81.115009"><name>J3</name><desc>J3: Turn right onto the blue-blazed Hart's Tongue Side Trail, heading north-west. (the blue-blazed Boundary Bluffs Side Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

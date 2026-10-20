@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 66 (stop 1 of 2) - Spirit Rock, Wiarton</name></metadata>
-<wpt lat="44.754912" lon="-81.136030"><name>P Start/finish parking</name><desc>Off road parking at the end of Bayview Street</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.754912" lon="-81.136030"><name>P Start/finish parking</name><desc>Off road parking at the end of Bayview Street. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.764210" lon="-81.133830"><name>P2 alternative parking</name><desc>Spirit Rock Conservation Area: Follow signs from Hwy 6. Paid: $10 + HST per vehicle (day). Joins the route near km 1.5 (140 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.764145" lon="-81.132541"><name>J1</name><desc>J1: Turn right onto the white-blazed main Bruce Trail, heading south. (the white-blazed main Bruce Trail goes off behind you.) There is trailhead parking here (Spirit Rock Conservation Area: Follow signs from Hwy 6). Then, turn right onto the blue-blazed Spirit Rock Side Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.755543" lon="-81.136438"><name>J2</name><desc>J2: You pass the start again. Keep going on the blue-blazed Wiarton Side Trail, heading south-west.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.753899" lon="-81.141348"><name>J3</name><desc>J3: Turnaround point. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>

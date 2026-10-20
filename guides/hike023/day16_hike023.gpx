@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 16 - River &amp; Ruin, Squire Cleaver, River &amp; Ruin, River &amp; Ruin, Dan Welsh</name></metadata>
-<wpt lat="43.429065" lon="-79.927324"><name>P Start/finish parking</name><desc>Roadside parking on Twiss Road at No 8 Sideroad</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.429065" lon="-79.927324"><name>P Start/finish parking</name><desc>Roadside parking on Twiss Road at No 8 Sideroad. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.417240" lon="-79.911150"><name>P2 alternative parking</name><desc>Official off road parking on north shoulder of Britannia Rd. Free. Joins the route near km 1.5 (540 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.422197" lon="-79.917272"><name>J1</name><desc>J1: Junction. Continue straight to stay on the main Bruce Trail, heading south-east. (the blue-blazed River &amp; Ruin Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.420864" lon="-79.915332"><name>J2</name><desc>J2: Turn left onto the blue-blazed River &amp; Ruin Side Trail, heading north-east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.423680" lon="-79.914157"><name>J3</name><desc>J3: Turn left onto the blue-blazed Dan Welsh Side Trail, heading south-west. (the blue-blazed River &amp; Ruin Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 1 - General Brock</name></metadata>
-<wpt lat="43.242012" lon="-79.060080"><name>P Start/finish parking</name><desc>Parking Area: On Niagara River Parkway, east of the John St intersection</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.242012" lon="-79.060080"><name>P Start/finish parking</name><desc>Parking Area: On Niagara River Parkway, east of the John St intersection. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.246650" lon="-79.073740"><name>P2 alternative parking</name><desc>Butler's Barracks: Enter from John St. Free. Joins the route near km 1.6 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.251080" lon="-79.065060"><name>P3 alternative parking</name><desc>Fort George: Enter from the Queens Parade. Paid (amount not confirmed). Joins the route near km 1.6 (1180 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.246711" lon="-79.073537"><name>J1</name><desc>J1: End of the General Brock Side Trail. There is trailhead parking here (Butler's Barracks: Enter from John St). Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.241717" lon="-79.059863"><name>J2</name><desc>J2: You pass the start again. Keep going on the blue-blazed General Brock Side Trail, heading south.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.203319" lon="-79.056526"><name>J3</name><desc>J3: Turnaround point. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>

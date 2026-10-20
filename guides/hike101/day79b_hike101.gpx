@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 79 (stop 2 of 3) - Otter Lake, Bard</name></metadata>
-<wpt lat="45.113223" lon="-81.316099"><name>P Start/finish parking</name><desc>Roadside parking along the shoulders of Cape Chin North Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.113223" lon="-81.316099"><name>P Start/finish parking</name><desc>Roadside parking along the shoulders of Cape Chin North Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.111660" lon="-81.314430"><name>P2 alternative parking</name><desc>Roadside parking along the eastern shoulder of Cape Chin North Rd where the side trail enters. Free. Joins the route near km 0.0 (220 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.123260" lon="-81.319470"><name>P3 alternative parking</name><desc>Normally a school bus turn-around, cars may park here on weekends and during summer. Free. Joins the route near km 2.2 (110 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="45.123502" lon="-81.320462"><name>J1</name><desc>J1: Turn right onto the white-blazed main Bruce Trail, heading east. (the white-blazed main Bruce Trail goes off on your left.) There is trailhead parking here (Normally a school bus turn-around, cars may park here on weekends and during summer).</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.121141" lon="-81.311587"><name>J2</name><desc>J2: Turn right onto the blue-blazed Bard Side Trail, heading south. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.117437" lon="-81.313041"><name>J3</name><desc>J3: Turn right onto the blue-blazed Cape Chin Meadows Side Trail, heading west. (the blue-blazed Cape Chin Meadows Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

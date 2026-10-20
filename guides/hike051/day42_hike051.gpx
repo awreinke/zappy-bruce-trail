@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 42 - Pine River Valley, Carl Alexander, Melodonna, Kilgorie, Bell Lookout</name></metadata>
-<wpt lat="44.172483" lon="-80.157538"><name>P Start/finish parking</name><desc>Roadside parking on 15 Sideroad at Prince of Wales Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.172483" lon="-80.157538"><name>P Start/finish parking</name><desc>Roadside parking on 15 Sideroad at Prince of Wales Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.174780" lon="-80.146570"><name>P2 alternative parking</name><desc>Roadside parking on Centre Rd (Kilgorie), 30 metres south of River Rd. Free. Joins the route near km 7.3 (230 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.171402" lon="-80.161653"><name>J1</name><desc>J1: Turn right onto the blue-blazed Pine River Valley Side Trail, heading west. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.169773" lon="-80.164265"><name>J2</name><desc>J2: Continue straight onto the blue-blazed Carl Alexander Side Trail, heading south. (the blue-blazed Pine River Valley Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.164487" lon="-80.168968"><name>J3</name><desc>J3: Continue straight onto the blue-blazed Pine River Valley Side Trail, heading north-east. (the blue-blazed Pine River Valley Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

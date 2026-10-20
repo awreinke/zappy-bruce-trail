@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 58 (stop 2 of 2) - Merle Gunby, Memorial Forest</name></metadata>
-<wpt lat="44.560754" lon="-80.990675"><name>P Start/finish parking</name><desc>Grey-Bruce Tourist Information Office: Enter from Hwy 6, just north of the junction of…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.560754" lon="-80.990675"><name>P Start/finish parking</name><desc>Grey-Bruce Tourist Information Office: Enter from Hwy 6, just north of the junction of…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.568130" lon="-80.977040"><name>P2 alternative parking</name><desc>Roadside parking at the end of Young's Dr. Free. Joins the route near km 3.0 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.560811" lon="-80.990090"><name>J1</name><desc>J1: Junction. Continue straight to stay on the Merle Gunby Side Trail, heading north-east. (the blue-blazed Merle Gunby Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.560405" lon="-80.983555"><name>J2</name><desc>J2: Turn sharp left onto the white-blazed main Bruce Trail, heading north-east. (the blue-blazed Merle Gunby Side Trail goes off ahead; the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.569128" lon="-80.978124"><name>J3</name><desc>J3: Turn right onto the blue-blazed Memorial Forest Side Trail, heading south-east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

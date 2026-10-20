@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 13 - Tews Falls, Glen Ferguson, Sydenham Lookout</name></metadata>
-<wpt lat="43.277643" lon="-79.949682"><name>P Start/finish parking</name><desc>Off road parking at the lookout on Sydenham Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.277643" lon="-79.949682"><name>P Start/finish parking</name><desc>Off road parking at the lookout on Sydenham Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.265130" lon="-79.944190"><name>P2 alternative parking</name><desc>Parking access to Hamilton to Brantford Rail Trail. Free. Joins the route near km 1.1 (2130 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.278272" lon="-79.949369"><name>J1</name><desc>J1: Turn sharp right onto the white-blazed main Bruce Trail, heading south. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.273901" lon="-79.957862"><name>J2</name><desc>J2: Continue straight onto the blue-blazed Tews Falls Side Trail, heading west. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.274524" lon="-79.967932"><name>J3</name><desc>J3: Junction. Continue straight to stay on the Tews Falls Side Trail, heading west. (the blue-blazed Glen Ferguson Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

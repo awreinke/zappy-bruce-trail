@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 35 - Tom East, Goodyear Memorial, Upland, Rushing River</name></metadata>
-<wpt lat="43.959916" lon="-80.070494"><name>P Start/finish parking</name><desc>BTC Parking Area on the east side of 1st Line EHS</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.959916" lon="-80.070494"><name>P Start/finish parking</name><desc>BTC Parking Area on the east side of 1st Line EHS. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.960900" lon="-80.055820"><name>P2 alternative parking</name><desc>Roadside parking on the west side of 2nd Line EHS. Free. Joins the route near km 1.9 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.972860" lon="-80.056330"><name>P3 alternative parking</name><desc>Hockley Road Parking Lot: Located on the north side of Hockley Rd at the Hockley Road Side…. Free. Joins the route near km 3.0 (220 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.960347" lon="-80.067852"><name>J1</name><desc>J1: Continue straight onto the blue-blazed Upland Side Trail, heading north. (the blue-blazed Goodyear Memorial Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.961524" lon="-80.059869"><name>J2</name><desc>J2: Turn right onto the blue-blazed Goodyear Memorial Side Trail, heading north-east. (the blue-blazed Goodyear Memorial Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.961328" lon="-80.055671"><name>J3</name><desc>J3: Turn left onto the white-blazed main Bruce Trail, heading north. (the white-blazed main Bruce Trail goes off on your right.) There is trailhead parking here (Roadside parking on the west side of 2nd Line EHS). The next 1.2 km follows a road shoulder; keep the dog close.</desc><sym>Waypoint</sym></wpt>

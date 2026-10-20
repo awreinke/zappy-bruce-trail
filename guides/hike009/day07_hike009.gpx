@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 7 - Bert Lowe</name></metadata>
-<wpt lat="43.107568" lon="-79.249598"><name>P Start/finish parking</name><desc>Decew House Heritage Park: Enter from Decew Rd, 500 m west of Merrittville Hwy</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.107568" lon="-79.249598"><name>P Start/finish parking</name><desc>Decew House Heritage Park: Enter from Decew Rd, 500 m west of Merrittville Hwy. Free</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.079692" lon="-79.213094"><name>J1</name><desc>J1: Turnaround point. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <trk><name>Day 7 - Bert Lowe (10.0 km)</name><trkseg>
 <trkpt lat="43.107568" lon="-79.249598"></trkpt>

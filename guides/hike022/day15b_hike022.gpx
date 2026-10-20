@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 15 (stop 2 of 2) - King, Kerncliff Park, Ian Reid, City View Park</name></metadata>
-<wpt lat="43.348464" lon="-79.859053"><name>P Start/finish parking</name><desc>Kerncliff Park: Parking on the north side of Kerns Road, provides access to the Kerncliff…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.348464" lon="-79.859053"><name>P Start/finish parking</name><desc>Kerncliff Park: Parking on the north side of Kerns Road, provides access to the Kerncliff…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.351750" lon="-79.862200"><name>P2 alternative parking</name><desc>Parking lot at City View Park off of Kerns Rd. Free. Joins the route near km 2.5 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.337990" lon="-79.865820"><name>P3 alternative parking</name><desc>Roadside parking on King Rd. Free. Joins the route near km 3.6 (1110 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.351969" lon="-79.858652"><name>J1</name><desc>J1: Continue straight onto the white-blazed main Bruce Trail, heading north. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.353195" lon="-79.856173"><name>J2</name><desc>J2: Continue straight onto the blue-blazed Ian Reid Side Trail, heading north-east. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.355722" lon="-79.853966"><name>J3</name><desc>J3: Turnaround point. The side trail meets the white-blazed main Bruce Trail here. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>

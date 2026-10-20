@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 26 - Credit Valley Footpath</name></metadata>
-<wpt lat="43.673093" lon="-79.921671"><name>P Start/finish parking</name><desc>Roadside parking on Prince Street (20th Sideroad) across from the cemetery</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.673093" lon="-79.921671"><name>P Start/finish parking</name><desc>Roadside parking on Prince Street (20th Sideroad) across from the cemetery. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.661030" lon="-79.908790"><name>P2 alternative parking</name><desc>Roadside parking on Maple Ave, south of River Drive. Free. Joins the route near km 2.5 (180 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.684250" lon="-79.927190"><name>P3 alternative parking</name><desc>Roadside parking on 22 Sideroad west of Tenth Line where the Credit Valley Footpath heads south. Free. Joins the route near km 9.1 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.659630" lon="-79.898740"><name>J1</name><desc>J1: End of the Credit Valley Footpath. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.673182" lon="-79.921515"><name>J2</name><desc>J2: You pass the start again. Keep going on the blue-blazed Credit Valley Footpath, heading north-west.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.684382" lon="-79.927146"><name>J3</name><desc>J3: Turnaround point. There is trailhead parking here (Roadside parking on 22 Sideroad west of Tenth Line where the Credit Valley Footpath heads…). Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>

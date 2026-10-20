@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 9 (stop 1 of 3) - Beamers Falls, Grimsby Point, Forty Mile Creek</name></metadata>
-<wpt lat="43.193201" lon="-79.565301"><name>P Start/finish parking</name><desc>Grimsby Lions Community Pool: Enter at 1 Elm St at the south end of Coronation Park</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.193201" lon="-79.565301"><name>P Start/finish parking</name><desc>Grimsby Lions Community Pool: Enter at 1 Elm St at the south end of Coronation Park. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.188140" lon="-79.575530"><name>P2 alternative parking</name><desc>Beamer Memorial Conservation Area: Enter from Quarry Rd, which intersects with Ridge Rd W just…. Free. Joins the route near km 1.7 (260 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.182960" lon="-79.572850"><name>P3 alternative parking</name><desc>Parking Area: Off of Ridge Rd, located east of the southernmost portion of Beamers Falls Side…. Free. Joins the route near km 2.3 (190 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.191579" lon="-79.565163"><name>J1</name><desc>J1: Turn right onto the white-blazed main Bruce Trail, heading south. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.187014" lon="-79.570918"><name>J2</name><desc>J2: Turn left onto the blue-blazed Beamers Falls Side Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.185632" lon="-79.571984"><name>J3</name><desc>J3: Turn right onto the blue-blazed Grimsby Point Side Trail, heading north-west. (the blue-blazed Beamers Falls Side Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

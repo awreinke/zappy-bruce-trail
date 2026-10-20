@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 57 (stop 3 of 3) - Pines, Clearview</name></metadata>
-<wpt lat="44.587484" lon="-80.863089"><name>P Start/finish parking</name><desc>Roadside parking on the west side of 8th Concession N at the entrance to the Pines Side…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.587484" lon="-80.863089"><name>P Start/finish parking</name><desc>Roadside parking on the west side of 8th Concession N at the entrance to the Pines Side…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.579430" lon="-80.874250"><name>P2 alternative parking</name><desc>Roadside parking along Clearview Crescent north of Hwy 26. Free. Joins the route near km 1.2 (560 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.587486" lon="-80.863591"><name>J1</name><desc>J1: Junction. Turn right to stay on the Pines Side Trail, heading north-west. (the blue-blazed Pines Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.588126" lon="-80.864358"><name>J2</name><desc>J2: Turn left onto the white-blazed main Bruce Trail, heading west. (the white-blazed main Bruce Trail goes off on your right; the blue-blazed Pines Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.587920" lon="-80.865051"><name>J3</name><desc>J3: Junction. Turn left to stay on the main Bruce Trail, heading south. (the blue-blazed Clearview Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

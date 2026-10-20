@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 25 - Bennett Heritage Trail, Great Esker, North Rim, Duff Pit, Trafalgar, Eighth Line</name></metadata>
-<wpt lat="43.686276" lon="-79.975578"><name>P Start/finish parking</name><desc>Roadside parking on the eastern shoulder of Eighth Line at the southernmost intersection…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.686276" lon="-79.975578"><name>P Start/finish parking</name><desc>Roadside parking on the eastern shoulder of Eighth Line at the southernmost intersection…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.692610" lon="-79.968430"><name>P2 alternative parking</name><desc>Silver Creek Education Centre: Enter from Fallbrook Trail northwest of the 27th Sideroad. Free. Joins the route near km 0.8 (1200 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.692270" lon="-79.983390"><name>P3 alternative parking</name><desc>In the laneway off the west side of Eighth Line where the Bennett Heritage Trail crosses. Free. Joins the route near km 2.8 (120 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.687350" lon="-79.990900"><name>P4 alternative parking</name><desc>Scotsdale Farm: Enter from Trafalgar Rd, 1.7 km northwest of Highway 7. Free. Joins the route near km 3.7 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.679840" lon="-79.966420"><name>P5 alternative parking</name><desc>Roadside parking across from the Eighth Line Side Trail on Eighth Line. Free. Joins the route near km 10.1 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.689553" lon="-79.969478"><name>J1</name><desc>J1: Continue straight onto the blue-blazed Bennett Heritage Trail, heading north-east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.691636" lon="-79.983985"><name>J2</name><desc>J2: Junction. Continue straight to stay on the Bennett Heritage Trail, heading south-west. (the blue-blazed Maureen Smith Side Trail goes off on your left (optional extra: Maureen Smith Side Trail, 0.7 km, mostly on road, not in the plan).) There is trailhead parking here (In the laneway off the west side of Eighth Line where the Bennett Heritage Trail crosses).</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.680256" lon="-79.990120"><name>J3</name><desc>J3: Continue straight onto the white-blazed main Bruce Trail, heading south-east. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

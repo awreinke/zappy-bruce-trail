@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 2 - General Brock</name></metadata>
-<wpt lat="43.157826" lon="-79.052045"><name>P Start/finish parking</name><desc>Queenston Heights Park: Enter from Niagara Pkwy</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.157826" lon="-79.052045"><name>P Start/finish parking</name><desc>Queenston Heights Park: Enter from Niagara Pkwy. Paid: $8 per hour</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.203319" lon="-79.056526"><name>J1</name><desc>J1: Turnaround point. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <trk><name>Day 2 - General Brock (12.8 km)</name><trkseg>
 <trkpt lat="43.157826" lon="-79.052045"></trkpt>

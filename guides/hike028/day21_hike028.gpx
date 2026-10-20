@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 21 - Vanderleck, Al Shaw, Cliff Hatch, Speyside South, 17 Sideroad, Hilton Falls</name></metadata>
-<wpt lat="43.592936" lon="-79.980139"><name>P Start/finish parking</name><desc>Roadside parking on 17 Sideroad, 730 m northeast of Halton Rd 25</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.592936" lon="-79.980139"><name>P Start/finish parking</name><desc>Roadside parking on 17 Sideroad, 730 m northeast of Halton Rd 25. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.582970" lon="-79.971790"><name>P2 alternative parking</name><desc>Roadside parking on the southeast side of 15 Sideroad. Free. Joins the route near km 2.9 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.577960" lon="-79.977020"><name>P3 alternative parking</name><desc>Bruce Trail Pear Tree Park: On 15 Sideroad, 200 m southwest of Halton Rd 25. Free. Joins the route near km 3.6 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.593823" lon="-79.975622"><name>J1</name><desc>J1: Continue straight onto the white-blazed main Bruce Trail, heading east. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.593563" lon="-79.973744"><name>J2</name><desc>J2: Turn left onto the blue-blazed Cliff Hatch Side Trail, heading north-east. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.589939" lon="-79.972269"><name>J3</name><desc>J3: Continue straight onto the white-blazed main Bruce Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 14 - Norman Pearson, Eric Best, King, McNally, Smokey Hollow</name></metadata>
-<wpt lat="43.330803" lon="-79.886980"><name>P Start/finish parking</name><desc>Great Falls: Parking area beside Mill St, at the Smokey Hollow Side Trail</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.330803" lon="-79.886980"><name>P Start/finish parking</name><desc>Great Falls: Parking area beside Mill St, at the Smokey Hollow Side Trail. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.337990" lon="-79.865820"><name>P2 alternative parking</name><desc>Roadside parking on King Rd. Free. Joins the route near km 4.3 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.330472" lon="-79.886672"><name>J1</name><desc>J1: Continue straight onto the white-blazed main Bruce Trail, heading south-east. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.324816" lon="-79.885666"><name>J2</name><desc>J2: Turn left onto the blue-blazed Norman Pearson Side Trail, heading east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.329028" lon="-79.878003"><name>J3</name><desc>J3: Continue straight onto the blue-blazed McNally Side Trail, heading east. (the blue-blazed McNally Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

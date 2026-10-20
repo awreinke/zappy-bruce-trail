@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 59 - Sydenham Nature Reserve, Keeling, Harrison Park</name></metadata>
-<wpt lat="44.545466" lon="-80.937276"><name>P Start/finish parking</name><desc>Harrison Park: Excellent free parking in Harrison Park in several places</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.545466" lon="-80.937276"><name>P Start/finish parking</name><desc>Harrison Park: Excellent free parking in Harrison Park in several places. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.535420" lon="-80.936020"><name>P2 alternative parking</name><desc>Grey Sauble Conservation Authority Headquarters: Enter from Inglis Falls Rd. Free. Joins the route near km 1.3 (100 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.525910" lon="-80.934290"><name>P3 alternative parking</name><desc>Inglis Falls Conservation Area: Enter from Inglis Falls Rd, 500 m north of County Rd.18 on…. Paid: $10 + HST per vehicle (day). Joins the route near km 3.2 (30 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.524180" lon="-80.913750"><name>P4 alternative parking</name><desc>Roadside parking on Derry Line (Grey Rd 18) provides access to the Keeling Side Trail. Free. Joins the route near km 8.3 (300 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.538998" lon="-80.936232"><name>J1</name><desc>J1: Junction. Continue straight to stay on the Harrison Park Side Trail, heading south-east. (the blue-blazed Creamery Hill Side Trail goes off on your right (optional extra: Creamery Hill Side Trail, 0.9 km, mostly on road, not in the plan).)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.534243" lon="-80.932512"><name>J2</name><desc>J2: Turn left onto the white-blazed main Bruce Trail, heading south-east. (the white-blazed main Bruce Trail goes off behind you.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.526267" lon="-80.933943"><name>J3</name><desc>J3: Turn left onto the blue-blazed Keeling Side Trail, heading south-east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 72 - Pease, Jackson's Cove, Rush Cove, Cannon, Shoreline Access</name></metadata>
-<wpt lat="44.958806" lon="-81.143985"><name>P Start/finish parking</name><desc>Bruce Trail parking lot: Please do not park on the public road by private cottages</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.958806" lon="-81.143985"><name>P Start/finish parking</name><desc>Bruce Trail parking lot: Please do not park on the public road by private cottages. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.939540" lon="-81.133320"><name>P2 alternative parking</name><desc>Bruce Trail parking lot: Located on Jackson's Cove Rd at the top of the hill just to the west…. Free. Joins the route near km 6.1 (190 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.953280" lon="-81.128020"><name>P3 alternative parking</name><desc>Bruce Trail parking located at the east end of Scenic Caves Rd. Free. Joins the route near km 9.1 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.960147" lon="-81.134310"><name>J1</name><desc>J1: Continue straight onto the white-blazed main Bruce Trail, heading east. (the white-blazed main Bruce Trail goes off behind you.) Then, continue straight onto the blue-blazed Shoreline Access Side Trail, heading east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.960411" lon="-81.131521"><name>J2</name><desc>J2: Turn left onto the white-blazed main Bruce Trail, heading east. (the blue-blazed Pease Side Trail goes off ahead; the white-blazed main Bruce Trail goes off behind you.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.953806" lon="-81.121478"><name>J3</name><desc>J3: Junction. Turn left to stay on the main Bruce Trail, heading south-east. (the blue-blazed Pease Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

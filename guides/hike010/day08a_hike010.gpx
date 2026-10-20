@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 8 (stop 1 of 2) - Upper Falls, Jim Rainforth, Jordan Hollow</name></metadata>
-<wpt lat="43.142022" lon="-79.372672"><name>P Start/finish parking</name><desc>Parking Area: On the north side of King Street (Hwy 81)</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.142022" lon="-79.372672"><name>P Start/finish parking</name><desc>Parking Area: On the north side of King Street (Hwy 81). Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.139160" lon="-79.373910"><name>P2 alternative parking</name><desc>Off Road Parking: On the shoulder of Glen Rd. Free. Joins the route near km 0.7 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.133590" lon="-79.385230"><name>P3 alternative parking</name><desc>Ball's Falls Conservation Area: Enter from Sixth Ave, 1 km north of Seventh Ave and 500 m east…. Paid: $15 per vehicle/driver (+$5 each additional adult); $9 off-season unattended. Joins the route near km 4.8 (260 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.138479" lon="-79.374661"><name>J1</name><desc>J1: Turn sharp left onto the white-blazed main Bruce Trail, heading north. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.137054" lon="-79.368157"><name>J2</name><desc>J2: Turn left onto the blue-blazed Jim Rainforth Side Trail, heading north-east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.135795" lon="-79.360678"><name>J3</name><desc>J3: Turnaround point. The side trail meets the white-blazed main Bruce Trail here. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>

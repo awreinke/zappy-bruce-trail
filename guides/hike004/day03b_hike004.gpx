@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 3 (stop 2 of 2) - Alfred's Trot, Upper Canada Heritage, Major Teyoninhokarawen John Norton</name></metadata>
-<wpt lat="43.158834" lon="-79.083752"><name>P Start/finish parking</name><desc>Off Road Parking: On York Rd (Regional Rd 81), just east of Concession 2</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.158834" lon="-79.083752"><name>P Start/finish parking</name><desc>Off Road Parking: On York Rd (Regional Rd 81), just east of Concession 2. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.157830" lon="-79.052040"><name>P2 alternative parking</name><desc>Queenston Heights Park: Enter from Niagara Pkwy. Paid: $8 per hour. Joins the route near km 4.6 (850 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.158587" lon="-79.084906"><name>J1</name><desc>J1: Junction. Continue straight to stay on the Upper Canada Heritage Side Trail, heading west. (the blue-blazed Major Teyoninhokarawen John Norton Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.155142" lon="-79.095382"><name>J2</name><desc>J2: Turn sharp left onto the white-blazed main Bruce Trail, heading east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.156262" lon="-79.083773"><name>J3</name><desc>J3: Junction. Continue straight to stay on the main Bruce Trail, heading south-east. (the blue-blazed Major Teyoninhokarawen John Norton Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

@@ -98,6 +98,8 @@
   })));
 
   // ---------------- hike panel
+  const feeChip = f => !f || !f.fee_label ? '' : `<span class="chip ${f.fee_status === 'paid' ? 'paid' : f.fee_status === 'free' ? 'free' : ''}" title="${esc(f.fee_detail || '')}">${f.fee_status === 'paid' ? '$ ' : ''}${esc(f.fee_label)}</span>`;
+  const trl = ts => (ts || []).map(t => t.replace(' Side Trail', '')).join(', ') || 'connecting trail only';
   function select(n, fly = true) {
     const h = byNum[n]; if (!h) return;
     if (current && markers[current]) markers[current].setIcon(hikeIcon(current));
@@ -109,6 +111,9 @@
     const r = routeOf[n];
     if (r) { const pl = L.polyline(ll(r), { color: css('--ink'), weight: 2.2, dashArray: '6 6', opacity: 0.85, interactive: false }).addTo(selL);
       if (fly) map.flyToBounds(pl.getBounds().extend([h.lat, h.lon]), { paddingTopLeft: [40, 40], paddingBottomRight: [window.innerWidth > 760 ? 470 : 40, window.innerWidth > 760 ? 40 : window.innerHeight * 0.62], duration: 0.8 }); }
+    (h.alt_parking || []).forEach((a, i) => L.marker([a.lat, a.lon], { icon: L.divIcon({ className: '', iconSize: [26, 20], html: `<div class="pk alt">P${i + 2}</div>` }) })
+      .bindTooltip(`<b>P${i + 2}</b> ${esc(a.name)}<br>${esc(a.fee_label)} · joins route near km ${a.km_on_route}`, { direction: 'top' }).addTo(selL));
+    L.marker([h.lat, h.lon], { icon: L.divIcon({ className: '', iconSize: [20, 20], html: `<div class="pk">P</div>` }), zIndexOffset: -100, interactive: false }).addTo(selL);
     showPhotos();
     const chip = st.state === 'done' ? `<span class="chip done">Done ${fmtDate(st.date)}</span>` : st.state === 'partial' ? `<span class="chip partial">${Math.round(st.frac * 100)}% walked</span>` : '<span class="chip">Not yet</span>';
     const dirs = h.directions.map(([km, t]) => `<tr><td>${km.toFixed(1)}</td><td>${esc(t)}</td></tr>`).join('');
@@ -129,7 +134,15 @@
         <a class="btn" href="${h.gmaps}" target="_blank" rel="noopener">Parking in Google Maps</a>
       </div>
       ${h.flags ? `<div class="flag">${esc(h.flags)}</div>` : ''}
-      <div class="muted"><b>Park:</b> ${esc(h.parking_details)}</div>
+      <div class="muted"><b>Park (P):</b> ${esc(h.parking_details)}</div>
+      <div style="margin-top:4px">${feeChip(h.parking_fee)} <span class="muted">${esc(h.parking_fee && h.parking_fee.fee_detail || '')}</span></div>
+      <h3>Other places to park</h3>
+      ${(h.alt_parking || []).length ? `<div class="alts">${h.alt_parking.map((a, i) => `<div><b class="pk alt">P${i + 2}</b><div><div>${esc(a.name)} · <a href="${a.gmaps}" target="_blank" rel="noopener">map</a></div>
+        <div class="muted">Joins the route near km ${a.km_on_route} · ${a.walk_m} m walk to the trail${a.near_trails.length ? ' · near ' + esc(a.near_trails.join(', ')) : ''}</div>${feeChip(a)}</div></div>`).join('')}</div>`
+        : '<div class="muted">No other official Bruce Trail parking within about 1 km of this route. To stop early, turn back the way you came; what you walked still counts.</div>'}
+      ${h.split ? `<div class="flag split"><b>Can't do it all in one go?</b> Split it into two outings.<br><b>1.</b> From P: ${h.split.part1.km} km / ${h.split.part1.mi} mi, covering ${esc(trl(h.split.part1.trails))}.<br>
+        <b>2.</b> From ${h.split.alt_id ? 'P' + (h.alt_parking.findIndex(a => a.id === h.split.alt_id) + 2) : 'P again'}: ${h.split.part2.km} km / ${h.split.part2.mi} mi, covering ${esc(trl(h.split.part2.trails))}.<br>
+        <span class="muted">The map turns walked trails green, so you can see what is left.</span></div>` : ''}
       <h3>Zappy's visits</h3>
       ${tr.length ? `<div class="trips">${tr.map(t => `<div><span>${fmtDate(t.date)} · ${esc(t.name)}</span><span>${t.km} km</span></div>`).join('')}</div>` : '<div class="muted">Not walked yet. Upload the GPX from Gaia after the hike and it will show up here.</div>'}
       ${ph.length ? `<h3>Photos (${ph.length})</h3><div class="thumbs">${ph.map((p, i) => `<img loading="lazy" src="${p.thumb}" data-i="${i}" alt="Photo from ${esc(p.date || '')}">`).join('')}</div>` : ''}
@@ -162,9 +175,9 @@
       ${['all', 'todo', 'partial', 'done'].map(f => `<button class="${f === filter ? 'primary' : ''}" data-f="${f}">${{ all: 'All', todo: 'To do', partial: 'Started', done: 'Done' }[f]}</button>`).join('')}
       <input type="text" id="q" placeholder="Search trails, parking, section" value="${esc(q)}" style="max-width:280px">
       <span class="muted">${rows.length} hikes</span></div>
-      <table><tr><th>Day</th><th>Hike</th><th>Side trails</th><th class="hide-sm">Section</th><th>mi</th><th>Status</th></tr>
+      <table><tr><th>Day</th><th>Hike</th><th>Side trails</th><th class="hide-sm">Section</th><th>mi</th><th class="hide-sm">Parking</th><th>Status</th></tr>
       ${rows.map(h => { const s = status(h.hike); return `<tr class="row" data-n="${h.hike}"><td class="num">${h.day}${h.stops > 1 ? 'abc'[h.stop - 1] : ''}</td><td class="num">${h.hike}</td>
-        <td>${esc(h.trails.replace(/ \([\d.]+ km\)/g, '').replace(/; /g, ', '))}</td><td class="hide-sm">${esc(h.section)}</td><td class="num">${h.mi}</td>
+        <td>${esc(h.trails.replace(/ \([\d.]+ km\)/g, '').replace(/; /g, ', '))}</td><td class="hide-sm">${esc(h.section)}</td><td class="num">${h.mi}</td><td class="hide-sm">${h.parking_fee && h.parking_fee.fee_status === 'paid' ? '<span class="chip paid">$ paid</span>' : h.parking_fee && h.parking_fee.fee_status === 'free' ? '<span class="muted">free</span>' : ''}${(h.alt_parking || []).length ? ` <span class="muted">+${h.alt_parking.length} alt</span>` : ''}</td>
         <td>${s.state === 'done' ? `<span class="chip done">${fmtDate(s.date)}</span>` : s.state === 'partial' ? `<span class="chip partial">${Math.round(s.frac * 100)}%</span>` : ''}</td></tr>`; }).join('')}</table>`;
     $('#list').querySelectorAll('[data-f]').forEach(b => b.onclick = () => { filter = b.dataset.f; renderList(); });
     $('#list').querySelectorAll('tr.row').forEach(r => r.onclick = () => select(+r.dataset.n));

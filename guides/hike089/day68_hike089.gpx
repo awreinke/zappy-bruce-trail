@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 68 - Malcolm Bluff, Bob Light, Coveney's</name></metadata>
-<wpt lat="44.862611" lon="-81.067962"><name>P Start/finish parking</name><desc>Roadside Parking at the bend on the grassy shoulder of Coveney's Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.862611" lon="-81.067962"><name>P Start/finish parking</name><desc>Roadside Parking at the bend on the grassy shoulder of Coveney's Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.873790" lon="-81.075040"><name>P2 alternative parking</name><desc>Crooked Toe Parking: Courtesy of Chippewas of Nawash. Free. Joins the route near km 12.3 (1160 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.861375" lon="-81.061869"><name>J1</name><desc>J1: Turn right onto the white-blazed main Bruce Trail, heading east. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.858536" lon="-81.050716"><name>J2</name><desc>J2: Turn right onto the blue-blazed Bob Light Side Trail, heading south-east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.853041" lon="-81.038207"><name>J3</name><desc>J3: Turn right onto the blue-blazed Malcolm Bluff Side Trail, heading west. (the blue-blazed Bob Light Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

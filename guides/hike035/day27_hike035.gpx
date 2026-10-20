@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 27 - Roberts, Irwin Quarry, Walking Fern</name></metadata>
-<wpt lat="43.709749" lon="-79.962893"><name>P Start/finish parking</name><desc>Roadside parking on Tenth Line, 2.2 km southeast of 32 Sideroad (Halton Road 42)</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.709749" lon="-79.962893"><name>P Start/finish parking</name><desc>Roadside parking on Tenth Line, 2.2 km southeast of 32 Sideroad (Halton Road 42). Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.692610" lon="-79.968430"><name>P2 alternative parking</name><desc>Silver Creek Education Centre: Enter from Fallbrook Trail northwest of the 27th Sideroad. Free. Joins the route near km 4.4 (230 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.703817" lon="-79.964765"><name>J1</name><desc>J1: End of the Walking Fern Side Trail. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.709536" lon="-79.962880"><name>J2</name><desc>J2: You pass the start again. Keep going on the white-blazed main Bruce Trail, heading west.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.701003" lon="-79.966191"><name>J3</name><desc>J3: Turn right onto the blue-blazed Roberts Side Trail, heading south-west. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

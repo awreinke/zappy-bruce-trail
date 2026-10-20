@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 81 - Minhinnick, Cottrill Lake, Anne &amp; Clayton Roberts, Lillie Family, Devil's Monument, Lillie Pothole</name></metadata>
-<wpt lat="45.147416" lon="-81.338921"><name>P Start/finish parking</name><desc>Bruce Trail parking, with direct access to Cottrill Lake, Anne and Clayton Roberts and…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.147416" lon="-81.338921"><name>P Start/finish parking</name><desc>Bruce Trail parking, with direct access to Cottrill Lake, Anne and Clayton Roberts and…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.162330" lon="-81.340380"><name>P2 alternative parking</name><desc>In the community parking lot situated in the old quarry, just east of the Trail. Paid: $5 per hour, max $30/day (Dyers Bay Rd lot) · book ahead. Joins the route near km 2.1 (810 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.133780" lon="-81.331820"><name>P3 alternative parking</name><desc>Borchardt Rd Parking: 50 metres north of the main Trail, on the Minhinnick Side Trail. Paid: $5 per hour, max $30/day (Devil's Monument lot, Borchardt Rd) · book ahead. Joins the route near km 6.3 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="45.153136" lon="-81.339126"><name>J1</name><desc>J1: Continue straight onto the blue-blazed Anne &amp; Clayton Roberts Side Trail, heading north-east. (the blue-blazed Anne &amp; Clayton Roberts Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.157269" lon="-81.335473"><name>J2</name><desc>J2: Turnaround point. The side trail meets the white-blazed main Bruce Trail here. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.151094" lon="-81.335577"><name>J3</name><desc>J3: Turn right onto the white-blazed main Bruce Trail, heading south-east. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

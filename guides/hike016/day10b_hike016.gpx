@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 10 (stop 2 of 2) - Mountain Brow, Red Hill Creek, Mud Street, Paramount Park, Mohawk, Kingsview Drive</name></metadata>
-<wpt lat="43.200840" lon="-79.809912"><name>P Start/finish parking</name><desc>Roadside parking on Kingsview Dr off Paramount Dr</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.200840" lon="-79.809912"><name>P Start/finish parking</name><desc>Roadside parking on Kingsview Dr off Paramount Dr. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.211740" lon="-79.815690"><name>P2 alternative parking</name><desc>Parking lot off Mountain Brow Boulevard. Free. Joins the route near km 2.5 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.206100" lon="-79.816760"><name>P3 alternative parking</name><desc>Parking lot found 420 m north of Limeridge Rd off Mountain Brow Boulevard. Free. Joins the route near km 3.3 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.201580" lon="-79.819070"><name>P4 alternative parking</name><desc>Albion Falls parking lot off Mountain Brow Blvd south of Limeridge Rd. Free. Joins the route near km 4.4 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.200680" lon="-79.815210"><name>P5 alternative parking</name><desc>Parking lot off of Mud St, providing access to the Mud Street Side Trail. Free. Joins the route near km 5.2 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.203020" lon="-79.799400"><name>P6 alternative parking</name><desc>Off road parking at Paramount Park on Paramount Dr. Free. Joins the route near km 7.9 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.201815" lon="-79.809783"><name>J1</name><desc>J1: Turn left onto the white-blazed main Bruce Trail, heading west. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.204658" lon="-79.813863"><name>J2</name><desc>J2: Junction. Continue straight to stay on the main Bruce Trail, heading west. (the blue-blazed Mountain Brow Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.208627" lon="-79.814586"><name>J3</name><desc>J3: Continue straight onto the blue-blazed Red Hill Creek Side Trail, heading north. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

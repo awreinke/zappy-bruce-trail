@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 50 - Chuck &amp; Pat Grant, Townline Access, Metcalfe Crevice</name></metadata>
-<wpt lat="44.411090" lon="-80.473064"><name>P Start/finish parking</name><desc>Roadside parking on the east side of Townline Road north of the entrance to the Townline…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.411090" lon="-80.473064"><name>P Start/finish parking</name><desc>Roadside parking on the east side of Townline Road north of the entrance to the Townline…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.423220" lon="-80.469570"><name>P2 alternative parking</name><desc>Parking lot located on the edge of the 9th Sideroad. Free. Joins the route near km 2.2 (690 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.416210" lon="-80.443560"><name>P3 alternative parking</name><desc>Parking lot 100 metres south of where the main Trail crosses the 10th Line on the east side. Free. Joins the route near km 6.5 (190 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.409070" lon="-80.467253"><name>J1</name><desc>J1: Continue straight onto the white-blazed main Bruce Trail, heading north-east. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.418636" lon="-80.464440"><name>J2</name><desc>J2: Turn right onto the blue-blazed Chuck &amp; Pat Grant Side Trail, heading south-east. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.421078" lon="-80.440512"><name>J3</name><desc>J3: Continue straight onto the white-blazed main Bruce Trail, heading south. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

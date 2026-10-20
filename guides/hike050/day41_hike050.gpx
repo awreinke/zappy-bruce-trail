@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 41 - Oliver Creek, Moss Haven, Enchanted Forest, 2nd Line ECL</name></metadata>
-<wpt lat="44.145874" lon="-80.101399"><name>P Start/finish parking</name><desc>Roadside parallel parking on west side of 2nd Line E</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.145874" lon="-80.101399"><name>P Start/finish parking</name><desc>Roadside parallel parking on west side of 2nd Line E. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.148250" lon="-80.118530"><name>P2 alternative parking</name><desc>Bruce Trail parking on the 1st Line E (emergency #716599). Free. Joins the route near km 1.5 (800 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.146877" lon="-80.101220"><name>J1</name><desc>J1: Turn left onto the blue-blazed Oliver Creek Side Trail, heading north. (the blue-blazed Oliver Creek Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.150080" lon="-80.102196"><name>J2</name><desc>J2: Turn left onto the white-blazed main Bruce Trail, heading west. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.150038" lon="-80.105986"><name>J3</name><desc>J3: Continue straight onto the blue-blazed Moss Haven Side Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

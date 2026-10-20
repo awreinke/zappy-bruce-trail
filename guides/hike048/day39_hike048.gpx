@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 39 - Walter Tovell, South Outlier Loop Trail, Carriage, Lookout, South Outlier Connector</name></metadata>
-<wpt lat="44.064042" lon="-80.081273"><name>P Start/finish parking</name><desc>Limited roadside parking on south side of 25 Sideroad where the Walter Tovell Side Trail…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.064042" lon="-80.081273"><name>P Start/finish parking</name><desc>Limited roadside parking on south side of 25 Sideroad where the Walter Tovell Side Trail…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.046600" lon="-80.061950"><name>P2 alternative parking</name><desc>Mono Cliffs' Ontario Parks Parking Lot: 3rd Line EHS, 900 metres north of Dufferin Rd 8. Paid: $18 per vehicle (full day), $8.50 (4 hours) · book ahead. Joins the route near km 3.8 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.026190" lon="-80.071520"><name>P3 alternative parking</name><desc>Mono Community Centre, 200 m south of Mono Centre (County Road 8). Free. Joins the route near km 6.5 (540 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.041440" lon="-80.075940"><name>P4 alternative parking</name><desc>Limited roadside parking on the 2nd Line EHS north of 20 Sideroad. Free. Joins the route near km 9.0 (170 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.055353" lon="-80.078061"><name>J1</name><desc>J1: Junction. Turn left to stay on the Walter Tovell Side Trail, heading east. (the blue-blazed Lookout Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.045134" lon="-80.072428"><name>J2</name><desc>J2: Turn left onto the blue-blazed Carriage Side Trail, heading north-east. (the blue-blazed Walter Tovell Side Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.046460" lon="-80.069374"><name>J3</name><desc>J3: Junction. Continue straight to stay on the Carriage Side Trail, heading north-east. (the blue-blazed South Outlier Connector goes off on your right.)</desc><sym>Waypoint</sym></wpt>

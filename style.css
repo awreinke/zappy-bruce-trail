@@ -47,6 +47,13 @@ main { position: absolute; top: var(--hdr, 64px); bottom: 0; left: 0; right: 0; 
 .actions { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 4px; }
 #panel h3 { font-size: 14.5px; margin: 18px 0 6px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
 #panel ul { margin: 4px 0; padding-left: 18px; } #panel li { margin: 4px 0; font-size: 14px; }
+.chip.paid { border-radius: 8px; background: color-mix(in srgb, var(--orange) 16%, transparent); color: var(--orange); }
+.chip.free { background: color-mix(in srgb, var(--green) 14%, transparent); color: var(--green); }
+.pk { width: 20px; height: 20px; border-radius: 4px; background: #eb6834; color: #fff; font-size: 10.5px; font-weight: 700; display: flex; align-items: center; justify-content: center; border: 1.5px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.pk.alt { background: #6b6a65; width: 26px; }
+.alts > div { display: flex; gap: 10px; align-items: flex-start; padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 14px; }
+.alts .pk { flex: 0 0 auto; margin-top: 2px; }
+.flag.split { border-left-color: var(--blue); background: color-mix(in srgb, var(--blue) 10%, transparent); margin-top: 10px; }
 .flag { background: color-mix(in srgb, var(--orange) 14%, transparent); border-left: 3px solid var(--orange); padding: 6px 10px; border-radius: 6px; font-size: 13.5px; margin: 8px 0; }
 .trips div { display: flex; justify-content: space-between; font-size: 14px; padding: 4px 0; border-bottom: 1px dashed var(--line); }
 .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 6px; }

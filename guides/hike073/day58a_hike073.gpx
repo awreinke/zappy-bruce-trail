@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 58 (stop 1 of 2) - Harrison Park, Palisades, Creamery Hill</name></metadata>
-<wpt lat="44.545466" lon="-80.937276"><name>P Start/finish parking</name><desc>Harrison Park: Excellent free parking in Harrison Park in several places</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.545466" lon="-80.937276"><name>P Start/finish parking</name><desc>Harrison Park: Excellent free parking in Harrison Park in several places. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.535420" lon="-80.936020"><name>P2 alternative parking</name><desc>Grey Sauble Conservation Authority Headquarters: Enter from Inglis Falls Rd. Free. Joins the route near km 2.6 (100 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.550380" lon="-80.929490"><name>P3 alternative parking</name><desc>Roadside parking on the shoulder of 7th Ave E, where the Harrison Park Side Trail enters the…. Free. Joins the route near km 5.5 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.556780" lon="-80.925590"><name>P4 alternative parking</name><desc>Utility Tower Lot: On the west side of Highway 6 &amp;10 at the top of the hill above Owen Sound. Free. Joins the route near km 5.6 (1160 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.538998" lon="-80.936232"><name>J1</name><desc>J1: Turn right onto the blue-blazed Creamery Hill Side Trail, heading south-west. (the blue-blazed Harrison Park Side Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.534243" lon="-80.932512"><name>J2</name><desc>J2: Turn sharp left onto the white-blazed main Bruce Trail, heading north. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.542557" lon="-80.925541"><name>J3</name><desc>J3: Turn left onto the blue-blazed Palisades Side Trail, heading north-west. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

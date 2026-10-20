@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 38 - South Outlier Loop Trail, Laidlaw, Turnbull, McCarston's Lake, Springwater</name></metadata>
-<wpt lat="44.026195" lon="-80.071516"><name>P Start/finish parking</name><desc>Mono Community Centre, 200 m south of Mono Centre (County Road 8)</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.026195" lon="-80.071516"><name>P Start/finish parking</name><desc>Mono Community Centre, 200 m south of Mono Centre (County Road 8). Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.041440" lon="-80.075940"><name>P2 alternative parking</name><desc>Limited roadside parking on the 2nd Line EHS north of 20 Sideroad. Free. Joins the route near km 2.4 (170 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.046600" lon="-80.061950"><name>P3 alternative parking</name><desc>Mono Cliffs' Ontario Parks Parking Lot: 3rd Line EHS, 900 metres north of Dufferin Rd 8. Paid: $18 per vehicle (full day), $8.50 (4 hours) · book ahead. Joins the route near km 5.2 (620 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.031347" lon="-80.072119"><name>J1</name><desc>J1: Turn left onto the white-blazed main Bruce Trail, heading north. (the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.043399" lon="-80.073828"><name>J2</name><desc>J2: Junction. Turn left to stay on the main Bruce Trail, heading south-west. (the blue-blazed Carriage Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.045071" lon="-80.076885"><name>J3</name><desc>J3: Turn left onto the blue-blazed McCarston's Lake Side Trail, heading west. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

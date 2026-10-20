@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 22 - Canada Goose, Black Creek, Charles Hildebrandt, Brown Benton</name></metadata>
-<wpt lat="43.625638" lon="-79.990703"><name>P Start/finish parking</name><desc>Bruce Trail parking located on 22 Sideroad immediately west of Fourth Line</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.625638" lon="-79.990703"><name>P Start/finish parking</name><desc>Bruce Trail parking located on 22 Sideroad immediately west of Fourth Line. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.621150" lon="-79.983090"><name>P2 alternative parking</name><desc>On the east side of Fourth Line across from the Brown Benton Side Trail access point. Free. Joins the route near km 1.0 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.604170" lon="-79.984450"><name>P3 alternative parking</name><desc>Roadside parking on the shoulder at the southeast end of the travelled portion of the Third…. Free. Joins the route near km 3.9 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.615160" lon="-79.975160"><name>P4 alternative parking</name><desc>On the east side of the road where the Trail croses Fourth Line. Free. Joins the route near km 5.7 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.632450" lon="-79.973350"><name>P5 alternative parking</name><desc>Limehouse Conservation Area: Parking at the baseball diamonds. Free. Joins the route near km 8.3 (640 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.636860" lon="-79.979820"><name>P6 alternative parking</name><desc>Roadside parking in Limehouse at the intersection of 22 Sideroad and the Fifth Line. Free. Joins the route near km 10.1 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.620659" lon="-79.984165"><name>J1</name><desc>J1: Turn left onto the blue-blazed Brown Benton Side Trail, heading east. (the blue-blazed Canada Goose Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.621056" lon="-79.983241"><name>J2</name><desc>J2: End of the Brown Benton Side Trail. There is trailhead parking here (On the east side of Fourth Line across from the Brown Benton Side Trail access point). Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.607532" lon="-79.981152"><name>J3</name><desc>J3: Turn right onto the blue-blazed Charles Hildebrandt Side Trail, heading west. (the blue-blazed Canada Goose Side Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>

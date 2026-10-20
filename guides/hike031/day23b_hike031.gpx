@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 23 (stop 2 of 2) - Rockside</name></metadata>
-<wpt lat="43.750866" lon="-79.951452"><name>P Start/finish parking</name><desc>Roadside parking at Boston Mills Rd just west of the Mississauga Rd intersection</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.750866" lon="-79.951452"><name>P Start/finish parking</name><desc>Roadside parking at Boston Mills Rd just west of the Mississauga Rd intersection. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.734080" lon="-79.944030"><name>P2 alternative parking</name><desc>Roadside parking where the main Trail meets Heritage Rd. Free. Joins the route near km 1.5 (980 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="43.748022" lon="-79.954440"><name>J1</name><desc>J1: Continue straight onto the blue-blazed Rockside Side Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="43.740370" lon="-79.952586"><name>J2</name><desc>J2: Turnaround point. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
 <trk><name>Day 23 (stop 2 of 2) - Rockside (3.0 km)</name><trkseg>

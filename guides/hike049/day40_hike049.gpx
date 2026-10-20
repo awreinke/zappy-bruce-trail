@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 40 - Primrose Loop, Boyne Valley, Prince of Wales</name></metadata>
-<wpt lat="44.109813" lon="-80.110865"><name>P Start/finish parking</name><desc>Roadside parking on 1st Line East</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.109813" lon="-80.110865"><name>P Start/finish parking</name><desc>Roadside parking on 1st Line East. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.093040" lon="-80.122520"><name>P2 alternative parking</name><desc>Roadside parking on Hurontario Street, south of Hwy 89, at least 30 meters from intersection. Free. Joins the route near km 1.5 (1270 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.117420" lon="-80.128360"><name>P3 alternative parking</name><desc>Off-Road parking area on Centre Rd, south of the 5 Sideroad, at the edge of the forest. Free. Joins the route near km 2.9 (1100 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.105940" lon="-80.139530"><name>P4 alternative parking</name><desc>Roadside parking where the Primrose Loop Side Trail crosses County Rd 19 (Prince of Wales Rd). Free. Joins the route near km 4.1 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.100050" lon="-80.137340"><name>P5 alternative parking</name><desc>A parking lot on County Rd 19 (Prince of Wales Rd) 80 metres south of the southern end of the…. Free. Joins the route near km 5.1 (260 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.103982" lon="-80.125222"><name>J1</name><desc>J1: Turn sharp right onto the white-blazed main Bruce Trail, heading north-west. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.112636" lon="-80.131318"><name>J2</name><desc>J2: Turn sharp left onto the blue-blazed Primrose Loop Side Trail, heading west. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.106157" lon="-80.142446"><name>J3</name><desc>J3: Junction. Turn left to stay on the Primrose Loop Side Trail, heading south. (the blue-blazed Primrose Loop Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>

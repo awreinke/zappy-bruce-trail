@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 75 - Ilse Hanel, Warder, Cemetery Road</name></metadata>
-<wpt lat="44.990102" lon="-81.242282"><name>P Start/finish parking</name><desc>McCurdy Drive Municipal Parking Lot (off of Moore St.): Online booking is required -…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.990102" lon="-81.242282"><name>P Start/finish parking</name><desc>McCurdy Drive Municipal Parking Lot (off of Moore St.): Online booking is required -…. Paid: $20 for 4 hours or $30 full day · book ahead</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.989100" lon="-81.252520"><name>P2 alternative parking</name><desc>Lion's Head Harbour: The best parking is on Phillip Forbes St, right on the Trail by the beach. Paid (amount not confirmed). Joins the route near km 0.0 (1070 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.967290" lon="-81.230600"><name>P3 alternative parking</name><desc>Parking area outside the Lion's Head Provincial Nature Reserve gate, accessible from Bruce…. Free · book ahead. Joins the route near km 5.5 (0 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.987503" lon="-81.239102"><name>J1</name><desc>J1: Turn right onto the blue-blazed Warder Side Trail, heading south. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.986357" lon="-81.227364"><name>J2</name><desc>J2: Turn right onto the blue-blazed Ilse Hanel Side Trail, heading east. (the blue-blazed Ilse Hanel Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.968698" lon="-81.225886"><name>J3</name><desc>J3: Turn right onto the blue-blazed Cemetery Road Side Trail, heading south-west. (the blue-blazed Ilse Hanel Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

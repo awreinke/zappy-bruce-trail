@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 79 (stop 1 of 3) - Cape Chin, no name access, Cape Chin Connector</name></metadata>
-<wpt lat="45.092716" lon="-81.272189"><name>P Start/finish parking</name><desc>Parking at the south end of Carter Rd</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.092716" lon="-81.272189"><name>P Start/finish parking</name><desc>Parking at the south end of Carter Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="45.097310" lon="-81.280440"><name>P2 alternative parking</name><desc>Roadside parking in a small space on the north side of the curved shoulder of Cape Chin South…. Free. Joins the route near km 0.1 (900 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="45.092327" lon="-81.272848"><name>J1</name><desc>J1: Turn left onto the blue-blazed Cape Chin Side Trail, heading south-east. (the white-blazed main Bruce Trail goes off on your left; the white-blazed main Bruce Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.085721" lon="-81.268420"><name>J2</name><desc>J2: Turn left onto the blue-blazed Cape Chin Connector Side Trail, heading east. (the blue-blazed Cape Chin Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="45.085596" lon="-81.267682"><name>J3</name><desc>J3: Turn right onto the white-blazed main Bruce Trail, heading south. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

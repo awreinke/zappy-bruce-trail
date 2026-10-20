@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 33 (stop 2 of 2) - Splitrock, Ralph Tremills, Narrows</name></metadata>
-<wpt lat="44.074962" lon="-80.083756"><name>P Start/finish parking</name><desc>Bruce Trail parking: 2nd Line EHS at the beginning of the Splitrock Side Trail</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.074962" lon="-80.083756"><name>P Start/finish parking</name><desc>Bruce Trail parking: 2nd Line EHS at the beginning of the Splitrock Side Trail. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.064040" lon="-80.081270"><name>P2 alternative parking</name><desc>Limited roadside parking on south side of 25 Sideroad where the Walter Tovell Side Trail…. Free. Joins the route near km 1.9 (870 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.073869" lon="-80.077499"><name>J1</name><desc>J1: Junction. Continue straight to stay on the Splitrock Side Trail, heading south-east. (the blue-blazed Narrows Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.072697" lon="-80.076206"><name>J2</name><desc>J2: Junction. Continue straight to stay on the Splitrock Side Trail, heading south-east. (the blue-blazed Ralph Tremills Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.070807" lon="-80.082953"><name>J3</name><desc>J3: Turn right onto the blue-blazed Ralph Tremills Side Trail, heading north-east. (the blue-blazed Splitrock Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>

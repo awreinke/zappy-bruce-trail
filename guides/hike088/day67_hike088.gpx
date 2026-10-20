@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
 <metadata><name>Day 67 - Colpoy's Bluff, Whicher, Mallory Beach, Crawford Drive, Gatis</name></metadata>
-<wpt lat="44.801588" lon="-81.088626"><name>P Start/finish parking</name><desc>Limited parking on the north side of the road, providing access to the Mallory Beach Side…</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.801588" lon="-81.088626"><name>P Start/finish parking</name><desc>Limited parking on the north side of the road, providing access to the Mallory Beach Side…. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.819240" lon="-81.072800"><name>P2 alternative parking</name><desc>Several cars may park at the north end of the Crawford Drive Side Trail. Free. Joins the route near km 3.3 (0 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="44.783250" lon="-81.124350"><name>P3 alternative parking</name><desc>Park on the east shoulder near the stile, taking care not to block any laneway. Free. Joins the route near km 9.1 (1010 m walk).</desc><sym>Parking Area</sym></wpt>
 <wpt lat="44.801896" lon="-81.091571"><name>J1</name><desc>J1: Junction. Turn right to stay on the Mallory Beach Side Trail, heading north. (the white-blazed main Bruce Trail goes off ahead; the white-blazed main Bruce Trail goes off behind you.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.803624" lon="-81.092218"><name>J2</name><desc>J2: Turn right onto the blue-blazed Colpoy's Bluff Side Trail, heading north-east. (the blue-blazed Colpoy's Bluff Side Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
 <wpt lat="44.816692" lon="-81.071649"><name>J3</name><desc>J3: Turn right onto the blue-blazed Crawford Drive Side Trail, heading south-east. (the blue-blazed Crawford Drive Side Trail goes off on your left.) This is a short excursion (about 760 m in all): walk the whole Crawford Drive Side Trail, including the short loop or branch near its end (see the map), and come back to this junction. The next 0.8 km follows an unopened road allowance (rough track, no traffic).</desc><sym>Waypoint</sym></wpt>
