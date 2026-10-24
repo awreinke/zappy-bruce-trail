@@ -1,21 +1,20 @@
 {
- "run": "2026-10-19T17:47:41-04:00",
- "tracks": [],
- "photos": [
+ "run": "2026-10-24T13:48:26-04:00",
+ "tracks": [
   {
-   "file": "IMG_7895.jpeg",
-   "date": "2025-10-18",
-   "gps": true
-  },
-  {
-   "file": "IMG_7955.png",
-   "date": "2025-10-29",
-   "gps": false
+   "file": "Saturday_Morning_Activity-boyne.gpx",
+   "date": "2026-10-24",
+   "km": 7.9,
+   "hikes": [
+    49
+   ],
+   "side_trail_km_new": 1.26
   }
  ],
+ "photos": [],
  "problems": [
-  "IMG_4650.jpeg: no trip matched yet (date 2026-10-18); it will be matched when that day's GPX is uploaded",
   "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
-  "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded"
+  "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded",
+  "IMG_4650.jpeg: no trip matched yet (date 2026-10-18); it will be matched when that day's GPX is uploaded"
  ]
 }
