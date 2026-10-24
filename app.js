@@ -8,9 +8,10 @@
   const setHdr = () => document.documentElement.style.setProperty('--hdr', $('#hdr').offsetHeight + 'px');
   setHdr(); addEventListener('resize', setHdr);
 
-  const [hikes, segs, routes, mainTrail, prog, manual] = await Promise.all([
+  const [hikes, segs, routes, mainTrail, prog, manual, journal] = await Promise.all([
     getJSON('data/hikes.json', []), getJSON('data/side_trails.json', []), getJSON('data/routes.geojson', { features: [] }),
-    getJSON('data/main_trail.json', []), getJSON('data/progress.json', { trips: [], photos: [], covered: {} }), getJSON('data/manual.json', { hikes: {} })
+    getJSON('data/main_trail.json', []), getJSON('data/progress.json', { trips: [], photos: [], covered: {} }), getJSON('data/manual.json', { hikes: {} }),
+    getJSON('data/journal.json', { hikes: {} })
   ]);
   const byNum = Object.fromEntries(hikes.map(h => [h.hike, h]));
   const routeOf = Object.fromEntries(routes.features.map(f => [f.properties.hike, f.geometry.coordinates]));
@@ -40,6 +41,90 @@
     `${nDone} of ${hikes.length} hikes done` + (bonusKm > 0.05 ? ` · +${bonusKm.toFixed(1)} km bonus` : '') +
     ` · ${photos.length} photo${photos.length === 1 ? '' : 's'}` + (last ? ` · last hike ${fmtDate(last)}` : '');
 
+  // ---------------- Zappy's reviews: notes + 1-4 paw rating per hike, saved to data/journal.json in the repository
+  const lsGet = k => { try { return localStorage.getItem(k) || ''; } catch { return ''; } };
+  const lsSet = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
+  journal.hikes ||= {};
+  // reviews saved from this browser show at once, before the site has republished
+  let pending = {}; try { pending = JSON.parse(lsGet('zappy_journal_pending') || '{}'); } catch {}
+  for (const [n, e] of Object.entries(pending)) {
+    const cur = journal.hikes[n];
+    if (cur && e && cur.saved_at >= e.saved_at || (!cur && e && e.deleted && Date.now() - Date.parse(e.saved_at) > 864e5)) delete pending[n];
+    else if (e && e.deleted) delete journal.hikes[n]; else if (e) journal.hikes[n] = e;
+  }
+  lsSet('zappy_journal_pending', JSON.stringify(pending));
+  const review = n => journal.hikes[n] || null;
+  const canEdit = () => !!(lsGet('zappy_token') && lsGet('zappy_repo'));
+  const PAW = '<svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="16.3" rx="5.3" ry="4.5"/><ellipse cx="5.4" cy="10.6" rx="2.1" ry="2.7" transform="rotate(-18 5.4 10.6)"/><ellipse cx="9.5" cy="6.3" rx="2.1" ry="2.8" transform="rotate(-6 9.5 6.3)"/><ellipse cx="14.5" cy="6.3" rx="2.1" ry="2.8" transform="rotate(6 14.5 6.3)"/><ellipse cx="18.6" cy="10.6" rx="2.1" ry="2.7" transform="rotate(18 18.6 10.6)"/></svg>';
+  const PAWWORD = ['Not rated', 'One paw: an OK outing', 'Two paws: a good hike', 'Three paws: a great hike', "Four paws: one of Zappy's favourites"];
+  const paws = (r, cls = '') => `<span class="paws ${cls}" role="img" aria-label="${r ? r + ' of 4 paws' : 'not rated'}" title="${PAWWORD[r || 0]}">${[1, 2, 3, 4].map(i => `<i class="${i <= (r || 0) ? 'on' : ''}">${PAW}</i>`).join('')}</span>`;
+  const b64enc = str => btoa(unescape(encodeURIComponent(str)));
+  const b64dec = b => decodeURIComponent(escape(atob(b.replace(/\n/g, ''))));
+  async function ghSaveJournal(mutate, message) {
+    const repo = lsGet('zappy_repo'), H = { Accept: 'application/vnd.github+json', Authorization: `Bearer ${lsGet('zappy_token')}`, 'X-GitHub-Api-Version': '2022-11-28' };
+    const url = `https://api.github.com/repos/${repo}/contents/data/journal.json`;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      let sha = null, data = { hikes: {} };
+      const r = await fetch(`${url}?ref=main&t=${Date.now()}`, { headers: H, cache: 'no-store' });
+      if (r.ok) { const j = await r.json(); sha = j.sha; data = JSON.parse(b64dec(j.content)); data.hikes ||= {}; }
+      else if (r.status !== 404) throw new Error(r.status === 401 ? 'GitHub did not accept the saved token (it may have expired). Set it up again on the Upload page.' : `GitHub said ${r.status}.`);
+      mutate(data);
+      const body = { message, content: b64enc(JSON.stringify(data, null, 1) + '\n'), branch: 'main' }; if (sha) body.sha = sha;
+      const p = await fetch(url, { method: 'PUT', headers: { ...H, 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      if (p.ok) return data;
+      if (p.status === 409 || p.status === 422) continue;   // someone else saved at the same moment: re-read and try again
+      if (p.status === 403) throw new Error('The saved token can read but not write. On GitHub, give it Contents: Read and write.');
+      throw new Error(`GitHub said ${p.status}.`);
+    }
+    throw new Error('GitHub was busy; please try again.');
+  }
+  function renderReview(n, editing = false, msg = '') {
+    const box = $('#review'); if (!box) return;
+    const r = review(n), h = byNum[n];
+    if (!editing) {
+      box.innerHTML = r ? `<div class="rv-head">${paws(r.rating, 'lg')}<span class="muted">${esc(PAWWORD[r.rating || 0])}</span></div>
+          ${r.notes ? `<div class="notes">${esc(r.notes)}</div>` : ''}<div class="muted rv-date">${r.hiked ? 'Hiked ' + fmtDate(r.hiked) + ' · ' : ''}updated ${fmtDate(String(r.saved_at || '').slice(0, 10))}</div>`
+        : `<div class="muted">No review yet.</div>`;
+      if (canEdit()) box.innerHTML += `<button id="rvEdit" style="margin-top:8px">${r ? 'Edit review' : 'Add rating and notes'}</button>`;
+      else if (!r) box.innerHTML += `<div class="muted" style="font-size:12.5px;margin-top:4px">To add reviews on this device, do the one-time token setup on the <a href="upload.html">Upload</a> page.</div>`;
+      if (msg) box.innerHTML += `<div class="status">${msg}</div>`;
+      const eb = $('#rvEdit'); if (eb) eb.onclick = () => renderReview(n, true);
+      return;
+    }
+    let rating = r ? r.rating : 0;
+    const lastTrip = tripsOf(n).slice(-1)[0];
+    box.innerHTML = `<div class="pawpick" role="radiogroup" aria-label="Rating">${[1, 2, 3, 4].map(i => `<button type="button" data-r="${i}" aria-label="${PAWWORD[i]}" title="${PAWWORD[i]}">${PAW}</button>`).join('')}</div>
+      <div class="muted" id="rvWord"></div>
+      <label for="rvNotes" class="muted" style="display:block;margin-top:8px">Notes about the hike</label>
+      <textarea id="rvNotes" rows="6" maxlength="5000" placeholder="What was it like? Highlights, mud, views, what Zappy loved…">${esc(r ? r.notes : '')}</textarea>
+      <label for="rvDate" class="muted" style="display:block;margin-top:6px">Date hiked (optional)</label>
+      <input type="date" id="rvDate" value="${esc(r && r.hiked || (lastTrip ? lastTrip.date : ''))}">
+      <div class="actions"><button class="primary" id="rvSave">Save</button><button id="rvCancel">Cancel</button>${r ? '<button id="rvDel">Delete review</button>' : ''}</div>
+      <div class="status" id="rvMsg"></div>`;
+    const paint = () => { box.querySelectorAll('.pawpick button').forEach(b => b.classList.toggle('on', +b.dataset.r <= rating)); $('#rvWord').textContent = PAWWORD[rating]; };
+    box.querySelectorAll('.pawpick button').forEach(b => b.onclick = () => { rating = rating === +b.dataset.r ? 0 : +b.dataset.r; paint(); });
+    paint();
+    $('#rvCancel').onclick = () => renderReview(n);
+    const save = async del => {
+      const notes = $('#rvNotes').value.trim(), hiked = $('#rvDate').value || null;
+      if (!del && !rating && !notes) { $('#rvMsg').innerHTML = '<span class="err">Pick a paw rating or write a note first.</span>'; return; }
+      $('#rvMsg').textContent = 'Saving…'; box.querySelectorAll('button').forEach(b => b.disabled = true);
+      const entry = del ? null : { rating, notes, hiked, trails: h.trails.replace(/ \([\d.]+ km\)/g, ''), saved_at: new Date().toISOString() };
+      try {
+        await ghSaveJournal(d => { if (entry) d.hikes[n] = entry; else delete d.hikes[n]; }, `${del ? 'Remove' : 'Update'} review for hike ${n}`);
+        if (entry) journal.hikes[n] = entry; else delete journal.hikes[n];
+        pending[n] = entry || { deleted: true, saved_at: new Date().toISOString() }; lsSet('zappy_journal_pending', JSON.stringify(pending));
+        markers[n].setIcon(hikeIcon(n, current === n));
+        renderReview(n, false, '<span class="ok">Saved ✓</span> <span class="muted">Everyone else will see it in a minute or two, once the site republishes.</span>');
+      } catch (e) {
+        box.querySelectorAll('button').forEach(b => b.disabled = false);
+        $('#rvMsg').innerHTML = `<span class="err">Not saved. ${esc(e.message)}</span>`;
+      }
+    };
+    $('#rvSave').onclick = () => save(false);
+    if ($('#rvDel')) $('#rvDel').onclick = () => { if (confirm('Delete the rating and notes for this hike?')) save(true); };
+  }
+
   let current = null;
   // ---------------- map
   const map = L.map('map', { zoomControl: true, preferCanvas: true }).setView([44.2, -80.4], 7);
@@ -62,10 +147,10 @@
   })).addTo(map);
   const trackL = L.layerGroup().addTo(map);
   const selL = L.layerGroup().addTo(map);
-  const hikeIcon = (n, sel) => L.divIcon({ className: '', iconSize: [24, 24], html: `<div class="hkw"><div class="hk ${status(n).state}${sel ? ' sel' : ''}">${n}</div></div>` });
+  const hikeIcon = (n, sel) => L.divIcon({ className: '', iconSize: [24, 24], html: `<div class="hkw"><div class="hk ${status(n).state}${sel ? ' sel' : ''}">${n}</div>${review(n) && review(n).rating ? `<b class="hkpaw" title="${review(n).rating} paws">${PAW}${review(n).rating}</b>` : ''}</div>` });
   const markers = {};
   const hikeL = L.layerGroup(hikes.map(h => (markers[h.hike] = L.marker([h.lat, h.lon], { icon: hikeIcon(h.hike), riseOnHover: true, title: `Hike ${h.hike}` })
-    .bindTooltip(`<b>Hike ${h.hike}</b> · Day ${h.day}${h.stops > 1 ? ` (stop ${h.stop}/${h.stops})` : ''} · ${h.mi} mi<br>${esc(h.trails)}`, { direction: 'top', offset: [0, -10] })
+    .bindTooltip(`<b>Hike ${h.hike}</b> · Day ${h.day}${h.stops > 1 ? ` (stop ${h.stop}/${h.stops})` : ''} · ${h.mi} mi${review(h.hike) && review(h.hike).rating ? ' · ' + paws(review(h.hike).rating, 'sm') : ''}<br>${esc(h.trails)}`, { direction: 'top', offset: [0, -10] })
     .on('click', () => select(h.hike))))).addTo(map);
   const photoL = L.layerGroup();
   const photoIdx = photos.filter(p => p.lat != null);
@@ -121,7 +206,7 @@
       <div class="kicker">Hike ${n} · Day ${h.day}${h.stops > 1 ? ` · stop ${h.stop} of ${h.stops}` : ''} · ${esc(h.section)}</div>
       <h2>${esc(h.trails.replace(/ \([\d.]+ km\)/g, '').replace(/; /g, ', '))}</h2>
       <div class="sub">${esc(h.subtitle)}</div>
-      ${chip}
+      ${chip}${review(n) && review(n).rating ? ' ' + paws(review(n).rating, 'sm') : ''}
       <div class="stats">
         <div class="stat"><b>${h.km} km</b><span>${h.mi} mi total</span></div>
         <div class="stat"><b>~${h.hours} h</b><span>hiking</span></div>
@@ -143,6 +228,8 @@
       ${h.split ? `<div class="flag split"><b>Can't do it all in one go?</b> Split it into two outings.<br><b>1.</b> From P: ${h.split.part1.km} km / ${h.split.part1.mi} mi, covering ${esc(trl(h.split.part1.trails))}.<br>
         <b>2.</b> From ${h.split.alt_id ? 'P' + (h.alt_parking.findIndex(a => a.id === h.split.alt_id) + 2) : 'P again'}: ${h.split.part2.km} km / ${h.split.part2.mi} mi, covering ${esc(trl(h.split.part2.trails))}.<br>
         <span class="muted">The map turns walked trails green, so you can see what is left.</span></div>` : ''}
+      <h3>Zappy's review</h3>
+      <div id="review"></div>
       <h3>Zappy's visits</h3>
       ${tr.length ? `<div class="trips">${tr.map(t => `<div><span>${fmtDate(t.date)} · ${esc(t.name)}</span><span>${t.km} km</span></div>`).join('')}</div>` : '<div class="muted">Not walked yet. Upload the GPX from Gaia after the hike and it will show up here.</div>'}
       ${ph.length ? `<h3>Photos (${ph.length})</h3><div class="thumbs">${ph.map((p, i) => `<img loading="lazy" src="${p.thumb}" data-i="${i}" alt="Photo from ${esc(p.date || '')}">`).join('')}</div>` : ''}
@@ -154,6 +241,7 @@
       ${h.sources.length ? `<details><summary>Sources</summary><ul>${h.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join('')}</ul></details>` : ''}`;
     $('#panelInner').querySelectorAll('.thumbs img').forEach(im => im.onclick = () => openLB(ph, +im.dataset.i));
     const gm = $('#panelInner .guide-map'); if (gm) gm.onclick = () => window.open(gm.src, '_blank');
+    renderReview(n);
     $('#panel').classList.add('open'); $('#panel').scrollTop = 0;
   }
   function closePanel() {
@@ -169,15 +257,17 @@
   function renderList() {
     const rows = hikes.filter(h => {
       const s = status(h.hike).state;
-      return (filter === 'all' || (filter === 'todo' ? s !== 'done' : s === filter)) && (!q || (h.trails + ' ' + h.parking + ' ' + h.section).toLowerCase().includes(q));
-    }).sort((a, b) => a.day - b.day || a.stop - b.stop);
+      const rv = review(h.hike);
+      return (filter === 'all' || (filter === 'rated' ? !!rv : filter === 'todo' ? s !== 'done' : s === filter)) && (!q || (h.trails + ' ' + h.parking + ' ' + h.section + ' ' + (rv ? rv.notes : '')).toLowerCase().includes(q));
+    }).sort((a, b) => filter === 'rated' ? ((review(b.hike).rating || 0) - (review(a.hike).rating || 0) || a.day - b.day) : a.day - b.day || a.stop - b.stop);
     $('#list').innerHTML = `<div class="filters">
-      ${['all', 'todo', 'partial', 'done'].map(f => `<button class="${f === filter ? 'primary' : ''}" data-f="${f}">${{ all: 'All', todo: 'To do', partial: 'Started', done: 'Done' }[f]}</button>`).join('')}
-      <input type="text" id="q" placeholder="Search trails, parking, section" value="${esc(q)}" style="max-width:280px">
+      ${['all', 'todo', 'partial', 'done', 'rated'].map(f => `<button class="${f === filter ? 'primary' : ''}" data-f="${f}">${{ all: 'All', todo: 'To do', partial: 'Started', done: 'Done', rated: 'Rated (best first)' }[f]}</button>`).join('')}
+      <input type="text" id="q" placeholder="Search trails, parking, notes" value="${esc(q)}" style="max-width:280px">
       <span class="muted">${rows.length} hikes</span></div>
-      <table><tr><th>Day</th><th>Hike</th><th>Side trails</th><th class="hide-sm">Section</th><th>mi</th><th class="hide-sm">Parking</th><th>Status</th></tr>
+      <table><tr><th>Day</th><th>Hike</th><th>Side trails</th><th class="hide-sm">Section</th><th>mi</th><th class="hide-sm">Parking</th><th>Paws</th><th>Status</th></tr>
       ${rows.map(h => { const s = status(h.hike); return `<tr class="row" data-n="${h.hike}"><td class="num">${h.day}${h.stops > 1 ? 'abc'[h.stop - 1] : ''}</td><td class="num">${h.hike}</td>
         <td>${esc(h.trails.replace(/ \([\d.]+ km\)/g, '').replace(/; /g, ', '))}</td><td class="hide-sm">${esc(h.section)}</td><td class="num">${h.mi}</td><td class="hide-sm">${h.parking_fee && h.parking_fee.fee_status === 'paid' ? '<span class="chip paid">$ paid</span>' : h.parking_fee && h.parking_fee.fee_status === 'free' ? '<span class="muted">free</span>' : ''}${(h.alt_parking || []).length ? ` <span class="muted">+${h.alt_parking.length} alt</span>` : ''}</td>
+        <td>${review(h.hike) && review(h.hike).rating ? paws(review(h.hike).rating, 'sm') : ''}</td>
         <td>${s.state === 'done' ? `<span class="chip done">${fmtDate(s.date)}</span>` : s.state === 'partial' ? `<span class="chip partial">${Math.round(s.frac * 100)}%</span>` : ''}</td></tr>`; }).join('')}</table>`;
     $('#list').querySelectorAll('[data-f]').forEach(b => b.onclick = () => { filter = b.dataset.f; renderList(); });
     $('#list').querySelectorAll('tr.row').forEach(r => r.onclick = () => select(+r.dataset.n));

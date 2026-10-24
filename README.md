@@ -4,6 +4,7 @@ A free website (GitHub Pages) that tracks Zappy's progress through every dog-fri
 
 - **Map:** every planned hike is a numbered dot at its parking. Click one for the guide, route map, GPX and turn-by-turn directions. Side trails turn green once a GPS track shows Zappy walked them.
 - **List:** all 106 hikes in day order, with filters for to do, started and done.
+- **Zappy's review:** each hike has a 1–4 paw rating and notes. On a device where the upload token is set up, open a hike and click **Add rating and notes**; it saves to `data/journal.json` and appears for everyone after the site republishes (a minute or two). The List view can show rated hikes best first and searches the notes.
 - **Upload:** drop the Gaia GPS track and the photos from a hike. A GitHub Action then:
   1. matches the track to the planned side trails and marks them walked, with the date;
   2. reads each photo's date and location, or places it on the track by the time it was taken if the phone stripped the location;
