@@ -1,3 +1,11 @@
 {
- "hikes": {}
+ "hikes": {
+  "49": {
+   "rating": 3,
+   "notes": "",
+   "hiked": "2026-10-24",
+   "trails": "Primrose Loop Side Trail; Boyne Valley Side Trail; Prince of Wales Side Trail",
+   "saved_at": "2026-10-24T19:07:44.269Z"
+  }
+ }
 }
