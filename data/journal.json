@@ -21,5 +21,15 @@
    "trails": "Pine River Valley Side Trail; Carl Alexander Side Trail; Melodonna Side Trail; Kilgorie Side Trail; Bell Lookout Side Trail",
    "saved_at": "2026-10-25T00:06:27.678Z"
   }
+ },
+ "reviews": {
+  "2a54693133": {
+   "rating": 3,
+   "notes": "",
+   "hiked": "2026-10-25",
+   "hike": 35,
+   "trails": "Bennett Heritage Trail; Maureen Smith Side Trail; Snows Creek Side Trail; Silver Creek Side Trail; Eighth Line Side Trail",
+   "saved_at": "2026-10-25T15:27:52.863Z"
+  }
  }
 }
