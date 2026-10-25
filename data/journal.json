@@ -86,6 +86,19 @@
    "hike": 49,
    "trails": "South Outlier Loop Trail; Laidlaw Side Trail; Turnbull Side Trail; McCarston's Lake Side Trail; Springwater Side Trail",
    "saved_at": "2026-10-25T15:43:46.831Z"
+  },
+  "655862b08c": {
+   "rating": 0,
+   "likes": [],
+   "apples": 0,
+   "bads": [
+    "ticks"
+   ],
+   "notes": "",
+   "hiked": "2025-10-25",
+   "hike": 45,
+   "trails": "Hockley Heights Side Trail; Hemlock Ridge Side Trail; Glacier Valley Side Trail",
+   "saved_at": "2026-10-25T15:45:27.211Z"
   }
  }
 }
