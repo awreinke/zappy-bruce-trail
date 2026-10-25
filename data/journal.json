@@ -87,15 +87,18 @@
     "running",
     "sniffs"
    ],
+   "trailhead": [],
+   "potty_lots": [],
    "apples": 0,
+   "berries": 1,
    "bads": [
     "ticks"
    ],
-   "notes": "",
+   "notes": "Blackberries and raspberries, somewhere near the lake loop.",
    "hiked": "2026-10-03",
    "hike": 49,
    "trails": "South Outlier Loop Trail; Laidlaw Side Trail; Turnbull Side Trail; McCarston's Lake Side Trail; Springwater Side Trail",
-   "saved_at": "2026-10-25T15:43:46.831Z"
+   "saved_at": "2026-10-25T19:25:21.375Z"
   },
   "655862b08c": {
    "rating": 0,
