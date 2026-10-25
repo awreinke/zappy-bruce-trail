@@ -150,18 +150,20 @@ td.zp { white-space: nowrap; } td.zp .lks { margin-left: 4px; }
 #list select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
 @media (max-width: 760px) { td.zp { white-space: normal; } td.zp .lks { display: flex; flex-wrap: wrap; margin: 2px 0 0; } }
 
-/* Wild apples and bad things */
+/* Wild fruit (apples, berries) and bad things */
+.fr-apples { --fruit: #c0392b; } .fr-berries { --fruit: #4a3fa8; }
 .apples { display: inline-flex; gap: 1px; vertical-align: middle; }
 .apples i { display: inline-flex; width: 22px; height: 22px; }
-.apples svg, .applepick svg, .lk.ap svg { width: 100%; height: 100%; }
-.ap-body { fill: var(--line); } .ap-stem { fill: none; stroke: var(--line); stroke-width: 1.6; stroke-linecap: round; } .ap-leaf { fill: var(--line); }
-.apples i.on .ap-body, .applepick button.on .ap-body, .lk.ap .ap-body { fill: #c0392b; }
-.apples i.on .ap-stem, .applepick button.on .ap-stem, .lk.ap .ap-stem { stroke: #7a4a21; }
-.apples i.on .ap-leaf, .applepick button.on .ap-leaf, .lk.ap .ap-leaf { fill: #3d8b3d; }
+.apples svg, .applepick svg, .lk.ap svg { width: 100%; height: 100%; stroke: none; }
+.fr-body { fill: var(--line); } .fr-stem { fill: none; stroke: var(--line); stroke-width: 1.6; stroke-linecap: round; } .fr-leaf { fill: var(--line); }
+.fr-shine { fill: none; stroke: none; stroke-width: 1.1; stroke-linecap: round; }
+.apples i.on .fr-body, .applepick button.on .fr-body, .lk.ap .fr-body { fill: var(--fruit); }
+.apples i.on .fr-stem, .applepick button.on .fr-stem, .lk.ap .fr-stem { stroke: #7a4a21; }
+.apples i.on .fr-leaf, .applepick button.on .fr-leaf, .lk.ap .fr-leaf { fill: #3d8b3d; }
+.apples i.on .fr-shine, .applepick button.on .fr-shine { stroke: rgba(255,255,255,.7); }
 .applepick { display: flex; gap: 4px; }
 .applepick button { border: 0; background: none; padding: 3px; width: 44px; height: 44px; border-radius: 10px; }
 .applepick button:hover { background: var(--surface2); }
-.lk.ap { position: relative; } .lk.ap svg { stroke: none; }
 .apgrp { display: inline-flex; margin-left: 3px; } .apgrp .lk.ap + .lk.ap { margin-left: -3px; }
 .lk.bad { color: var(--red); margin-left: 2px; }
 .likechip.bad { background: color-mix(in srgb, var(--red) 14%, transparent); } .likechip.bad svg { color: var(--red); }

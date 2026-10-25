@@ -75,16 +75,20 @@
     ['uphill', 'Uphills', '<path d="M2.5 20.5l6.5-10 4 5.5 3-4 5.5 8.5z"/><path d="M15.5 3.5h4v4M19.5 3.5l-6 6"/>'],
     ['trees', 'Tree cover', '<path d="M12 2.5l-5 7h2.6L6 14.5h3.2L5.5 20h13l-3.7-5.5H18l-3.6-5h2.6z"/><path d="M12 20v2"/>'],
     ['running', 'Good for trail running', '<circle cx="15.5" cy="4.3" r="1.9"/><path d="M14 8.2l-3.2 5.6 3.6 2.2-1.2 5"/><path d="M7.5 10.6l3.2-2.6 3.3.4 1.9 2.8 2.8.6"/><path d="M10.8 13.8L8.3 17.3H4.6"/>'],
+    ['parking', 'Easy parking', '<rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M10 17V8h3.1a2.6 2.6 0 0 1 0 5.2H10"/>'],
     ['sniffs', 'Good sniffs', '<path d="M6 13.5c0-2.5 2.7-4 6-4s6 1.5 6 4-2.2 4-3.6 4c-.9 0-1.5-.6-2.4-.6s-1.5.6-2.4.6C8.2 17.5 6 16 6 13.5z"/><path d="M10 14.2v.6M14 14.2v.6"/><path d="M8.5 6.5c.6-1 .6-2 0-3M12 6.5c.6-1 .6-2 0-3M15.5 6.5c.6-1 .6-2 0-3"/>'],
   ];
   const LIKE = Object.fromEntries(LIKES.map(([k, label, svg]) => [k, { label, svg: `<svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg>` }]));
   const likesOf = r => ((r && r.likes) || []).filter(k => LIKE[k]).sort((a, b) => LIKES.findIndex(l => l[0] === a) - LIKES.findIndex(l => l[0] === b));
   const likeIcons = (r, cls = '') => likesOf(r).map(k => `<i class="lk ${cls}" title="${LIKE[k].label}" role="img" aria-label="${LIKE[k].label}">${LIKE[k].svg}</i>`).join('');
-  // Wild apples: 0-3 (few / moderate / abundant)
-  const APPLE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="ap-body" d="M12 8c-1.4-1-3.6-1.3-5.2-.2C5 9 4.3 11.2 4.6 13.5c.4 3.5 2.7 7.5 5.3 7.5.9 0 1.3-.4 2.1-.4s1.2.4 2.1.4c2.6 0 4.9-4 5.3-7.5.3-2.3-.4-4.5-2.2-5.7-1.6-1.1-3.8-.8-5.2.2z"/><path class="ap-stem" d="M12 8c0-1.7.4-3.1 1.3-4.3"/><path class="ap-leaf" d="M13.2 5.4c1-1.7 2.8-2.5 4.6-2.2-.3 1.9-2 3.1-4.6 2.2z"/></svg>';
-  const APPLEWORD = ['No wild apples noted', 'A few wild apples', 'Moderate wild apples', 'Abundant wild apples'];
-  const applesOf = r => Math.max(0, Math.min(3, +(r && r.apples) || 0));
-  const apples = (a, cls = '') => `<span class="apples ${cls}" role="img" aria-label="${APPLEWORD[a]}" title="${APPLEWORD[a]}">${[1, 2, 3].map(i => `<i class="${i <= a ? 'on' : ''}">${APPLE}</i>`).join('')}</span>`;
+  // Wild fruit amounts: 0-3 (few / moderate / abundant). Saved as r.apples and r.berries.
+  const FRUITS = [
+    ['apples', 'Wild apples', 'apples', '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="fr-body" d="M12 8c-1.4-1-3.6-1.3-5.2-.2C5 9 4.3 11.2 4.6 13.5c.4 3.5 2.7 7.5 5.3 7.5.9 0 1.3-.4 2.1-.4s1.2.4 2.1.4c2.6 0 4.9-4 5.3-7.5.3-2.3-.4-4.5-2.2-5.7-1.6-1.1-3.8-.8-5.2.2z"/><path class="fr-stem" d="M12 8c0-1.7.4-3.1 1.3-4.3"/><path class="fr-leaf" d="M13.2 5.4c1-1.7 2.8-2.5 4.6-2.2-.3 1.9-2 3.1-4.6 2.2z"/></svg>'],
+    ['berries', 'Wild berries', 'berries', '<svg viewBox="0 0 24 24" aria-hidden="true"><path class="fr-stem" d="M12 9.5V5.2"/><path class="fr-leaf" d="M12 6c1.2-1.7 3-2.2 4.7-1.6-.6 1.8-2.4 2.7-4.7 1.6z"/><circle class="fr-body" cx="12" cy="11" r="3.6"/><circle class="fr-body" cx="8.1" cy="16.6" r="3.6"/><circle class="fr-body" cx="15.9" cy="16.6" r="3.6"/><path class="fr-shine" d="M10.6 10.2a1.3 1.3 0 0 1 1.1-.9M6.7 15.8a1.3 1.3 0 0 1 1.1-.9M14.5 15.8a1.3 1.3 0 0 1 1.1-.9"/></svg>'],
+  ];
+  const FRUIT = Object.fromEntries(FRUITS.map(([k, name, plural, svg]) => [k, { name, svg, words: ['No ' + name.toLowerCase() + ' noted', 'A few ' + name.toLowerCase(), 'Moderate ' + name.toLowerCase(), 'Abundant ' + name.toLowerCase()] }]));
+  const fruitOf = (r, k) => Math.max(0, Math.min(3, +(r && r[k]) || 0));
+  const fruitMeter = (k, a) => `<span class="apples fr-${k}" role="img" aria-label="${FRUIT[k].words[a]}" title="${FRUIT[k].words[a]}">${[1, 2, 3].map(i => `<i class="${i <= a ? 'on' : ''}">${FRUIT[k].svg}</i>`).join('')}</span>`;
   // Bad things (watch out)
   const BADS = [
     ['ticks', 'Ticks', '<ellipse cx="12" cy="14" rx="4" ry="5"/><path d="M10.4 8.9c.4-1.6 2.8-1.6 3.2 0"/><path d="M11 7.4l-.7-1.8M13 7.4l.7-1.8"/><path d="M8.2 11.2L4.5 9.2M8 13.6H4M8.3 16l-3.6 2.2M9.4 18.2l-2.6 3"/><path d="M15.8 11.2l3.7-2M16 13.6h4M15.7 16l3.6 2.2M14.6 18.2l2.6 3"/>'],
@@ -94,11 +98,11 @@
   // All the small icons for a review (likes, apples, bad things), used in map tooltips and the list
   const tagIcons = (r, cls = 'sm') => {
     if (!r) return '';
-    const a = applesOf(r), out = likeIcons(r, cls) + (a ? `<span class="apgrp" title="${APPLEWORD[a]}" role="img" aria-label="${APPLEWORD[a]}">${`<i class="lk ap ${cls}">${APPLE}</i>`.repeat(a)}</span>` : '')
+    const out = likeIcons(r, cls) + FRUITS.map(([k]) => { const a = fruitOf(r, k); return a ? `<span class="apgrp fr-${k}" title="${FRUIT[k].words[a]}" role="img" aria-label="${FRUIT[k].words[a]}">${`<i class="lk ap ${cls}">${FRUIT[k].svg}</i>`.repeat(a)}</span>` : ''; }).join('')
       + badsOf(r).map(k => `<i class="lk bad ${cls}" title="Watch out: ${BAD[k].label}" role="img" aria-label="Watch out: ${BAD[k].label}">${BAD[k].svg}</i>`).join('');
     return out ? `<span class="lks">${out}</span>` : '';
   };
-  const tagText = r => r ? [...likesOf(r).map(k => LIKE[k].label), applesOf(r) ? APPLEWORD[applesOf(r)] : '', ...badsOf(r).map(k => BAD[k].label)].join(' ') : '';
+  const tagText = r => r ? [...likesOf(r).map(k => LIKE[k].label), ...FRUITS.map(([k]) => fruitOf(r, k) ? FRUIT[k].words[fruitOf(r, k)] : ''), ...badsOf(r).map(k => BAD[k].label)].join(' ') : '';
   const b64enc = str => btoa(unescape(encodeURIComponent(str)));
   const b64dec = b => decodeURIComponent(escape(atob(b.replace(/\n/g, ''))));
   async function ghSaveJournal(mutate, message) {
@@ -126,7 +130,7 @@
     if (!editing) {
       box.innerHTML = r ? `<div class="rv-head">${paws(r.rating, 'lg')}<span class="muted">${esc(PAWWORD[r.rating || 0])}</span></div>
           ${likesOf(r).length ? `<div class="likes-view"><span class="muted">Zappy liked:</span> ${likesOf(r).map(k => `<span class="likechip">${LIKE[k].svg}${LIKE[k].label}</span>`).join('')}</div>` : ''}
-          ${applesOf(r) ? `<div class="likes-view">${apples(applesOf(r))}<span class="muted">${APPLEWORD[applesOf(r)]}</span></div>` : ''}
+          ${FRUITS.map(([k]) => fruitOf(r, k) ? `<div class="likes-view">${fruitMeter(k, fruitOf(r, k))}<span class="muted">${FRUIT[k].words[fruitOf(r, k)]}</span></div>` : '').join('')}
           ${badsOf(r).length ? `<div class="likes-view"><span class="muted">Watch out:</span> ${badsOf(r).map(k => `<span class="likechip bad">${BAD[k].svg}${BAD[k].label}</span>`).join('')}</div>` : ''}
           ${r.notes ? `<div class="notes">${esc(r.notes)}</div>` : ''}<div class="muted rv-date">${r.hiked ? 'Hiked ' + fmtDate(r.hiked) + ' · ' : ''}updated ${fmtDate(String(r.saved_at || '').slice(0, 10))}</div>`
         : `<div class="muted">No review yet.</div>`;
@@ -142,8 +146,8 @@
       <div class="muted" id="rvWord"></div>
       <div class="muted" style="margin-top:10px">What Zappy liked <span style="font-size:12px">(tap all that apply)</span></div>
       <div class="likepick">${LIKES.map(([k, label]) => `<button type="button" data-like="${k}" aria-pressed="false">${LIKE[k].svg}<span>${label}</span></button>`).join('')}</div>
-      <div class="muted" style="margin-top:12px">Wild apples <span style="font-size:12px">(tap again to clear)</span></div>
-      <div class="rv-head"><div class="applepick">${[1, 2, 3].map(i => `<button type="button" data-a="${i}" aria-label="${APPLEWORD[i]}" title="${APPLEWORD[i]}">${APPLE}</button>`).join('')}</div><span class="muted" id="apWord"></span></div>
+      ${FRUITS.map(([k, name]) => `<div class="muted" style="margin-top:12px">${name} <span style="font-size:12px">(tap again to clear)</span></div>
+      <div class="rv-head"><div class="applepick fr-${k}" data-fruit="${k}">${[1, 2, 3].map(i => `<button type="button" data-a="${i}" aria-label="${FRUIT[k].words[i]}" title="${FRUIT[k].words[i]}">${FRUIT[k].svg}</button>`).join('')}</div><span class="muted fr-word"></span></div>`).join('')}
       <div class="muted" style="margin-top:12px">Bad things</div>
       <div class="likepick badpick">${BADS.map(([k, label]) => `<button type="button" data-bad="${k}" aria-pressed="false">${BAD[k].svg}<span>${label}</span></button>`).join('')}</div>
       <label for="rvNotes" class="muted" style="display:block;margin-top:8px">Notes about the hike</label>
@@ -161,10 +165,13 @@
       b.onclick = () => { liked.has(b.dataset.like) ? liked.delete(b.dataset.like) : liked.add(b.dataset.like); set(); };
       set();
     });
-    let appleN = applesOf(r);
-    const paintA = () => { box.querySelectorAll('.applepick button').forEach(b => b.classList.toggle('on', +b.dataset.a <= appleN)); $('#apWord').textContent = appleN ? APPLEWORD[appleN] : 'None noted'; };
-    box.querySelectorAll('.applepick button').forEach(b => b.onclick = () => { appleN = appleN === +b.dataset.a ? 0 : +b.dataset.a; paintA(); });
-    paintA();
+    const fruitN = Object.fromEntries(FRUITS.map(([k]) => [k, fruitOf(r, k)]));
+    box.querySelectorAll('.applepick').forEach(pk => {
+      const k = pk.dataset.fruit, word = pk.parentNode.querySelector('.fr-word');
+      const paintF = () => { pk.querySelectorAll('button').forEach(b => b.classList.toggle('on', +b.dataset.a <= fruitN[k])); word.textContent = fruitN[k] ? FRUIT[k].words[fruitN[k]] : 'None noted'; };
+      pk.querySelectorAll('button').forEach(b => b.onclick = () => { fruitN[k] = fruitN[k] === +b.dataset.a ? 0 : +b.dataset.a; paintF(); });
+      paintF();
+    });
     const bad = new Set(badsOf(r));
     box.querySelectorAll('.badpick button').forEach(b => {
       const set = () => { const on = bad.has(b.dataset.bad); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); };
@@ -176,9 +183,9 @@
       const notes = $('#rvNotes').value.trim(), hiked = $('#rvDate').value || null;
       const likes = LIKES.map(l => l[0]).filter(k => liked.has(k));
       const bads = BADS.map(l => l[0]).filter(k => bad.has(k));
-      if (!del && !rating && !notes && !likes.length && !appleN && !bads.length) { $('#rvMsg').innerHTML = '<span class="err">Pick a paw rating, tap an icon, or write a note first.</span>'; return; }
+      if (!del && !rating && !notes && !likes.length && !Object.values(fruitN).some(Boolean) && !bads.length) { $('#rvMsg').innerHTML = '<span class="err">Pick a paw rating, tap an icon, or write a note first.</span>'; return; }
       $('#rvMsg').textContent = 'Saving…'; box.querySelectorAll('button').forEach(b => b.disabled = true);
-      const entry = del ? null : { rating, likes, apples: appleN, bads, notes, hiked, hike: n, trails: h.trails.replace(/ \([\d.]+ km\)/g, ''), saved_at: new Date().toISOString() };
+      const entry = del ? null : { rating, likes, apples: fruitN.apples, berries: fruitN.berries, bads, notes, hiked, hike: n, trails: h.trails.replace(/ \([\d.]+ km\)/g, ''), saved_at: new Date().toISOString() };
       try {
         await ghSaveJournal(d => { if (entry) d.reviews[h.hid] = entry; else delete d.reviews[h.hid]; if (legacyOf[h.hid] != null) delete d.hikes[legacyOf[h.hid]]; }, `${del ? 'Remove' : 'Update'} review for hike ${n}`);
         if (entry) journal.reviews[h.hid] = entry; else delete journal.reviews[h.hid];
@@ -324,9 +331,9 @@
   // ---------------- list view
   let filter = 'all', q = '', likeF = '';
   const TAGOPTS = [['Any icon'], ['Zappy liked', LIKES.map(([k, label]) => ['like:' + k, label])],
-    ['Wild apples', [['apples:1', 'Wild apples: any'], ['apples:2', 'Wild apples: moderate or more'], ['apples:3', 'Wild apples: abundant']]],
+    ...FRUITS.map(([k, name]) => [name, [[k + ':1', name + ': any'], [k + ':2', name + ': moderate or more'], [k + ':3', name + ': abundant']]]),
     ['Watch out', BADS.map(([k, label]) => ['bad:' + k, 'Watch out: ' + label.toLowerCase()])]];
-  const tagMatch = (rv, f) => { if (!f) return true; const [t, v] = f.split(':'); return t === 'like' ? likesOf(rv).includes(v) : t === 'apples' ? applesOf(rv) >= +v : badsOf(rv).includes(v); };
+  const tagMatch = (rv, f) => { if (!f) return true; const [t, v] = f.split(':'); return t === 'like' ? likesOf(rv).includes(v) : FRUIT[t] ? fruitOf(rv, t) >= +v : badsOf(rv).includes(v); };
   function renderList() {
     const rows = hikes.filter(h => {
       const s = status(h.hike).state;
