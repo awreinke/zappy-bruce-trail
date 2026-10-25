@@ -409,6 +409,66 @@
    "trip": "2026-10-24_10acc3",
    "original": "IMG_4125.jpeg",
    "placed_by": "gps"
+  },
+  {
+   "hash": "03e8ce054d5a",
+   "file": "photos/2026-10-25/03e8ce054d5a.jpg",
+   "thumb": "photos/2026-10-25/03e8ce054d5a_t.jpg",
+   "w": 4032,
+   "h": 3024,
+   "taken": "2026-10-25T09:13:40-04:00",
+   "date": "2026-10-25",
+   "lon": -79.975731,
+   "lat": 43.693672,
+   "gps": true,
+   "trip": "2026-10-25_cfe5df",
+   "original": "IMG_4132.jpeg",
+   "placed_by": "gps"
+  },
+  {
+   "hash": "62c97e7248f8",
+   "file": "photos/2026-10-25/62c97e7248f8.jpg",
+   "thumb": "photos/2026-10-25/62c97e7248f8_t.jpg",
+   "w": 4032,
+   "h": 3024,
+   "taken": "2026-10-25T09:33:03-04:00",
+   "date": "2026-10-25",
+   "lon": -79.973983,
+   "lat": 43.685858,
+   "gps": true,
+   "trip": "2026-10-25_cfe5df",
+   "original": "IMG_4136.jpeg",
+   "placed_by": "gps"
+  },
+  {
+   "hash": "2938f276e554",
+   "file": "photos/2026-10-25/2938f276e554.jpg",
+   "thumb": "photos/2026-10-25/2938f276e554_t.jpg",
+   "w": 4032,
+   "h": 3024,
+   "taken": "2026-10-25T09:33:25-04:00",
+   "date": "2026-10-25",
+   "lon": -79.974031,
+   "lat": 43.685806,
+   "gps": true,
+   "trip": "2026-10-25_cfe5df",
+   "original": "IMG_4140.jpeg",
+   "placed_by": "gps"
+  },
+  {
+   "hash": "8485e0f655dc",
+   "file": "photos/2026-10-25/8485e0f655dc.jpg",
+   "thumb": "photos/2026-10-25/8485e0f655dc_t.jpg",
+   "w": 4032,
+   "h": 3024,
+   "taken": "2026-10-25T09:46:25-04:00",
+   "date": "2026-10-25",
+   "lon": -79.969336,
+   "lat": 43.67915,
+   "gps": true,
+   "trip": "2026-10-25_cfe5df",
+   "original": "IMG_4142.jpeg",
+   "placed_by": "gps"
   }
  ],
  "covered": {
@@ -449,5 +509,5 @@
   "1542": "2026-10-25",
   "1399": "2026-10-25"
  },
- "updated": "2026-10-25T10:16:43-04:00"
+ "updated": "2026-10-25T10:24:11-04:00"
 }

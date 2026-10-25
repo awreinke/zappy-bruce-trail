@@ -1,18 +1,28 @@
 {
- "run": "2026-10-25T10:16:43-04:00",
- "tracks": [
+ "run": "2026-10-25T10:24:11-04:00",
+ "tracks": [],
+ "photos": [
   {
-   "file": "Sunday_Morning_Hiking-8thline.gpx",
+   "file": "IMG_4132.jpeg",
    "date": "2026-10-25",
-   "km": 8.2,
-   "hikes": [
-    34,
-    35
-   ],
-   "side_trail_km_new": 5.11
+   "gps": true
+  },
+  {
+   "file": "IMG_4136.jpeg",
+   "date": "2026-10-25",
+   "gps": true
+  },
+  {
+   "file": "IMG_4140.jpeg",
+   "date": "2026-10-25",
+   "gps": true
+  },
+  {
+   "file": "IMG_4142.jpeg",
+   "date": "2026-10-25",
+   "gps": true
   }
  ],
- "photos": [],
  "problems": [
   "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
   "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded",
