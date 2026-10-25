@@ -44,13 +44,21 @@
     "running",
     "sniffs"
    ],
+   "trailhead": [
+    "parking",
+    "potty"
+   ],
+   "potty_lots": [
+    202
+   ],
    "apples": 3,
+   "berries": 0,
    "bads": [],
    "notes": "",
    "hiked": "2026-10-24",
    "hike": 51,
    "trails": "Primrose Loop Side Trail; Boyne Valley Rim Side Trail; Meadows Side Trail; Murphy's Pinnacle Side Trail; Centre Road Side Trail; Prince of Wales Side Trail",
-   "saved_at": "2026-10-25T15:42:35.667Z"
+   "saved_at": "2026-10-25T18:19:05.699Z"
   },
   "774adf44f5": {
    "rating": 3,
