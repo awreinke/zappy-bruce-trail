@@ -1,13 +1,17 @@
 {
- "run": "2026-10-25T13:25:46-04:00",
- "tracks": [],
- "photos": [
+ "run": "2026-10-25T14:45:11-04:00",
+ "tracks": [
   {
-   "file": "IMG_4683.jpeg",
-   "date": "2026-10-25",
-   "gps": true
+   "file": "Saturday_Morning_Hiking-1stpinevallyhike.gpx",
+   "date": "2026-06-20",
+   "km": 4.2,
+   "hikes": [
+    53
+   ],
+   "side_trail_km_new": 1.05
   }
  ],
+ "photos": [],
  "problems": [
   "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
   "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded",
