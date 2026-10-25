@@ -179,20 +179,27 @@ def main():
     _before = json.dumps({k: v for k, v in prog.items() if k != 'updated'}, sort_keys=True)
     prog.setdefault('trips', []); prog.setdefault('photos', []); prog.setdefault('covered', {})
     seg_lat0 = 44.0
-    seg_xy = [to_xy([c[0] for c in s['coords']], [c[1] for c in s['coords']], seg_lat0) for s in segs]
-    seg_box = [(a[:, 0].min(), a[:, 0].max(), a[:, 1].min(), a[:, 1].max()) for a in seg_xy]
-    def match(xy):
-        dens = densify(xy, 15)
-        bx = (dens[:, 0].min() - 100, dens[:, 0].max() + 100, dens[:, 1].min() - 100, dens[:, 1].max() + 100)
-        out = []
-        for s, a, b in zip(segs, seg_xy, seg_box):
-            if b[1] < bx[0] or b[0] > bx[1] or b[3] < bx[2] or b[2] > bx[3]:
-                continue
-            sp = densify(a, 20)
-            frac = float((min_dist(sp, dens) <= MATCH_M).mean())
-            if frac >= (0.5 if s['km'] < 0.08 else SEG_FRAC):
-                out.append(s['oid'])
-        return out
+    def matcher(segs):
+        seg_xy = [to_xy([c[0] for c in s['coords']], [c[1] for c in s['coords']], seg_lat0) for s in segs]
+        seg_box = [(a[:, 0].min(), a[:, 0].max(), a[:, 1].min(), a[:, 1].max()) for a in seg_xy]
+        def match(xy):
+            dens = densify(xy, 15)
+            bx = (dens[:, 0].min() - 100, dens[:, 0].max() + 100, dens[:, 1].min() - 100, dens[:, 1].max() + 100)
+            out = []
+            for s, a, b in zip(segs, seg_xy, seg_box):
+                if b[1] < bx[0] or b[0] > bx[1] or b[3] < bx[2] or b[2] > bx[3]:
+                    continue
+                sp = densify(a, 20)
+                frac = float((min_dist(sp, dens) <= MATCH_M).mean())
+                if frac >= (0.5 if s['km'] < 0.08 else SEG_FRAC):
+                    out.append(s['oid'])
+            return out
+        return match
+    match = matcher(segs)
+    # main Bruce Trail (not the goal, but tracked too): data/main_segments.json
+    main_segs = load_json(f'{DATA}/main_segments.json', [])
+    match_main = matcher(main_segs) if main_segs else (lambda xy: [])
+    main_km_of = {s['oid']: s['km'] for s in main_segs}
     log = {'run': dt.datetime.now(LOCAL).isoformat(timespec='seconds'), 'tracks': [], 'photos': [], 'problems': []}
     files = []
     for dp, _, fs in os.walk(UP):
@@ -269,7 +276,7 @@ def main():
 
     # -------- re-match all stored tracks against the current trail data, so updates to the trail network
     #          (renamed / split / new side trails) are reflected in what counts as walked
-    prog['covered'] = {}
+    prog['covered'] = {}; prog['main_covered'] = {}
     km_of = {s['oid']: s['km'] for s in segs}
     for t in sorted(prog['trips'], key=lambda t: (t['date'], t['start'] or '')):
         tr = load_json(t['track'], {})
@@ -280,6 +287,12 @@ def main():
         for o in w:
             if str(o) not in prog['covered']: prog['covered'][str(o)] = t['date']; new += km_of.get(o, 0)
         t['new_km'] = round(new, 2)
+        mw = match_main(to_xy(c[:, 0], c[:, 1], seg_lat0)); mnew = 0.0
+        for o in mw:
+            if str(o) not in prog['main_covered']: prog['main_covered'][str(o)] = t['date']; mnew += main_km_of.get(o, 0)
+        t['main_km'] = round(sum(main_km_of.get(o, 0) for o in mw), 2); t['main_new_km'] = round(mnew, 2)
+    prog['main_total_km'] = round(sum(main_km_of.values()), 1)
+    prog['main_done_km'] = round(sum(main_km_of.get(o, 0) for o in prog['main_covered']), 2)
 
     # -------- attach photos to trips (re-run every time so photos uploaded before their GPX still get placed)
     tracks = {t['id']: load_json(t['track'], {}) for t in prog['trips']}

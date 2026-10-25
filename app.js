@@ -40,6 +40,14 @@
   $('#progtext').textContent = `${doneKm.toFixed(1)} of ${plannedKm.toFixed(0)} km of planned side trails (${(100 * doneKm / plannedKm).toFixed(1)}%) · ` +
     `${nDone} of ${hikes.length} hikes done` + (bonusKm > 0.05 ? ` · +${bonusKm.toFixed(1)} km bonus` : '') +
     ` · ${photos.length} photo${photos.length === 1 ? '' : 's'}` + (last ? ` · last hike ${fmtDate(last)}` : '');
+  // main Bruce Trail walked along the way (secondary tracker; computed by the GitHub Action from the GPX tracks)
+  const mainCovered = prog.main_covered || {};
+  if (prog.main_total_km) {
+    const mk = prog.main_done_km || 0, mt = prog.main_total_km;
+    $('#mainbar').style.width = Math.min(100, 100 * mk / mt).toFixed(2) + '%';
+    $('#maintext').textContent = `Main Bruce Trail along the way: ${mk.toFixed(1)} of ${mt.toFixed(0)} km (${(100 * mk / mt).toFixed(1)}%)`;
+    $('#mainprog').hidden = false; setHdr();
+  }
 
   // ---------------- Zappy's reviews: notes + 1-4 paw rating per hike, saved to data/journal.json in the repository
   const lsGet = k => { try { return localStorage.getItem(k) || ''; } catch { return ''; } };
@@ -238,6 +246,10 @@
   const ll = c => c.map(([x, y]) => [y, x]);
   const rend = L.canvas({ padding: 0.3, tolerance: 6 });
   const mainL = L.polyline(ll(mainTrail), { renderer: rend, color: '#8a7b62', weight: 2.5, opacity: 0.8, interactive: false }).addTo(map);
+  const mainWalkedL = L.layerGroup().addTo(map);
+  if (Object.keys(mainCovered).length) getJSON('data/main_segments.json', []).then(ms => ms.filter(s => mainCovered[s.oid]).forEach(s =>
+    L.polyline(ll(s.coords), { renderer: rend, color: css('--green'), weight: 4, opacity: 0.85 })
+      .bindTooltip(`Main Bruce Trail · walked ${fmtDate(mainCovered[s.oid])}`, { sticky: true }).addTo(mainWalkedL)));
   const segStyle = s => covered[s.oid] ? { color: css('--green'), weight: 5, opacity: 0.95, dashArray: null }
     : s.status === 'planned' ? { color: css('--blue'), weight: 3.5, opacity: 0.9, dashArray: null }
     : s.status === 'nodog' ? { color: css('--red'), weight: 2.5, opacity: 0.9, dashArray: '5 5' }
@@ -337,7 +349,7 @@
       <h3>Zappy's review</h3>
       <div id="review"></div>
       <h3>Zappy's visits</h3>
-      ${tr.length ? `<div class="trips">${tr.map(t => `<div><span>${fmtDate(t.date)} · ${esc(t.name)}</span><span>${t.km} km</span></div>`).join('')}</div>` : '<div class="muted">Not walked yet. Upload the GPX from Gaia after the hike and it will show up here.</div>'}
+      ${tr.length ? `<div class="trips">${tr.map(t => `<div><span>${fmtDate(t.date)} · ${esc(t.name)}</span><span>${t.km} km${t.main_km ? ` <span class="muted">(${t.main_km} main)</span>` : ''}</span></div>`).join('')}</div>` : '<div class="muted">Not walked yet. Upload the GPX from Gaia after the hike and it will show up here.</div>'}
       ${ph.length ? `<h3>Photos (${ph.length})</h3><div class="thumbs">${ph.map((p, i) => `<img loading="lazy" src="${p.thumb}" data-i="${i}" alt="Photo from ${esc(p.date || '')}">`).join('')}</div>` : ''}
       <h3>Route</h3>
       ${h.files.map ? `<img class="guide-map" src="${h.files.map}" alt="Route map for hike ${n}" loading="lazy">` : ''}

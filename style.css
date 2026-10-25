@@ -186,3 +186,10 @@ svg.inl { width: 15px; height: 15px; vertical-align: -3px; fill: none; stroke: v
 .pk .wcb { display: none; position: absolute; right: -11px; top: -11px; width: 15px; height: 15px; background: #fff; border-radius: 4px; padding: 1px; box-shadow: 0 1px 2px rgba(0,0,0,.4); }
 .pk.wc .wcb { display: block; }
 .pk .wcb svg { width: 100%; height: 100%; fill: none; stroke: var(--blue); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; display: block; }
+
+/* secondary tracker: main Bruce Trail walked along the way */
+.mainprog { display: flex; align-items: center; gap: 7px; }
+.mainprog[hidden] { display: none; }
+.minibar { flex: 0 0 90px; height: 4px; background: var(--surface2); border-radius: 3px; overflow: hidden; }
+.minibar i { display: block; height: 100%; background: #8a7b62; border-radius: 3px; }
+.mainprog small { font-size: 11.5px; color: var(--ink2); opacity: .9; }
