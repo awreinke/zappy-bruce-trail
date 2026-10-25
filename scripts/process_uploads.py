@@ -176,10 +176,23 @@ def main():
     segs = load_json(f'{DATA}/side_trails.json', [])
     hikes = {h['hike']: h for h in load_json(f'{DATA}/hikes.json', [])}
     prog = load_json(f'{DATA}/progress.json', {'trips': [], 'photos': [], 'covered': {}})
+    _before = json.dumps({k: v for k, v in prog.items() if k != 'updated'}, sort_keys=True)
     prog.setdefault('trips', []); prog.setdefault('photos', []); prog.setdefault('covered', {})
     seg_lat0 = 44.0
     seg_xy = [to_xy([c[0] for c in s['coords']], [c[1] for c in s['coords']], seg_lat0) for s in segs]
     seg_box = [(a[:, 0].min(), a[:, 0].max(), a[:, 1].min(), a[:, 1].max()) for a in seg_xy]
+    def match(xy):
+        dens = densify(xy, 15)
+        bx = (dens[:, 0].min() - 100, dens[:, 0].max() + 100, dens[:, 1].min() - 100, dens[:, 1].max() + 100)
+        out = []
+        for s, a, b in zip(segs, seg_xy, seg_box):
+            if b[1] < bx[0] or b[0] > bx[1] or b[3] < bx[2] or b[2] > bx[3]:
+                continue
+            sp = densify(a, 20)
+            frac = float((min_dist(sp, dens) <= MATCH_M).mean())
+            if frac >= (0.5 if s['km'] < 0.08 else SEG_FRAC):
+                out.append(s['oid'])
+        return out
     log = {'run': dt.datetime.now(LOCAL).isoformat(timespec='seconds'), 'tracks': [], 'photos': [], 'problems': []}
     files = []
     for dp, _, fs in os.walk(UP):
@@ -206,14 +219,7 @@ def main():
         km = float(np.hypot(*np.diff(xy, axis=0).T).sum() / 1000)
         dens = densify(xy, 15)
         bx = (dens[:, 0].min() - 100, dens[:, 0].max() + 100, dens[:, 1].min() - 100, dens[:, 1].max() + 100)
-        walked = []
-        for s, a, b in zip(segs, seg_xy, seg_box):
-            if b[1] < bx[0] or b[0] > bx[1] or b[3] < bx[2] or b[2] > bx[3]:
-                continue
-            sp = densify(a, 20)
-            frac = float((min_dist(sp, dens) <= MATCH_M).mean())
-            if frac >= (0.5 if s['km'] < 0.08 else SEG_FRAC):
-                walked.append(s['oid'])
+        walked = match(xy)
         hk = sorted({s['hike'] for s in segs if s['oid'] in walked and s.get('hike')})
         tid = f"{date}_{hashlib.sha1(open(path, 'rb').read()).hexdigest()[:6]}"
         if any(t['id'] == tid for t in prog['trips']):
@@ -261,6 +267,20 @@ def main():
         log['photos'].append({'file': os.path.basename(path), 'date': rec['date'], 'gps': bool(pos)})
         done.append(path)
 
+    # -------- re-match all stored tracks against the current trail data, so updates to the trail network
+    #          (renamed / split / new side trails) are reflected in what counts as walked
+    prog['covered'] = {}
+    km_of = {s['oid']: s['km'] for s in segs}
+    for t in sorted(prog['trips'], key=lambda t: (t['date'], t['start'] or '')):
+        tr = load_json(t['track'], {})
+        if not tr.get('coords'): continue
+        c = np.array(tr['coords']); w = match(to_xy(c[:, 0], c[:, 1], seg_lat0))
+        t['segments'] = w; t['hikes'] = sorted({s['hike'] for s in segs if s['oid'] in w and s.get('hike')})
+        new = 0.0
+        for o in w:
+            if str(o) not in prog['covered']: prog['covered'][str(o)] = t['date']; new += km_of.get(o, 0)
+        t['new_km'] = round(new, 2)
+
     # -------- attach photos to trips (re-run every time so photos uploaded before their GPX still get placed)
     tracks = {t['id']: load_json(t['track'], {}) for t in prog['trips']}
     for p in prog['photos']:
@@ -299,9 +319,12 @@ def main():
 
     prog['trips'].sort(key=lambda t: (t['date'], t['start'] or ''))
     prog['photos'].sort(key=lambda p: (p['taken'] or '9999'))
-    prog['updated'] = log['run']
-    save_json(f'{DATA}/progress.json', prog, pretty=True)
-    save_json(f'{DATA}/last_run.json', log, pretty=True)
+    changed = json.dumps({k: v for k, v in prog.items() if k != 'updated'}, sort_keys=True) != _before
+    if changed or files:                     # avoid a bot commit on every push when nothing changed
+        prog['updated'] = log['run']
+        save_json(f'{DATA}/progress.json', prog, pretty=True)
+    if files:
+        save_json(f'{DATA}/last_run.json', log, pretty=True)
     for p in done:
         os.remove(p)
     print(json.dumps({k: (len(v) if isinstance(v, list) else v) for k, v in log.items()}))

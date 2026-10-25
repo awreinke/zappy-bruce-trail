@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Claude Bruce Trail planner" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>Day 3 (stop 1 of 2) - Wetland Ridge, Margaret Kalogeropoulos, Niagara College</name></metadata>
+<wpt lat="43.148280" lon="-79.156708"><name>P Start/finish parking</name><desc>Woodend Conservation Area: Enter from Taylor Rd, 140 m north of Warner Rd. Free</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.143620" lon="-79.166700"><name>P2 alternative parking</name><desc>Woodend Conservation Area: Enter from Taylor Rd. Free. Joins the route near km 0.8 (360 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.150280" lon="-79.155090"><name>P3 alternative parking</name><desc>Woodend Conservation Area: Enter from Taylor Rd, 140 m north of Warner Rd. Free. Joins the route near km 3.8 (130 m walk).</desc><sym>Parking Area</sym></wpt>
+<wpt lat="43.146325" lon="-79.163563"><name>J1</name><desc>J1: Continue straight onto the white-blazed main Bruce Trail, heading south-west. (the white-blazed main Bruce Trail goes off behind you.)</desc><sym>Waypoint</sym></wpt>
+<wpt lat="43.145696" lon="-79.165340"><name>J2</name><desc>J2: Continue straight onto the blue-blazed Wetland Ridge Side Trail, heading west. (the white-blazed main Bruce Trail goes off ahead.)</desc><sym>Waypoint</sym></wpt>
+<wpt lat="43.148703" lon="-79.162532"><name>J3</name><desc>J3: Continue straight onto the blue-blazed Niagara College Side Trail, heading north. (the blue-blazed Wetland Ridge Side Trail goes off on your right.)</desc><sym>Waypoint</sym></wpt>
+<wpt lat="43.152424" lon="-79.163737"><name>J4</name><desc>J4: End of the Niagara College Side Trail. Turn around and retrace your steps.</desc><sym>Waypoint</sym></wpt>
+<wpt lat="43.150078" lon="-79.153944"><name>J5</name><desc>J5: Turn left onto the white-blazed main Bruce Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your right.) There is trailhead parking here (Woodend Conservation Area: Enter from Taylor Rd, 140 m north of Warner Rd).</desc><sym>Waypoint</sym></wpt>
+<wpt lat="43.147491" lon="-79.156038"><name>J6</name><desc>J6: Continue straight onto the blue-blazed Margaret Kalogeropoulos Side Trail, heading south-west. (the white-blazed main Bruce Trail goes off on your left.)</desc><sym>Waypoint</sym></wpt>
+<trk><name>Day 3 (stop 1 of 2) - Wetland Ridge, Margaret Kalogeropoulos, Niagara College (4.4 km)</name><trkseg>
+<trkpt lat="43.148280" lon="-79.156708"></trkpt>
+<trkpt lat="43.147860" lon="-79.157040"></trkpt>
+<trkpt lat="43.147620" lon="-79.157560"></trkpt>
+<trkpt lat="43.147700" lon="-79.157730"></trkpt>
+<trkpt lat="43.147820" lon="-79.157860"></trkpt>
+<trkpt lat="43.147860" lon="-79.158040"></trkpt>
+<trkpt lat="43.147680" lon="-79.158530"></trkpt>
+<trkpt lat="43.147710" lon="-79.159020"></trkpt>
+<trkpt lat="43.147630" lon="-79.159820"></trkpt>
+<trkpt lat="43.147860" lon="-79.160060"></trkpt>
+<trkpt lat="43.147930" lon="-79.160260"></trkpt>
+<trkpt lat="43.147440" lon="-79.161020"></trkpt>
+<trkpt lat="43.147290" lon="-79.161090"></trkpt>
+<trkpt lat="43.146890" lon="-79.161450"></trkpt>
+<trkpt lat="43.146700" lon="-79.161530"></trkpt>
+<trkpt lat="43.146590" lon="-79.161770"></trkpt>
+<trkpt lat="43.146590" lon="-79.162100"></trkpt>
+<trkpt lat="43.146640" lon="-79.162750"></trkpt>
+<trkpt lat="43.146350" lon="-79.163350"></trkpt>
+<trkpt lat="43.146330" lon="-79.163560"></trkpt>
+<trkpt lat="43.146020" lon="-79.164340"></trkpt>
+<trkpt lat="43.145980" lon="-79.164790"></trkpt>
+<trkpt lat="43.145700" lon="-79.165340"></trkpt>
+<trkpt lat="43.145650" lon="-79.165730"></trkpt>
+<trkpt lat="43.145690" lon="-79.165910"></trkpt>
+<trkpt lat="43.146230" lon="-79.165320"></trkpt>
+<trkpt lat="43.146330" lon="-79.164980"></trkpt>
+<trkpt lat="43.146500" lon="-79.164940"></trkpt>
+<trkpt lat="43.146650" lon="-79.164800"></trkpt>
+<trkpt lat="43.146870" lon="-79.164140"></trkpt>
+<trkpt lat="43.147030" lon="-79.163930"></trkpt>
+<trkpt lat="43.147140" lon="-79.163880"></trkpt>
+<trkpt lat="43.147210" lon="-79.163710"></trkpt>
+<trkpt lat="43.147400" lon="-79.163550"></trkpt>
+<trkpt lat="43.147520" lon="-79.163510"></trkpt>
+<trkpt lat="43.147600" lon="-79.163340"></trkpt>
+<trkpt lat="43.147970" lon="-79.162870"></trkpt>
+<trkpt lat="43.147970" lon="-79.162690"></trkpt>
+<trkpt lat="43.148080" lon="-79.162510"></trkpt>
+<trkpt lat="43.148220" lon="-79.162440"></trkpt>
+<trkpt lat="43.148390" lon="-79.162570"></trkpt>
+<trkpt lat="43.148570" lon="-79.162630"></trkpt>
+<trkpt lat="43.148710" lon="-79.162540"></trkpt>
+<trkpt lat="43.150730" lon="-79.162620"></trkpt>
+<trkpt lat="43.151680" lon="-79.162810"></trkpt>
+<trkpt lat="43.152650" lon="-79.162860"></trkpt>
+<trkpt lat="43.152780" lon="-79.162980"></trkpt>
+<trkpt lat="43.152820" lon="-79.163190"></trkpt>
+<trkpt lat="43.152770" lon="-79.163280"></trkpt>
+<trkpt lat="43.152550" lon="-79.163430"></trkpt>
+<trkpt lat="43.152430" lon="-79.163740"></trkpt>
+<trkpt lat="43.152550" lon="-79.163430"></trkpt>
+<trkpt lat="43.152770" lon="-79.163280"></trkpt>
+<trkpt lat="43.152820" lon="-79.163190"></trkpt>
+<trkpt lat="43.152780" lon="-79.162980"></trkpt>
+<trkpt lat="43.152650" lon="-79.162860"></trkpt>
+<trkpt lat="43.151680" lon="-79.162810"></trkpt>
+<trkpt lat="43.150730" lon="-79.162620"></trkpt>
+<trkpt lat="43.148710" lon="-79.162540"></trkpt>
+<trkpt lat="43.148950" lon="-79.162040"></trkpt>
+<trkpt lat="43.149220" lon="-79.161700"></trkpt>
+<trkpt lat="43.149450" lon="-79.161240"></trkpt>
+<trkpt lat="43.150180" lon="-79.160170"></trkpt>
+<trkpt lat="43.150430" lon="-79.159630"></trkpt>
+<trkpt lat="43.150540" lon="-79.159500"></trkpt>
+<trkpt lat="43.150700" lon="-79.159420"></trkpt>
+<trkpt lat="43.150630" lon="-79.159180"></trkpt>
+<trkpt lat="43.151080" lon="-79.158720"></trkpt>
+<trkpt lat="43.151040" lon="-79.158600"></trkpt>
+<trkpt lat="43.151340" lon="-79.157790"></trkpt>
+<trkpt lat="43.151710" lon="-79.157520"></trkpt>
+<trkpt lat="43.151660" lon="-79.157450"></trkpt>
+<trkpt lat="43.151690" lon="-79.157200"></trkpt>
+<trkpt lat="43.151780" lon="-79.157120"></trkpt>
+<trkpt lat="43.151810" lon="-79.156990"></trkpt>
+<trkpt lat="43.152010" lon="-79.156830"></trkpt>
+<trkpt lat="43.152110" lon="-79.156560"></trkpt>
+<trkpt lat="43.152050" lon="-79.156450"></trkpt>
+<trkpt lat="43.152080" lon="-79.156260"></trkpt>
+<trkpt lat="43.152540" lon="-79.155890"></trkpt>
+<trkpt lat="43.152690" lon="-79.155540"></trkpt>
+<trkpt lat="43.152640" lon="-79.155280"></trkpt>
+<trkpt lat="43.152700" lon="-79.155190"></trkpt>
+<trkpt lat="43.152810" lon="-79.155150"></trkpt>
+<trkpt lat="43.152900" lon="-79.154940"></trkpt>
+<trkpt lat="43.152820" lon="-79.154830"></trkpt>
+<trkpt lat="43.152760" lon="-79.154520"></trkpt>
+<trkpt lat="43.152810" lon="-79.153500"></trkpt>
+<trkpt lat="43.152330" lon="-79.153180"></trkpt>
+<trkpt lat="43.152240" lon="-79.152920"></trkpt>
+<trkpt lat="43.152130" lon="-79.152850"></trkpt>
+<trkpt lat="43.152120" lon="-79.152770"></trkpt>
+<trkpt lat="43.151900" lon="-79.152590"></trkpt>
+<trkpt lat="43.151600" lon="-79.152550"></trkpt>
+<trkpt lat="43.151400" lon="-79.152630"></trkpt>
+<trkpt lat="43.151190" lon="-79.152590"></trkpt>
+<trkpt lat="43.150790" lon="-79.152900"></trkpt>
+<trkpt lat="43.150630" lon="-79.152990"></trkpt>
+<trkpt lat="43.150070" lon="-79.153530"></trkpt>
+<trkpt lat="43.150010" lon="-79.153690"></trkpt>
+<trkpt lat="43.150080" lon="-79.153950"></trkpt>
+<trkpt lat="43.149850" lon="-79.154180"></trkpt>
+<trkpt lat="43.149700" lon="-79.154200"></trkpt>
+<trkpt lat="43.149540" lon="-79.154470"></trkpt>
+<trkpt lat="43.149370" lon="-79.154640"></trkpt>
+<trkpt lat="43.148600" lon="-79.155090"></trkpt>
+<trkpt lat="43.147500" lon="-79.156040"></trkpt>
+<trkpt lat="43.147420" lon="-79.156320"></trkpt>
+<trkpt lat="43.147190" lon="-79.156620"></trkpt>
+<trkpt lat="43.147370" lon="-79.156660"></trkpt>
+<trkpt lat="43.147770" lon="-79.156420"></trkpt>
+<trkpt lat="43.147880" lon="-79.156630"></trkpt>
+<trkpt lat="43.147840" lon="-79.156940"></trkpt>
+<trkpt lat="43.148280" lon="-79.156708"></trkpt>
+</trkseg></trk></gpx>

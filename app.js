@@ -44,16 +44,25 @@
   // ---------------- Zappy's reviews: notes + 1-4 paw rating per hike, saved to data/journal.json in the repository
   const lsGet = k => { try { return localStorage.getItem(k) || ''; } catch { return ''; } };
   const lsSet = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
-  journal.hikes ||= {};
-  // reviews saved from this browser show at once, before the site has republished
-  let pending = {}; try { pending = JSON.parse(lsGet('zappy_journal_pending') || '{}'); } catch {}
-  for (const [n, e] of Object.entries(pending)) {
-    const cur = journal.hikes[n];
-    if (cur && e && cur.saved_at >= e.saved_at || (!cur && e && e.deleted && Date.now() - Date.parse(e.saved_at) > 864e5)) delete pending[n];
-    else if (e && e.deleted) delete journal.hikes[n]; else if (e) journal.hikes[n] = e;
+  // reviews are keyed by a stable hike id (parking + side trails), so they survive plan updates that renumber hikes
+  journal.reviews ||= {}; journal.hikes ||= {};
+  const tset = s => new Set(String(s || '').split(/;\s*/).map(x => x.replace(/ \(.*$/, '').trim()).filter(Boolean));
+  const sim = (a, names) => { const A = tset(a), Bs = new Set(names || []); let c = 0; A.forEach(x => Bs.has(x) && c++); return c / Math.max(1, A.size, Bs.size); };
+  const legacyOf = {};   // reviews saved before hike ids existed were keyed by hike number: attach each to the hike with the same trails
+  for (const [k, e] of Object.entries(journal.hikes)) {
+    if (!e) continue; let best = null;
+    for (const h of hikes) { const v = sim(e.trails, h.trail_names); if (v >= 0.5 && (!best || v > best[0])) best = [v, h]; }
+    if (best && !journal.reviews[best[1].hid]) { journal.reviews[best[1].hid] = e; legacyOf[best[1].hid] = k; }
   }
-  lsSet('zappy_journal_pending', JSON.stringify(pending));
-  const review = n => journal.hikes[n] || null;
+  // reviews saved from this browser show at once, before the site has republished
+  let pending = {}; try { pending = JSON.parse(lsGet('zappy_journal_pending_v2') || '{}'); } catch {}
+  for (const [k, e] of Object.entries(pending)) {
+    const cur = journal.reviews[k];
+    if (cur && e && cur.saved_at >= e.saved_at || (!cur && e && e.deleted && Date.now() - Date.parse(e.saved_at) > 864e5)) delete pending[k];
+    else if (e && e.deleted) delete journal.reviews[k]; else if (e) journal.reviews[k] = e;
+  }
+  lsSet('zappy_journal_pending_v2', JSON.stringify(pending));
+  const review = n => (byNum[n] && journal.reviews[byNum[n].hid]) || null;
   const canEdit = () => !!(lsGet('zappy_token') && lsGet('zappy_repo'));
   const PAW = '<svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="16.3" rx="5.3" ry="4.5"/><ellipse cx="5.4" cy="10.6" rx="2.1" ry="2.7" transform="rotate(-18 5.4 10.6)"/><ellipse cx="9.5" cy="6.3" rx="2.1" ry="2.8" transform="rotate(-6 9.5 6.3)"/><ellipse cx="14.5" cy="6.3" rx="2.1" ry="2.8" transform="rotate(6 14.5 6.3)"/><ellipse cx="18.6" cy="10.6" rx="2.1" ry="2.7" transform="rotate(18 18.6 10.6)"/></svg>';
   const PAWWORD = ['Not rated', 'One paw: an OK outing', 'Two paws: a good hike', 'Three paws: a great hike', "Four paws: one of Zappy's favourites"];
@@ -68,6 +77,7 @@
       const r = await fetch(`${url}?ref=main&t=${Date.now()}`, { headers: H, cache: 'no-store' });
       if (r.ok) { const j = await r.json(); sha = j.sha; data = JSON.parse(b64dec(j.content)); data.hikes ||= {}; }
       else if (r.status !== 404) throw new Error(r.status === 401 ? 'GitHub did not accept the saved token (it may have expired). Set it up again on the Upload page.' : `GitHub said ${r.status}.`);
+      data.reviews ||= {};
       mutate(data);
       const body = { message, content: b64enc(JSON.stringify(data, null, 1) + '\n'), branch: 'main' }; if (sha) body.sha = sha;
       const p = await fetch(url, { method: 'PUT', headers: { ...H, 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
@@ -109,11 +119,11 @@
       const notes = $('#rvNotes').value.trim(), hiked = $('#rvDate').value || null;
       if (!del && !rating && !notes) { $('#rvMsg').innerHTML = '<span class="err">Pick a paw rating or write a note first.</span>'; return; }
       $('#rvMsg').textContent = 'Saving…'; box.querySelectorAll('button').forEach(b => b.disabled = true);
-      const entry = del ? null : { rating, notes, hiked, trails: h.trails.replace(/ \([\d.]+ km\)/g, ''), saved_at: new Date().toISOString() };
+      const entry = del ? null : { rating, notes, hiked, hike: n, trails: h.trails.replace(/ \([\d.]+ km\)/g, ''), saved_at: new Date().toISOString() };
       try {
-        await ghSaveJournal(d => { if (entry) d.hikes[n] = entry; else delete d.hikes[n]; }, `${del ? 'Remove' : 'Update'} review for hike ${n}`);
-        if (entry) journal.hikes[n] = entry; else delete journal.hikes[n];
-        pending[n] = entry || { deleted: true, saved_at: new Date().toISOString() }; lsSet('zappy_journal_pending', JSON.stringify(pending));
+        await ghSaveJournal(d => { if (entry) d.reviews[h.hid] = entry; else delete d.reviews[h.hid]; if (legacyOf[h.hid] != null) delete d.hikes[legacyOf[h.hid]]; }, `${del ? 'Remove' : 'Update'} review for hike ${n}`);
+        if (entry) journal.reviews[h.hid] = entry; else delete journal.reviews[h.hid];
+        pending[h.hid] = entry || { deleted: true, saved_at: new Date().toISOString() }; lsSet('zappy_journal_pending_v2', JSON.stringify(pending));
         markers[n].setIcon(hikeIcon(n, current === n));
         renderReview(n, false, '<span class="ok">Saved ✓</span> <span class="muted">Everyone else will see it in a minute or two, once the site republishes.</span>');
       } catch (e) {
