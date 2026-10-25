@@ -132,3 +132,39 @@ label { font-size: 13px; color: var(--ink2); display: block; margin: 8px 0 3px; 
 .hkpaw { position: absolute; right: -7px; top: -7px; background: #b5651d; color: #fff; font-size: 9px; line-height: 1; border-radius: 8px; padding: 2px 4px; border: 1.5px solid #fff; }
 .hkpaw { display: inline-flex; align-items: center; gap: 1px; } .hkpaw svg { width: 8px; height: 8px; fill: #fff; }
 .small .hkpaw { display: none; }
+
+/* What Zappy liked */
+.likepick { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 6px; margin-top: 6px; }
+.likepick button { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 4px; border-radius: 10px; font-size: 12.5px; line-height: 1.2; text-align: center; color: var(--ink2); }
+.likepick button svg { width: 28px; height: 28px; }
+.likepick button.on { background: color-mix(in srgb, #b5651d 15%, transparent); border-color: #b5651d; color: var(--ink); }
+.likepick button.on svg { color: #b5651d; }
+.likepick svg, .likechip svg, .lk svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.likes-view { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin-top: 8px; }
+.likechip { display: inline-flex; align-items: center; gap: 4px; font-size: 12.5px; padding: 3px 9px 3px 6px; border-radius: 99px; background: color-mix(in srgb, #b5651d 13%, transparent); color: var(--ink); }
+.likechip svg { width: 17px; height: 17px; color: #b5651d; }
+.lks { display: inline-flex; gap: 1px; vertical-align: middle; color: #b5651d; }
+.lk { display: inline-flex; width: 18px; height: 18px; } .lk.sm { width: 15px; height: 15px; }
+.lk svg { width: 100%; height: 100%; }
+td.zp { white-space: nowrap; } td.zp .lks { margin-left: 4px; }
+#list select { font: inherit; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+@media (max-width: 760px) { td.zp { white-space: normal; } td.zp .lks { display: flex; flex-wrap: wrap; margin: 2px 0 0; } }
+
+/* Wild apples and bad things */
+.apples { display: inline-flex; gap: 1px; vertical-align: middle; }
+.apples i { display: inline-flex; width: 22px; height: 22px; }
+.apples svg, .applepick svg, .lk.ap svg { width: 100%; height: 100%; }
+.ap-body { fill: var(--line); } .ap-stem { fill: none; stroke: var(--line); stroke-width: 1.6; stroke-linecap: round; } .ap-leaf { fill: var(--line); }
+.apples i.on .ap-body, .applepick button.on .ap-body, .lk.ap .ap-body { fill: #c0392b; }
+.apples i.on .ap-stem, .applepick button.on .ap-stem, .lk.ap .ap-stem { stroke: #7a4a21; }
+.apples i.on .ap-leaf, .applepick button.on .ap-leaf, .lk.ap .ap-leaf { fill: #3d8b3d; }
+.applepick { display: flex; gap: 4px; }
+.applepick button { border: 0; background: none; padding: 3px; width: 44px; height: 44px; border-radius: 10px; }
+.applepick button:hover { background: var(--surface2); }
+.lk.ap { position: relative; } .lk.ap svg { stroke: none; }
+.apgrp { display: inline-flex; margin-left: 3px; } .apgrp .lk.ap + .lk.ap { margin-left: -3px; }
+.lk.bad { color: var(--red); margin-left: 2px; }
+.likechip.bad { background: color-mix(in srgb, var(--red) 14%, transparent); } .likechip.bad svg { color: var(--red); }
+.badpick button.on { background: color-mix(in srgb, var(--red) 13%, transparent); border-color: var(--red); }
+.badpick button.on svg { color: var(--red); }
+.badpick svg { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
