@@ -76,6 +76,7 @@
     ['trees', 'Tree cover', '<path d="M12 2.5l-5 7h2.6L6 14.5h3.2L5.5 20h13l-3.7-5.5H18l-3.6-5h2.6z"/><path d="M12 20v2"/>'],
     ['running', 'Good for trail running', '<circle cx="15.5" cy="4.3" r="1.9"/><path d="M14 8.2l-3.2 5.6 3.6 2.2-1.2 5"/><path d="M7.5 10.6l3.2-2.6 3.3.4 1.9 2.8 2.8.6"/><path d="M10.8 13.8L8.3 17.3H4.6"/>'],
     ['parking', 'Easy parking', '<rect x="4" y="4" width="16" height="16" rx="3.5"/><path d="M10 17V8h3.1a2.6 2.6 0 0 1 0 5.2H10"/>'],
+    ['potty', 'Porta-potty', '<path d="M5.5 8c0-2.6 2.9-4.3 6.5-4.3s6.5 1.7 6.5 4.3"/><rect x="5.5" y="8" width="13" height="12.5" rx="1"/><path d="M9 20.5v-9.3h6v9.3"/><path d="M10.5 6h3"/><path d="M13.6 15.6h.1"/><path d="M7 20.5v1.3M17 20.5v1.3"/>'],
     ['sniffs', 'Good sniffs', '<path d="M6 13.5c0-2.5 2.7-4 6-4s6 1.5 6 4-2.2 4-3.6 4c-.9 0-1.5-.6-2.4-.6s-1.5.6-2.4.6C8.2 17.5 6 16 6 13.5z"/><path d="M10 14.2v.6M14 14.2v.6"/><path d="M8.5 6.5c.6-1 .6-2 0-3M12 6.5c.6-1 .6-2 0-3M15.5 6.5c.6-1 .6-2 0-3"/>'],
   ];
   const LIKE = Object.fromEntries(LIKES.map(([k, label, svg]) => [k, { label, svg: `<svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg>` }]));
