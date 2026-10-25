@@ -57,6 +57,25 @@
    "hike": 46,
    "trails": "Tom East Side Trail; Goodyear Memorial Side Trail; Upland SIde Trail; Rushing River Side Trail",
    "saved_at": "2026-10-25T15:35:12.373Z"
+  },
+  "ed0a6a6f88": {
+   "rating": 3,
+   "likes": [
+    "quiet",
+    "dogs",
+    "trees",
+    "running",
+    "sniffs"
+   ],
+   "apples": 0,
+   "bads": [
+    "ticks"
+   ],
+   "notes": "",
+   "hiked": "2026-10-03",
+   "hike": 49,
+   "trails": "South Outlier Loop Trail; Laidlaw Side Trail; Turnbull Side Trail; McCarston's Lake Side Trail; Springwater Side Trail",
+   "saved_at": "2026-10-25T15:43:46.831Z"
   }
  }
 }
