@@ -35,10 +35,11 @@
   const doneKm = planned.filter(s => covered[s.oid]).reduce((a, s) => a + s.km, 0);
   const bonusKm = segs.filter(s => s.status !== 'planned' && covered[s.oid]).reduce((a, s) => a + s.km, 0);
   const nDone = hikes.filter(h => status(h.hike).state === 'done').length;
+  const totalMi = trips.reduce((a, t) => a + (+t.km || 0), 0) / 1.609344;   // every uploaded GPS track, side trails or not
   const last = trips.length ? trips[trips.length - 1].date : null;
   $('#bar').style.width = (100 * doneKm / plannedKm).toFixed(1) + '%';
   $('#progtext').textContent = `${doneKm.toFixed(1)} of ${plannedKm.toFixed(0)} km of planned side trails (${(100 * doneKm / plannedKm).toFixed(1)}%) · ` +
-    `${nDone} of ${hikes.length} hikes done` + (bonusKm > 0.05 ? ` · +${bonusKm.toFixed(1)} km bonus` : '') +
+    `${nDone} of ${hikes.length} hikes done · ${totalMi.toFixed(1)} mi walked in total` + (bonusKm > 0.05 ? ` · +${bonusKm.toFixed(1)} km bonus` : '') +
     ` · ${photos.length} photo${photos.length === 1 ? '' : 's'}` + (last ? ` · last hike ${fmtDate(last)}` : '');
   // main Bruce Trail walked along the way (secondary tracker; computed by the GitHub Action from the GPX tracks)
   const mainCovered = prog.main_covered || {};
