@@ -1,5 +1,12 @@
 {
  "hikes": {
+  "44": {
+   "rating": 4,
+   "notes": "",
+   "hiked": "2026-10-17",
+   "trails": "Tom East Side Trail; Goodyear Memorial Side Trail; Upland SIde Trail; Rushing River Side Trail",
+   "saved_at": "2026-10-25T00:07:27.940Z"
+  },
   "49": {
    "rating": 3,
    "notes": "",
