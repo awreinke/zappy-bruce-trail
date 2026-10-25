@@ -51,12 +51,22 @@
    "saved_at": "2026-10-25T15:42:35.667Z"
   },
   "774adf44f5": {
-   "rating": 4,
+   "rating": 3,
+   "likes": [
+    "stream",
+    "uphill",
+    "trees",
+    "sniffs"
+   ],
+   "apples": 0,
+   "bads": [
+    "ticks"
+   ],
    "notes": "",
    "hiked": "2026-10-17",
    "hike": 46,
    "trails": "Tom East Side Trail; Goodyear Memorial Side Trail; Upland SIde Trail; Rushing River Side Trail",
-   "saved_at": "2026-10-25T15:35:12.373Z"
+   "saved_at": "2026-10-25T15:44:59.172Z"
   },
   "ed0a6a6f88": {
    "rating": 3,
