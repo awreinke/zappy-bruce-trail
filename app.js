@@ -245,11 +245,21 @@
   osm.addTo(map);
   const ll = c => c.map(([x, y]) => [y, x]);
   const rend = L.canvas({ padding: 0.3, tolerance: 6 });
-  const mainL = L.polyline(ll(mainTrail), { renderer: rend, color: '#8a7b62', weight: 2.5, opacity: 0.8, interactive: false }).addTo(map);
-  const mainWalkedL = L.layerGroup().addTo(map);
-  if (Object.keys(mainCovered).length) getJSON('data/main_segments.json', []).then(ms => ms.filter(s => mainCovered[s.oid]).forEach(s =>
-    L.polyline(ll(s.coords), { renderer: rend, color: css('--green'), weight: 4, opacity: 0.85 })
-      .bindTooltip(`Main Bruce Trail · walked ${fmtDate(mainCovered[s.oid])}`, { sticky: true }).addTo(mainWalkedL)));
+  // main Bruce Trail: purple, turning yellow where Zappy has walked it. Own pane so it always sits under the side trails.
+  const MAIN_C = '#8e44ad', MAIN_WALKED = '#f5c400';
+  map.createPane('mainPane').style.zIndex = 390;
+  const mainRend = L.canvas({ padding: 0.3, tolerance: 6, pane: 'mainPane' });
+  const mainL = L.layerGroup([L.polyline(ll(mainTrail), { renderer: mainRend, color: MAIN_C, weight: 3, opacity: 0.75, interactive: false })]).addTo(map);
+  getJSON('data/main_segments.json', []).then(ms => {
+    if (!ms.length) return;
+    mainL.clearLayers();
+    const todo = ms.filter(s => !mainCovered[s.oid]), done = ms.filter(s => mainCovered[s.oid]);
+    L.polyline(todo.map(s => ll(s.coords)), { renderer: mainRend, color: MAIN_C, weight: 3, opacity: 0.8 })
+      .bindTooltip('Main Bruce Trail', { sticky: true }).addTo(mainL);
+    if (done.length) L.polyline(done.map(s => ll(s.coords)), { renderer: mainRend, color: '#6b5400', weight: 7, opacity: 0.55, interactive: false }).addTo(mainL);
+    done.forEach(s => L.polyline(ll(s.coords), { renderer: mainRend, color: MAIN_WALKED, weight: 4.5, opacity: 1 })
+      .bindTooltip(`Main Bruce Trail · walked ${fmtDate(mainCovered[s.oid])}`, { sticky: true }).addTo(mainL));
+  });
   const segStyle = s => covered[s.oid] ? { color: css('--green'), weight: 5, opacity: 0.95, dashArray: null }
     : s.status === 'planned' ? { color: css('--blue'), weight: 3.5, opacity: 0.9, dashArray: null }
     : s.status === 'nodog' ? { color: css('--red'), weight: 2.5, opacity: 0.9, dashArray: '5 5' }
@@ -272,19 +282,20 @@
   photoIdx.forEach(p => L.marker([p.lat, p.lon], { icon: L.divIcon({ className: '', iconSize: [36, 36], html: `<div class="ph" style="background-image:url('${p.thumb}')"></div>` }) })
     .on('click', () => openLB(photos, photos.indexOf(p))).addTo(photoL));
   const showPhotos = () => { if (map.getZoom() >= 12 || current) photoL.addTo(map); else photoL.remove(); };
-  const zoomStyle = () => { map.getContainer().classList.toggle('small', map.getZoom() < 9); if (map.getZoom() >= 12) mainL.remove(); else if (!map.hasLayer(mainL) && mainOn) mainL.addTo(map); };
-  let mainOn = true; map.on('overlayadd overlayremove', e => { if (e.layer === mainL) mainOn = e.type === 'overlayadd'; });
+  const zoomStyle = () => { map.getContainer().classList.toggle('small', map.getZoom() < 9); };
   map.on('zoomend', () => { showPhotos(); zoomStyle(); });
   map.fitBounds(L.latLngBounds(hikes.map(h => [h.lat, h.lon])), { padding: [20, 20] }); zoomStyle();
   L.control.layers({ 'Street map': osm, 'Topographic': topo, 'Satellite': sat },
     { 'Hikes (parking)': hikeL, 'Side trails': sideL, "Zappy's GPS tracks": trackL, 'Photos': photoL, 'Main Bruce Trail': mainL }, { collapsed: true }).addTo(map);
   const legend = L.control({ position: 'bottomleft' });
   legend.onAdd = () => { const d = L.DomUtil.create('div', 'legend'); d.innerHTML =
-    `<div><i style="border-color:${css('--green')};border-top-width:5px"></i>Walked with Zappy</div>
-     <div><i style="border-color:${css('--blue')}"></i>Planned side trail</div>
+    `<div><i style="border-color:${css('--blue')}"></i>Planned side trail</div>
+     <div><i style="border-color:${css('--green')};border-top-width:5px"></i>Side trail walked</div>
+     <div><i style="border-color:${MAIN_C}"></i>Main Bruce Trail</div>
+     <div><i style="border-color:${MAIN_WALKED};border-top-width:5px;box-shadow:0 1px 0 #6b5400"></i>Main trail walked</div>
      <div><i class="dash" style="border-color:${css('--grey')}"></i>Skipped (short or road)</div>
      <div><i class="dash" style="border-color:${css('--red')}"></i>No dogs allowed</div>
-     <div><i style="border-color:${css('--orange')}"></i>GPS track</div>
+     <div><i style="border-color:${css('--orange')};border-top-width:2px"></i>GPS track</div>
      <div><span class="dot"></span>Hike to do <span class="dot" style="background:${css('--orange')};border-color:#fff"></span>Started <span class="dot" style="background:${css('--green')};border-color:#fff"></span>Done</div>`;
     L.DomEvent.disableClickPropagation(d); return d; };
   legend.addTo(map);
@@ -293,7 +304,7 @@
   const trackCache = {};
   Promise.all(trips.map(t => getJSON(t.track, null).then(tr => {
     if (!tr) return; trackCache[t.id] = tr;
-    L.polyline(ll(tr.coords), { renderer: rend, color: css('--orange'), weight: 3, opacity: 0.9 })
+    L.polyline(ll(tr.coords), { renderer: rend, color: css('--orange'), weight: 2, opacity: 0.85 })
       .bindTooltip(`${esc(t.name)} · ${fmtDate(t.date)} · ${t.km} km`, { sticky: true }).addTo(trackL);
   })));
 
