@@ -1,17 +1,18 @@
 {
- "run": "2026-10-31T12:09:18-04:00",
- "tracks": [
+ "run": "2026-10-31T14:24:57-04:00",
+ "tracks": [],
+ "photos": [
   {
-   "file": "Saturday_Morning_Activity-pinrivermeladona.gpx",
+   "file": "IMG_4186.jpeg",
    "date": "2026-10-31",
-   "km": 7.7,
-   "hikes": [
-    53
-   ],
-   "side_trail_km_new": 2.1
+   "gps": true
+  },
+  {
+   "file": "IMG_4188.jpeg",
+   "date": "2026-10-31",
+   "gps": true
   }
  ],
- "photos": [],
  "problems": [
   "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
   "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded",
