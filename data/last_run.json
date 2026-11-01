@@ -1,18 +1,18 @@
 {
- "run": "2026-10-31T14:24:57-04:00",
- "tracks": [],
- "photos": [
+ "run": "2026-11-01T09:11:05-05:00",
+ "tracks": [
   {
-   "file": "IMG_4186.jpeg",
-   "date": "2026-10-31",
-   "gps": true
-  },
-  {
-   "file": "IMG_4188.jpeg",
-   "date": "2026-10-31",
-   "gps": true
+   "file": "Sunday_Morning_Hiking-snowcreek_.gpx",
+   "date": "2026-11-01",
+   "km": 8.3,
+   "hikes": [
+    34,
+    35
+   ],
+   "side_trail_km_new": 5.25
   }
  ],
+ "photos": [],
  "problems": [
   "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
   "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded",
