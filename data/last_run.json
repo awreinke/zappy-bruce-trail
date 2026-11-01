@@ -1,18 +1,53 @@
 {
- "run": "2026-11-01T09:11:05-05:00",
- "tracks": [
+ "run": "2026-11-01T11:26:38-05:00",
+ "tracks": [],
+ "photos": [
   {
-   "file": "Sunday_Morning_Hiking-snowcreek_.gpx",
+   "file": "IMG_4214.jpeg",
    "date": "2026-11-01",
-   "km": 8.3,
-   "hikes": [
-    34,
-    35
-   ],
-   "side_trail_km_new": 5.25
+   "gps": true
+  },
+  {
+   "file": "IMG_4215.jpeg",
+   "date": "2026-11-01",
+   "gps": true
+  },
+  {
+   "file": "IMG_4735.jpeg",
+   "date": "2026-10-31",
+   "gps": true
+  },
+  {
+   "file": "IMG_4739.jpeg",
+   "date": "2026-10-31",
+   "gps": true
+  },
+  {
+   "file": "IMG_4744.jpeg",
+   "date": "2026-10-31",
+   "gps": true
+  },
+  {
+   "file": "IMG_4746.jpeg",
+   "date": "2026-10-31",
+   "gps": true
+  },
+  {
+   "file": "IMG_4751.jpeg",
+   "date": "2026-10-31",
+   "gps": true
+  },
+  {
+   "file": "IMG_4764.jpeg",
+   "date": "2026-11-01",
+   "gps": true
+  },
+  {
+   "file": "IMG_4766.jpeg",
+   "date": "2026-11-01",
+   "gps": true
   }
  ],
- "photos": [],
  "problems": [
   "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
   "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded",
