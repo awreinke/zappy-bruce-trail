@@ -133,6 +133,28 @@
    "hike": 53,
    "trails": "Pine River Valley Side Trail; Carl Alexander Side Trail; Melodonna Side Trail; Kilgorie Side Trail; Bell Lookout Side Trail",
    "saved_at": "2026-10-31T18:25:31.869Z"
+  },
+  "7fcdf2033d": {
+   "rating": 0,
+   "likes": [
+    "stream",
+    "dogs",
+    "trees",
+    "running",
+    "sniffs"
+   ],
+   "trailhead": [
+    "parking"
+   ],
+   "potty_lots": [],
+   "apples": 0,
+   "berries": 0,
+   "bads": [],
+   "notes": "Black walnuts after crossing highway 7 on snowcreek going south",
+   "hiked": "2026-11-01",
+   "hike": 34,
+   "trails": "Snows Creek Side Trail; Reservoir Side Trail; North Rim Side Trail; Maureen Smith Side Trail",
+   "saved_at": "2026-11-01T14:24:47.569Z"
   }
  }
 }
