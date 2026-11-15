@@ -1,50 +1,21 @@
 {
- "run": "2026-11-01T11:26:38-05:00",
- "tracks": [],
+ "run": "2026-11-15T11:03:02-05:00",
+ "tracks": [
+  {
+   "file": "Sunday_Morning_Hiking.gpx",
+   "date": "2026-11-15",
+   "km": 10.3,
+   "hikes": [
+    34,
+    35
+   ],
+   "side_trail_km_new": 2.54
+  }
+ ],
  "photos": [
   {
-   "file": "IMG_4214.jpeg",
-   "date": "2026-11-01",
-   "gps": true
-  },
-  {
-   "file": "IMG_4215.jpeg",
-   "date": "2026-11-01",
-   "gps": true
-  },
-  {
-   "file": "IMG_4735.jpeg",
-   "date": "2026-10-31",
-   "gps": true
-  },
-  {
-   "file": "IMG_4739.jpeg",
-   "date": "2026-10-31",
-   "gps": true
-  },
-  {
-   "file": "IMG_4744.jpeg",
-   "date": "2026-10-31",
-   "gps": true
-  },
-  {
-   "file": "IMG_4746.jpeg",
-   "date": "2026-10-31",
-   "gps": true
-  },
-  {
-   "file": "IMG_4751.jpeg",
-   "date": "2026-10-31",
-   "gps": true
-  },
-  {
-   "file": "IMG_4764.jpeg",
-   "date": "2026-11-01",
-   "gps": true
-  },
-  {
-   "file": "IMG_4766.jpeg",
-   "date": "2026-11-01",
+   "file": "11-15-26_ 8.31.39AM.jpg",
+   "date": "2026-11-15",
    "gps": true
   }
  ],
