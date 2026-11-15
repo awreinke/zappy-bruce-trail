@@ -1,20 +1,19 @@
 {
- "run": "2026-11-15T11:03:02-05:00",
- "tracks": [
-  {
-   "file": "Sunday_Morning_Hiking.gpx",
-   "date": "2026-11-15",
-   "km": 10.3,
-   "hikes": [
-    34,
-    35
-   ],
-   "side_trail_km_new": 2.54
-  }
- ],
+ "run": "2026-11-15T12:20:43-05:00",
+ "tracks": [],
  "photos": [
   {
-   "file": "11-15-26_ 8.31.39AM.jpg",
+   "file": "IMG_4885.jpeg",
+   "date": "2026-11-15",
+   "gps": true
+  },
+  {
+   "file": "IMG_4886.jpeg",
+   "date": "2026-11-15",
+   "gps": true
+  },
+  {
+   "file": "IMG_4887.jpeg",
    "date": "2026-11-15",
    "gps": true
   }
