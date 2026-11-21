@@ -1,17 +1,33 @@
 {
- "run": "2026-11-21T10:37:10-05:00",
- "tracks": [
+ "run": "2026-11-21T13:28:30-05:00",
+ "tracks": [],
+ "photos": [
   {
-   "file": "Bruce_Trail_to_Bruce_Trail_Glen_Cross_Side_Trail-Mono-ON-Canada.gpx",
+   "file": "IMG_4784.jpeg",
    "date": "2026-11-21",
-   "km": 7.2,
-   "hikes": [
-    47
-   ],
-   "side_trail_km_new": 5.39
+   "gps": true
+  },
+  {
+   "file": "IMG_4788.jpeg",
+   "date": "2026-11-21",
+   "gps": true
+  },
+  {
+   "file": "IMG_4791.jpeg",
+   "date": "2026-11-21",
+   "gps": true
+  },
+  {
+   "file": "IMG_4795.jpeg",
+   "date": "2026-11-21",
+   "gps": true
+  },
+  {
+   "file": "IMG_4796.jpeg",
+   "date": "2026-11-21",
+   "gps": true
   }
  ],
- "photos": [],
  "problems": [
   "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
   "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded",
