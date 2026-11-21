@@ -155,6 +155,29 @@
    "hike": 34,
    "trails": "Snows Creek Side Trail; Reservoir Side Trail; North Rim Side Trail; Maureen Smith Side Trail",
    "saved_at": "2026-11-02T10:18:01.578Z"
+  },
+  "59305de981": {
+   "rating": 4,
+   "likes": [
+    "stream",
+    "quiet",
+    "uphill",
+    "trees",
+    "running",
+    "sniffs"
+   ],
+   "trailhead": [
+    "parking"
+   ],
+   "potty_lots": [],
+   "apples": 2,
+   "berries": 0,
+   "bads": [],
+   "notes": "Lots of stairs!  Quite a bit of uphill.  Got to return!",
+   "hiked": "2026-11-21",
+   "hike": 47,
+   "trails": "Cam Snell Side Trail; Isabel East Side Trail; Glen Cross Side Trail",
+   "saved_at": "2026-11-21T15:44:20.750Z"
   }
  }
 }
