@@ -1,18 +1,17 @@
 {
- "run": "2026-11-21T13:30:58-05:00",
- "tracks": [],
- "photos": [
+ "run": "2026-11-22T09:52:03-05:00",
+ "tracks": [
   {
-   "file": "IMG_4906.jpeg",
-   "date": "2026-11-21",
-   "gps": true
-  },
-  {
-   "file": "IMG_4913.jpeg",
-   "date": "2026-11-21",
-   "gps": true
+   "file": "Fisher_pond.gpx",
+   "date": "2026-11-22",
+   "km": 5.9,
+   "hikes": [
+    22
+   ],
+   "side_trail_km_new": 1.16
   }
  ],
+ "photos": [],
  "problems": [
   "IMG_7895.jpeg: no trip matched yet (date 2025-10-18); it will be matched when that day's GPX is uploaded",
   "IMG_7955.png: no trip matched yet (date 2025-10-29); it will be matched when that day's GPX is uploaded",
