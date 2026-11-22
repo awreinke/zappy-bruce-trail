@@ -178,6 +178,25 @@
    "hike": 47,
    "trails": "Cam Snell Side Trail; Isabel East Side Trail; Glen Cross Side Trail",
    "saved_at": "2026-11-21T15:44:20.750Z"
+  },
+  "04282b98ec": {
+   "rating": 3,
+   "likes": [
+    "uphill",
+    "trees",
+    "running",
+    "sniffs"
+   ],
+   "trailhead": [],
+   "potty_lots": [],
+   "apples": 1,
+   "berries": 1,
+   "bads": [],
+   "notes": "",
+   "hiked": "2026-11-22",
+   "hike": 22,
+   "trails": "Fisher's Pond Side Trail",
+   "saved_at": "2026-11-22T14:56:53.752Z"
   }
  }
 }
